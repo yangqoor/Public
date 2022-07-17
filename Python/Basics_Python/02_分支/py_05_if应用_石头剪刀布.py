@@ -20,9 +20,7 @@ print("玩家出拳为：%d，电脑出拳为：%d" % (player, computer))
 # or（））
 # elif
 # else
-if ((player == 1 and computer == 2)
-        or (player == 2 and computer == 3)
-        or (player == 3 and computer == 1)):
+if ((player == 1 and computer == 2) or (player == 2 and computer == 3) or (player == 3 and computer == 1)):
     print("玩家胜利！")
 # 平局
 elif player == computer:
@@ -30,6 +28,3 @@ elif player == computer:
 # 其他情况电脑胜
 else:
     print("玩家惜败！")
-
-
-

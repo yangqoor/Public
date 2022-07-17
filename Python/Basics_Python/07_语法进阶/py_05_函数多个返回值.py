@@ -24,4 +24,3 @@ gl_temp, gl_wetness = measure()
 
 print(gl_temp)
 print(gl_wetness)
-

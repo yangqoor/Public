@@ -18,4 +18,3 @@ def print_info(name, title="", gender=True):
 # 应使用最常用的值作为默认值
 print_info("小明")
 print_info("小美", gender=False)
-

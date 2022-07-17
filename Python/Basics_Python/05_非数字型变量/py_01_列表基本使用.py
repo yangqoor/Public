@@ -1,8 +1,8 @@
 name_list = ["zhangsan", "lisi", "zhangsan", "wangwu", "zhangsan", "zhangsan"]
 """
-.append  .count   .insert  .reverse 
-.clear   .extend  .pop     .sort    
-.copy    .index   .remove  
+.append  .count   .insert  .reverse
+.clear   .extend  .pop     .sort
+.copy    .index   .remove
 """
 # 1、取值和取索引
 # list index out of range 列表索引超出范围

@@ -10,7 +10,6 @@ def demo(num, num_list):
     # num_list = num_list + num_list
     # num_list.extend(num_list)
 
-
     print(num)
     print(num_list)
 

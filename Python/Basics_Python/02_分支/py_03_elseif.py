@@ -11,4 +11,3 @@ elif holiday_name == "生日":
     print("买蛋糕")
 else:
     print("其他日子每天都是节日.....")
-

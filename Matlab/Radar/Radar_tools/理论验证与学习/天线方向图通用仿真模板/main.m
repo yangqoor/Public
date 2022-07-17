@@ -95,7 +95,7 @@ radiation_pattern_dB = mag2db(abs(radiation_pattern));
                        
 plot(angle_d,radiation_pattern_dB);grid on                        
                        
-for beam_idx = 1:48
+for beam_idx = 1:1
     freq_idx = 128;
 
     radiation_pattern = reshape(rx_freq(freq_idx,beam_idx,:),[],1);

@@ -1,7 +1,7 @@
 #! /usr/bin/python3
 
 # 保存主程序功能代码
-import  cards_tools
+import cards_tools
 # 死循环，由用户决定什么时间停止
 while True:
 
