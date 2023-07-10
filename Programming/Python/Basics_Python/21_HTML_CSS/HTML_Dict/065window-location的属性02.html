@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oBody = document.getElementById('body01');
+			var sData = window.location.search;
+			alert(sData);
+
+			var sHash = window.location.hash;
+			alert(sHash);
+
+			if(sData!='')
+			{
+				var aRr = sData.split("=");
+				var iNum = aRr[1];
+				
+				if(iNum==1)
+				{
+					oBody.style.backgroundColor = 'gold';
+				}
+				else if(iNum==2)
+				{
+					oBody.style.backgroundColor = 'green';
+				}
+				else
+				{
+					oBody.style.backgroundColor = 'pink';
+				}
+			}
+		}
+
+	</script>
+</head>
+<body id="body01">
+	<h1>007页面</h1>
+	<a href="065window-location的属性02.html">链接到007页面</a><br><br>
+	<a href="065window-location的属性02.html?aa=1">链接到金色背景007页面</a><br><br>
+	<a href="065window-location的属性02.html?aa=2">链接到绿色背景007页面</a>
+	<br><br>
+	<a href="065window-location的属性02.html?aa=3">链接到粉色背景007页面</a>
+	<br><br>
+</body>
+</html>

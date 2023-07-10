@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单</title>
+    <style type="text/css">
+        .menu{
+            width: 694px;
+            height:50px;
+            /*background-color: cyan;*/
+
+            /*去掉行首的小圆点*/
+            list-style: none;
+            margin: 50px auto 0;
+            padding: 0;
+        }
+
+        .menu li{
+            width: 98px;
+            height: 48px;
+            border: 1px solid gold;
+            background-color: #fff;
+            /*display: inline-block;*/
+            float: left;
+            margin-left: -1px;
+        }
+
+        .menu li a{
+            /*background-color: gold;*/
+            display: block;
+            width: 98px;
+            height: 48px;
+            text-align: center;
+            line-height: 48px;
+            text-decoration: none;
+            font-size: 16px;
+            font-family: "Microsoft YaHei";
+            color: pink;
+        }
+
+        .menu li a:hover{
+            background-color: gold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!--    ul.menu>(li>a{公司简介})*7-->
+<ul class="menu">
+    <li><a href="#">公司简介</a></li>
+    <li><a href="#">公司简介</a></li>
+    <li><a href="#">公司简介</a></li>
+    <li><a href="#">公司简介</a></li>
+    <li><a href="#">公司简介</a></li>
+    <li><a href="#">公司简介</a></li>
+    <li><a href="#">公司简介</a></li>
+</ul>
+</body>
+</html>

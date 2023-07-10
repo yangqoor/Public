@@ -1,0 +1,48 @@
+[System]
+Name='Untitled'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=4
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='E'
+Range=[0 1]
+NumMFs=5
+MF1='PB':'trimf',[0.8 1 2]
+MF2='PS':'trimf',[0.5 0.7 0.9]
+MF3='ZO':'trimf',[0.3 0.5 0.7]
+MF4='NS':'trimf',[0.1 0.3 0.5]
+MF5='NB':'trimf',[-2 0 0.2]
+
+[Input2]
+Name='EC'
+Range=[0 1]
+NumMFs=3
+MF1='NB':'trimf',[-0.5 0 0.401408450704225]
+MF2='ZO':'trapmf',[0.14 0.46 0.54 0.86]
+MF3='PB':'trimf',[0.59967497291441 1 1.5]
+
+[Output1]
+Name='U'
+Range=[0 1]
+NumMFs=7
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+MF4='mf4':'trimf',[-0.3333 0 0.3333]
+MF5='mf5':'trimf',[0 0.3333 0.6667]
+MF6='mf6':'trimf',[0.3333 0.6667 1]
+MF7='mf7':'gaussmf',[0.00403 0.521]
+
+[Rules]
+1 0, 4 (1) : 1
+1 2, 1 (1) : 1
+2 1, 2 (1) : 1
+-2 2, 3 (1) : 1

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css选择器</title>
+    <style type="text/css">
+        /*1、标签选择器*/
+        /*  *{} 星号选择器选择所有标签*/
+        *{
+            color: aqua;
+        }
+        div{
+            color: red;
+        }
+        /*2、id选择器（id必须为不重复）*/
+        /*下边的样式覆盖上边的样式*/
+        /*id的权重要高于类选择器*/
+        #div_1{
+            color: darkgreen;
+        }
+        /*3、类选择器*/
+        .green{
+            color: green;
+        }
+        .big{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div_1" class="big">这是第1个div</div>
+    <div >这是第2个div</div>
+    <div>这是第3个div</div>
+    <p class="big green">这是一个p</p>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+    <script type="text/javascript">
+        // function fnMyAlert() {
+        //     alert('hello')
+        // }
+
+        // 只执行一次的定时器(fun, 时间ms)
+        // setTimeout(fnMyAlert, 2000)
+        // var timer1 = setTimeout(fnMyAlert, 2000);
+        // clearTimeout(timer1)   // 关闭只执行一次的定时器
+
+        // 反复执行的定时器(fun， 时间ms)
+        // var timer2 = setInterval(fnMyAlert, 1000)
+
+        // var timer2 = setInterval(function () {
+        //     alert('hello')
+        // }, 1000);
+        // clearInterval(timer2)    // 关闭
+        window.onload = function () {
+            var oDiv = document.getElementById('div1')
+            var iLeft = 0;
+            var iSpeed = 3;
+            // var oTimer = setInterval(fnMoving,30)
+            //
+            // function fnMoving() {
+            //     iLeft += 2;
+            //     oDiv.style.left = iLeft + 'px';
+            // }
+            var oTimer = setInterval(function () {
+                iLeft += iSpeed;
+                oDiv.style.left = iLeft + 'px';
+                if(iLeft>700)
+                {
+                    iSpeed = -3;
+                }
+                else if(iLeft === 0)
+                {
+                    iSpeed = 3;
+                }
+                },30);
+
+            var oPop = document.getElementById('pop')
+            var oTimer2 = setTimeout(function () {
+                oPop.style.display = 'block';
+            }, 6000)
+
+        }
+    </script>
+    <style type="text/css">
+        .box{
+            width: 100px;
+            height: 100px;
+            background: lightgreen;
+            position: absolute;
+            left: 0;
+            top:50px;
+        }
+
+        .pop_con{
+            display: none;
+        }
+        .popup{
+            width: 500px;
+            height: 300px;
+            border: 1px solid #000;
+            background-color: #fff;
+            position: fixed;
+            left: 50%;
+            margin-left: -251px;
+            top: 50%;
+            margin-top: -151px;
+            z-index: 9999;
+        }
+        .popup h2{
+            background-color: gold;
+            margin: 10px;
+            height: 40px;
+        }
+        .mask{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            left: 0;
+            top: 0;
+            opacity: 0.5;
+            z-index: 9998;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="div1"></div>
+    <div id="pop" class="pop_con">
+        <div class="popup">
+            <h2>弹框标题</h2>
+            弹框
+        </div>
+        <div class="mask"></div>
+    </div>
+</body>
+</html>

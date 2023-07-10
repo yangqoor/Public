@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.con,.con2{
+			width:200px;
+			height:200px;
+			background-color:gold;
+		}
+
+		.box,.box2{
+			width:100px;
+			height:100px;
+			background-color:green;
+		}
+	</style>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+
+		$(window).resize(function(){
+
+			var w = $(window).width();
+
+			document.title = w;
+
+		});
+
+		// 获得输入框的焦点
+		$(function(){
+
+			// 在获得焦点的时候做什么事情
+			/*$('#input01').focus(function(){
+				alert('获得焦点')
+			})*/
+
+			//focus 一般用来让input元素开始就获取焦点，只能是一个元素获得焦点
+			$('#input01').focus();
+
+			// 失去焦点事件
+			// $('#input01').blur(function(){
+			// 	// 获取input元素的value值用 val()
+			// 	var sVal = $(this).val();
+			// 	alert(sVal);
+			// });
+
+			$('#form1').submit(function(){
+
+				//alert('提交');
+
+				// 阻止默认的提交行为
+				return false;
+
+			})
+
+		});
+
+		// 鼠标移入移出触发事件
+		$(function(){
+			// 鼠标移入，移入的子元素也会触发（事件冒泡）
+			// $('.con').mouseover(function(){
+			// 	alert('移入');
+			// });
+
+			// $('.con').mouseout(function(){
+			// 	alert('移出');
+			// });
+
+			// 鼠标移入，移入的子元素不会触发
+			/*
+			$('.con2').mouseenter(function(){
+				alert('移入');
+			})
+
+			$('.con2').mouseleave(function(){
+				alert('移出');
+			})
+			合并成下面的写法：
+			*/
+
+			// $('.con2').hover(function(){
+			// 	alert('移入')
+			// },function(){
+			// 	alert('移出')
+			// })
+
+		});
+
+		$(function(){
+
+			/*
+			$('#btn').click(function(){
+
+				alert('click事件')
+
+			})
+
+			*/
+
+			// 绑定事件的其他方法
+			// 点击或者鼠标移入的时候都执行绑定的函数
+			$('#btn').bind('click mouseover',function(){
+
+				alert('触发事件绑定的函数');
+
+				// 取消绑定事件
+				$(this).unbind('mouseover');
+
+			})
+
+		})
+
+	</script>
+</head>
+<body>
+	<form id="form1" action="http://www.baidu.com">
+		<input type="text" name="dat01" id="input01" ><!--autofocus-->
+		<input type="text" name="dat02" id="input02">
+		<input type="submit" name="" value="提交" id="sub">
+	</form>
+	<br><br><br>
+	<div class="con">
+		<div class="box"></div>
+	</div>
+	<br><br><br>
+
+	<div class="con2">
+		<div class="box2"></div>
+	</div>
+	<br><br><br>
+
+	<input type="button" name="" value="按钮" id="btn">
+</body>
+</html>

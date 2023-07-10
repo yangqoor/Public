@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation动画</title>
+    <style type="text/css">
+        /*定义动画*/
+        @keyframes moving {
+            from{
+                width: 100px;
+            }
+            to{
+                width: 500px;
+            }
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background: gold;
+
+            animation: moving 500ms ease infinite alternate;
+            /*animation-play-state: paused;*/
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+
+        /*风车动画*/
+        @keyframes rotating {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        .rot{
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto 0;
+
+            animation: rotating 2s linear infinite;
+        }
+
+        /*loading动画*/
+        @keyframes loading {
+            from{
+                transform: scale(1,1);
+            }
+            to{
+                transform: scale(1,0.5);
+            }
+        }
+
+        .con{
+            width: 300px;
+            height: 158px;
+            border: 1px solid #000000;
+            margin: 50px auto 0;
+        }
+        .con p{
+            text-align: center;
+        }
+        .con div{
+            float: left;
+            width: 30px;
+            height: 100px;
+            background: gold;
+            margin: 15px;
+            border-radius: 15px;
+            animation: loading 500ms ease infinite alternate;
+        }
+
+        .con div:nth-child(1){
+            background: red;
+        }
+        .con div:nth-child(2){
+            background: green;
+            animation-delay: 100ms;
+        }
+        .con div:nth-child(3){
+            background: pink;
+            animation-delay: 200ms;
+        }
+        .con div:nth-child(4){
+            background: lightgreen;
+            animation-delay: 300ms;
+        }
+        .con div:nth-child(5){
+            background: lightblue;
+            animation-delay: 400ms;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div>
+        <img src="images/fengche.png" alt="风车" class="rot">
+    </div>
+<!--    .con>(div.box01)*5+p{loading...}-->
+    <div class="con">
+        <div class="box01"></div>
+        <div class="box01"></div>
+        <div class="box01"></div>
+        <div class="box01"></div>
+        <div class="box01"></div>
+        <p>loading...</p>
+    </div>
+
+</body>
+</html>

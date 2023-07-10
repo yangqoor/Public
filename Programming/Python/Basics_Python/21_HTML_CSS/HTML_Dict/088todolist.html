@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>todolist</title>
+	<style type="text/css">
+		.list_con{
+			width:600px;
+			margin:50px auto 0;
+		}
+		.inputtxt{
+			width:550px;
+			height:30px;
+			border:1px solid #ccc;
+			padding:0px;
+			text-indent:10px;			
+		}
+		.inputbtn{
+			width:40px;
+			height:32px;
+			padding:0px;
+			border:1px solid #ccc;
+		}
+		.list{
+			margin:0;
+			padding:0;
+			list-style:none;
+			margin-top:20px;
+		}
+		.list li{
+			height:40px;
+			line-height:40px;
+			border-bottom:1px solid #ccc;
+		}
+
+		.list li span{
+			float:left;
+		}
+
+		.list li a{
+			float:right;
+			text-decoration:none;
+			margin:0 10px;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var $inputtxt = $('#txt1');
+			var $btn = $('#btn1');
+			var $ul = $('#list');
+
+
+			$btn.click(function(){
+
+				// 获取input输入框的内容
+				var $val = $inputtxt.val();
+
+				if($val=="")
+				{
+					alert('请输入内容');
+					return;
+				}
+				var $li = $('<li><span>'+ $val +'</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>');
+
+			/*	var $a = $li.find('.del');
+
+				$a.click(function(){
+					$(this).parent().remove();
+				})*/
+
+
+
+				$ul.append($li);
+				$inputtxt.val("");
+
+			})
+
+			/*
+			$('.del').click(function(){
+
+				$(this).parent().remove();
+
+			})*/
+
+
+			$ul.delegate('a','click',function(){
+
+				var $handler = $(this).prop('class');
+
+				if($handler=='del')
+				{
+					$(this).parent().remove();
+				}
+
+				if($handler=='up')
+				{
+					if($(this).parent().prev().length==0)
+					{
+						alert('到顶了！');
+						return;
+					}
+					$(this).parent().insertBefore( $(this).parent().prev() );
+				}
+
+				if($handler=='down')
+				{
+					if($(this).parent().next().length==0)
+					{
+						alert('到底了！');
+						return;
+					}
+
+					$(this).parent().insertAfter( $(this).parent().next() );
+				}
+
+			})
+
+
+
+
+
+
+		})
+
+	</script>	
+</head>
+<body>
+
+	<div class="list_con">
+	<h2>To do list</h2>
+		<input type="text" name="" id="txt1" class="inputtxt">
+		<input type="button" name="" value="增加" id="btn1" class="inputbtn">
+		
+		<ul id="list" class="list">
+			<!-- # 默认会链接到页面顶部   -->
+			<!-- <a href="#">链接</a> -->
+
+			<!-- <a href="javascript:alert('ok!');">链接</a> -->
+			<!-- 让链接的默认行为是 执行javascript的空语句，也就是什么都不做   -->
+			<li><span>学习html</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>
+			<li><span>学习css</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>
+			<li><span>学习javascript</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>
+
+		</ul>
+
+	</div>
+</body>
+</html>

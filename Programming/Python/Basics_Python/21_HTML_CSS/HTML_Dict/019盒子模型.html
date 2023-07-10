@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+        .box{
+            /*盒子的尺寸*/
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+
+            /*盒子的边框*/
+            /*border-top-color: pink;
+            border-top-width: 10px;*/
+            /*!*实线solid   虚线dashed  点线dotted*!*/
+            /*border-top-style: solid;*/
+
+            /*border-top: 10px solid pink;
+            border-left: 10px dashed pink;
+            border-right: 10px dotted pink;
+            border-bottom: 10px solid black;*/
+
+            border: 10px solid black;
+
+            /*文字与边框的距离*/
+            /*padding-top: 20px;
+            padding-left: 40px;
+            padding-right: 80px;
+            padding-bottom: 20px;*/
+            /*注：调整边距后，盒子的尺寸会发生改变*/
+
+            /*顺时针 上 右 下 左
+            padding: 20px 0 0 40px;*/
+            /*上   左右   下
+            padding: 20px 80px 100px;*/
+            /*上下   左右
+            padding: 20px 80px;*/
+            /*四周的边*/
+            padding: 20px;
+
+            /*设置盒子与页面的间距 与padding相似*/
+            margin: 100px;
+
+        }
+
+        .box01{
+            /*控制盒子大小 200*200*/
+            /*width: 200px;
+            height: 200px;*/
+            /*width和height指的是盒子内部内容的尺寸*/
+            width: 140px;
+            height: 140px;
+
+            border: 10px solid black;
+            padding: 20px;
+        }
+
+        .new_title{
+            width: 380px;
+            height: 35px;
+
+            border-top: 1px solid #ff0000;
+            border-bottom: 3px solid #666;
+
+            font-size: 20px;
+            color: #333;
+            font-family: "Microsoft YaHei";
+            font-weight: normal;
+            padding-top: 15px;
+            line-height: 20px;
+            padding-left: 20px;
+        }
+
+        .new_title02{
+            width: 400px;
+            height: 50px;
+
+            border-top: 1px solid #ff0000;
+            border-bottom: 3px solid #666;
+
+            font-size: 20px;
+            color: #333;
+            font-family: "Microsoft YaHei";
+            font-weight: normal;
+            /*通过指定行高使文字居中*/
+            line-height: 50px;
+            /*将padding换为首行缩进*/
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">盒子内容</div>
+    <div class="box01">"哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或"</div>
+    <h3 class="new_title">新闻列表</h3>
+    <h3 class="new_title02">新闻列表</h3>
+</body>
+</html>

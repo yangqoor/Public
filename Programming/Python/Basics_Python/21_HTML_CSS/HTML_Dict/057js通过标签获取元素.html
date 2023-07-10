@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过标签获取元素</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var aLi = document.getElementsByTagName('li');
+            // alert(aLi.length);
+            // 不能给选择集设置样式属性
+            // aLi.style.backgroundColor = 'blue'
+            var aLen = aLi.length;
+            for(var i=0;i<aLen;i++)
+            {
+                aLi[i].style.backgroundColor = 'pink'
+            }
+
+            var oUl = document.getElementById('list1');
+            var aLi1 = oUl.getElementsByTagName('li');
+            aLen1 = aLi1.length;
+            for(var i=0;i<aLen1;i+=2)
+            {
+                aLi[i].style.backgroundColor = 'lightblue'
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul id="list1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+
+    <ul id="list2">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

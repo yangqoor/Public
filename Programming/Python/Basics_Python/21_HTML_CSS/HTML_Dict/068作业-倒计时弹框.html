@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">		
+		.menu{
+			height:80px;
+			background-color:gold;
+			position:fixed;
+			width:960px;
+			top:0px;
+			left:50%;
+			margin-left:-480px;
+		}
+		p{
+			text-align:center;
+		}
+		.popup{
+			width:500px;
+			height:300px;
+			border:1px solid #000;
+			background-color:#fff;
+			position:fixed;
+			left:50%;
+			margin-left:-251px;
+			top:50%;
+			margin-top:-151px;
+			z-index:9999;
+		}
+		.popup h2{
+			background-color:gold;
+			margin:10px;
+			height:40px;
+		}
+
+		.mask{
+			position:fixed;
+			width:100%;
+			height:100%;
+			background-color:#000;
+			left:0;
+			top:0;
+			opacity:0.5;
+			z-index:9998;
+		}
+		.pop_con{
+			display:none;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oPop = document.getElementById('pop_con');
+			var oBtn = document.getElementById('btn');
+			var oPop_tip = document.getElementById('pop_tip');
+			var iTime = 5;
+			oBtn.onclick = function(){
+				oPop.style.display = 'block';
+				/*
+				var timer = setInterval(fnDaojishi,1000);
+
+				function fnDaojishi(){					
+					iTime--;
+					oPop_tip.innerHTML = '还有'+ iTime +'秒钟关闭弹框';
+
+					if(iTime==0)
+					{
+						oPop.style.display = 'none';
+						clearInterval(timer);
+					}
+				}
+				*/
+				var timer = setInterval(function(){					
+					iTime--;
+					oPop_tip.innerHTML = '还有'+ iTime +'秒钟关闭弹框';
+
+					if(iTime==0)
+					{
+						oPop.style.display = 'none';
+						clearInterval(timer);
+						iTime=5;
+						oPop_tip.innerHTML = '还有5秒钟关闭弹框';
+					}
+				},1000);			
+
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<div class="menu">菜单文字</div>	
+	<div class="pop_con" id="pop_con">
+		<div class="popup">
+			<h2>弹框的标题</h2>	
+			<br>
+			<br>
+			<br>
+			<p id="pop_tip">还有5秒钟关闭弹框</p>
+		</div>
+		<div class="mask"></div>
+	</div>
+
+	<input type="button" name="" value="弹出弹框" id="btn">
+
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>网页文字</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>翻面</title>
+    <style type="text/css">
+        .box{
+            width: 700px;
+            height: 272px;
+            background: gold;
+            border: 3px solid #000000;
+            margin: 50px auto 0;
+
+            position: absolute;
+        }
+
+        .box img{
+            position: absolute;
+            left: 200px;
+            top: 0;
+
+            transform-style: preserve-3d;
+            transform: perspective(800px) rotateY(0deg);
+            transition: all 500ms ease;
+            backface-visibility: hidden;
+        }
+
+        .box:hover img{
+            transform: perspective(800px) rotateY(-180deg);
+        }
+
+        .box .back{
+            width: 300px;
+            height: 272px;
+            background: pink;
+            position: absolute;
+            left: 200px;
+            top: 0;
+
+            font-size: 20px;
+            text-align: center;
+            line-height: 272px;
+            transform: perspective(800px) rotateY(180deg);
+            transition: all 500ms ease;
+            backface-visibility: hidden;
+        }
+
+        .box:hover .back{
+            transform: perspective(800px) rotateY(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/location_bg.jpg" alt="背景图">
+        <div class="back">图片的说明文字</div>
+    </div>
+</body>
+</html>

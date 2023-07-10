@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直的margin合并</title>
+    <style type="text/css">
+        .box01,.box02{
+            width: 200px;
+            height: 400px;
+            background-color: gold;
+        }
+
+        .box01{
+            margin-bottom: 20px;
+
+        }
+        /*两个margin重叠时最大的那个有效果*/
+        .box02{
+            margin-top: 20px;
+        }
+
+        .box{
+            width: 500px;
+            border: 1px solid #000;
+            margin: 50px auto 0;
+        }
+
+        .box div{
+            /*段与段之间的margin合并*/
+            margin: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box01"></div>
+    <div class="box02"></div>
+    <div class="box">
+        <div>外边距合并指的是，当两个垂直外边距相遇时，它们将形成一个外边距。合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。</div>
+        <div>外边距合并指的是，当两个垂直外边距相遇时，它们将形成一个外边距。合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。</div>
+        <div>外边距合并指的是，当两个垂直外边距相遇时，它们将形成一个外边距。合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。</div>
+        <div>外边距合并指的是，当两个垂直外边距相遇时，它们将形成一个外边距。合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。</div>
+    </div>
+</body>
+</html>

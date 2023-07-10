@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+		.chart{
+			width:150px;
+			height:50px;
+			border:2px solid #000;
+			text-align:center;
+			line-height:50px;
+			float:right;
+			margin-right:100px;
+			margin-top:50px;
+		}
+
+		.chart em{
+			font-style: normal;
+			color:red;
+			font-weight:bold;
+		}
+
+
+		.add{
+			width:100px;
+			height:50px;
+			background-color:green;
+			border:0;
+			color:#fff;
+			float:left;
+			margin-top:300px;
+			margin-left:300px;
+		}
+
+		.point{
+			width:16px;
+			height:16px;
+			background-color:red;
+			position:fixed;
+			left:0;
+			top:0;
+			display:none;
+			z-index:9999;
+			border-radius:50%;
+		}
+
+	</style>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var $chart = $('.chart');
+			var $count = $('.chart em');
+			var $btn = $('.add');
+			var $point = $('.point');
+
+			var $w01 = $btn.outerWidth();
+			var $h01 = $btn.outerHeight();
+
+			var $w02 = $chart.outerWidth();
+			var $h02 = $chart.outerHeight();
+
+			$btn.click(function(){
+				var oPos01 = $btn.offset();
+				var oPos02 = $chart.offset();
+				$point.css({'left':oPos01.left+parseInt($w01/2)-8,'top':oPos01.top+parseInt($h01/2)-8});
+				$point.show();
+
+				$point.stop().animate({'left':oPos02.left+parseInt($w02/2)-8,'top':oPos02.top+parseInt($h02/2)-8},800,function(){
+					$point.hide();
+					var iNum = $count.html();
+					$count.html(parseInt(iNum)+1);
+				});
+			})
+		});
+	</script>
+</head>
+<body>
+	<div class="chart">购物车<em>0</em></div>
+	<input type="button" name="" value="加入购物车" class="add">
+	<div class="point"></div>
+</body>
+</html>

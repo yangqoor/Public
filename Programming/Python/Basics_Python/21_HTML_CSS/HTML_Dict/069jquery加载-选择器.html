@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<!--  不能直接在jquery的引入标签里写js代码，需要另外写一个script标签，在这个标签里面写js代码   -->
+	<script type="text/javascript">
+
+		window.onload = function(){
+			var oDiv = document.getElementById('div');
+			alert('原生弹出的'+oDiv);
+		}
+		/*
+		
+		// ready 比window.onload 要快：
+		//原因是，window.onload是等标签加载完后，再渲染完之后才运行，
+		// ready是等标签加载完后就运行
+
+		// ready的完整写法：
+		$(document).ready(function(){
+			var $div = $('#div1');
+			alert('jquery弹出的'+$div);
+
+		})
+		*/
+
+		// ready的简写：
+		$(function(){
+			var $div = $('#div');
+			alert('jquery弹出的'+$div);
+		})
+
+		$(function(){
+
+			var $div = $('#div1');
+			$div.css({'color':'red'});
+
+
+			var $div2 = $('.box');
+			$div2.css({'color':'green'});
+
+
+			var $li = $('.list li');
+			// 带“-”的样式属性，可以写成驼峰式，也可以写成原始
+			$li.css({'background-color':'pink','color':'red'});
+
+		});
+
+		// 选择器过滤
+		$(function(){
+
+			/*
+
+			var $div = $('div');
+			$div.css({'backgroundColor':'gold'});
+
+			*/
+
+			$('div').css({'backgroundColor':'gold'});
+
+			$('div').has('p').css({'fontSize':'30px'});
+
+			$('div').eq(4).css({'textIndent':'20px'});
+
+			$('div').eq(4).prev().css({'color':'red'});
+
+			$('div').find('.tip').css({'fontSize':'30px'});
+
+		})
+
+		$(function(){
+			$div = $('#div1');
+
+			alert($div.length);
+
+			// 没有选中元素，也不会报错，程序正常运行
+			$div2 = $('#div2');
+
+			alert($div2.length);
+			// if($div2.length>0) 通过length属性来判断是否选中了元素
+		})
+
+	</script>
+</head>
+<body>
+	<div id="div">这是一个div元素</div>
+		<div id="div1">这是一个div元素</div>
+
+	<div class="box">这是第二个div元素</div>
+	<div class="box">这是第三个div元素</div>
+
+	<!-- ul.list>li{$}*8 -->
+
+	<ul class="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+	</ul>
+
+	<div>1</div>
+	<div><p>2</p></div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div><span>8</span><span class="tip">9</span></div>
+
+</body>
+</html>

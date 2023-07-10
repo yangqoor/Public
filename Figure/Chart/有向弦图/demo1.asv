@@ -1,0 +1,26 @@
+% demo 1
+% @author : slandarer
+% 公众号  : slandarer随笔
+% 知乎    : slandarer
+
+dataMat=randi([0,8],[6,6]);
+
+BCC=biChordChart(dataMat,'Arrow','on');
+BCC=BCC.draw();
+
+% BCC=biChordChart(dataMat,'Arrow','on','CData',[]);
+% BCC=BCC.draw();
+% 
+% BCC=biChordChart(dataMat,'Arrow','on','CData',bone(9));
+% BCC=BCC.draw();
+
+
+ColorList=lines(6);
+for i=1:6
+    BCC.setSquareN(i,'FaceColor',ColorList(i,:))
+    BCC.setChordN(i,)
+end
+
+
+
+

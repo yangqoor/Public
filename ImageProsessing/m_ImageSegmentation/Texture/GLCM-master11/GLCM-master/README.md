@@ -1,0 +1,5 @@
+# GLCM
+GLCM calculates the statistics specified in properties from the gray-level co-occurrence matrix glcm. glcm is an m-by-n-by-p array of valid gray-level co-occurrence matrices. If glcm is an array of GLCMs, stats is an array of statistics for each glcm. graycoprops normalizes the gray-level co-occurrence matrix (GLCM) so that the sum of its elements is equal to 1. Each element (r,c) in the normalized GLCM is the joint probability occurrence of pixel pairs with a defined spatial relationship having gray level values r and c in the image. graycoprops uses the normalized GLCM to calculate properties.
+
+应用灰度共生矩阵建立#
+GLCM从灰度共生矩阵GLCM中计算属性中指定的统计信息。glcm是一个m×n×p的有效灰度共现矩阵数组。如果glcm是GLCMs的数组，stats是每个glcm的统计信息数组。graycoprops对灰度共现矩阵(GLCM)进行规范化，使其元素的和等于1。归一化GLCM中的每个元素(r,c)是图像中灰度值为r和c的像素对与定义的空间关系的联合概率出现。graycoprops使用规范化的GLCM来计算属性。

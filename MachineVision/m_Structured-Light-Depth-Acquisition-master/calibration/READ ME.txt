@@ -1,0 +1,25 @@
+There are 3 folders and 1 MATLAB file included in 'calibration' folder
+
+
+FOLDER
+own_calibration ***********************************************************
+Contains 6 own captured images, 6 computed reprojection images and 2 calibration mat. file obtained from 'calib_gui' tool box.
+Because of limited size of uploaded file, the taken space of original captured images have been compressed so image quality reduced with some degrees.
+
+
+real_calibration **********************************************************
+Contains 9 given real images, 9 computed reprojection images and 2 calibration mat.file obtained from 'calib_gui' tool box.
+
+
+synthetic_calibration *****************************************************
+Contains 6 synthetic images, 3 computed reprojection images and 2 calibration mat.file obtained from 'calib_gui' tool box.
+
+
+
+MATLAB FILE
+Calibration.m *************************************************************
+MATLAB function used for calibration
+
+
+
+

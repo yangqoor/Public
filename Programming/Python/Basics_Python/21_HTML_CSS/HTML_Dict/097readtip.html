@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../JS/jquery.cookie.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var hasread = $.cookie('hasread');
+			//alert(hasread);
+
+			// 判断是否存了cookie，没有就弹出弹框
+			if(hasread==undefined)
+			{
+				$('.pop_con').show();				
+			}
+			
+			//用户点击知道后，存cookie，把弹框关掉
+			$('#user_read').click(function(){
+				$.cookie('hasread','read',{expires:7,path:'/'});
+				$('.pop_con').hide();
+			})
+		})
+
+
+	</script>
+	<script type="text/javascript">
+		
+
+	</script>
+	<style type="text/css">
+
+		.pop_con{
+			display:none;
+		}		
+		.pop{
+			position:fixed;
+			width:500px;
+			height:300px;
+			background-color:#fff;
+			border:3px solid #000;
+			left:50%;
+			top:50%;
+			margin-left:-250px;
+			margin-top:-150px;
+			z-index:9999;
+		}
+
+		.mask{
+			position:fixed;
+			width:100%;
+			height:100%;
+			background-color:#000;
+			opacity:0.3;
+			filter:alpha(opacity=30);
+			left:0;
+			top:0;
+			z-index:9990;
+
+		}
+
+		.close{
+			float:right;
+			font-size:30px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="pop_con">
+		<div class="pop">
+			亲！本网站最近有优惠活动！请强力关注！			
+			<a href="#" id="close" class="close">×</a>
+
+			<a href="javascript:;" id="user_read">朕知道了！</a>
+		</div>
+		<div class="mask"></div>
+	</div>
+
+	<h1>网站内容</h1>
+</body>
+</html>

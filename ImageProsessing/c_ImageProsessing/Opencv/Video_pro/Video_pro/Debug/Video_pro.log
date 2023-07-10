@@ -1,0 +1,5 @@
+﻿  main.cpp
+f:\my study\visual_studio\opencv\video_pro\video_pro\main.cpp(156): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
+f:\my study\visual_studio\opencv\video_pro\video_pro\main.cpp(183): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  Video_pro.vcxproj -> F:\My Study\Visual_Studio\Opencv\Video_pro\Debug\Video_pro.exe
+  Video_pro.vcxproj -> F:\My Study\Visual_Studio\Opencv\Video_pro\Debug\Video_pro.pdb (Full PDB)

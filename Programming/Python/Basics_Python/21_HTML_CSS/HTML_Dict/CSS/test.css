@@ -1,0 +1,167 @@
+body,ul{
+	margin:0;
+	padding:0;
+}
+
+ul{list-style:none;}
+
+.pages_con{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	overflow:hidden;
+}
+
+.pages{
+	height:600px;
+	position:relative;
+}
+.page1{	background-color:orange;}
+.page2{	background-color:lightgreen;}
+.page3{	background-color:cyan;}
+.page4{	background-color:pink;}
+.page5{	background-color:lightblue;}
+
+
+.points{
+	width:16px;
+	height:176px;
+	position:fixed;
+	right:20px;
+	top:50%;
+	margin-top:-88px;
+}
+
+.points li{
+	width:13px;
+	height:13px;
+	margin:16px 0;
+	border-radius:50%;
+	border:1px solid #666;
+	cursor:pointer;
+}
+
+.points li.active{
+	background-color:#666;
+}
+
+.main_con{
+	width:900px;
+	height:400px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-450px;
+	margin-top:-200px;
+}
+
+.main_con .left_img{
+	width:363px;
+	height:400px;
+	float:left;
+	position:relative;
+	left:-50px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	transition:all 1000ms ease 300ms;
+}
+
+.main_con .right_info{
+	width:500px;
+	height:300px;
+	margin-top:50px;
+	float:right;
+	font-family:'Microsoft Yahei';
+	font-size:20px;
+	line-height:50px;
+	color:#666;
+	text-indent:2em;
+	text-align:justify;
+	position:relative;
+	right:-50px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	transition:all 1000ms ease 300ms;
+}
+
+
+.moving .main_con .left_img{
+	left:0;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+
+.moving .main_con .right_info{
+	right:0;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+
+.main_con .right_img{
+	width:522px;
+	height:400px;
+	float:right;
+	position:relative;
+	top:-50px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	transition:all 1000ms ease 300ms;
+}
+
+.main_con .left_info{
+	width:350px;
+	height:300px;
+	margin-top:50px;
+	float:left;
+	font-family:'Microsoft Yahei';
+	font-size:20px;
+	line-height:50px;
+	color:#666;
+	text-indent:2em;
+	text-align:justify;
+	position:relative;
+	bottom:-50px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	transition:all 1000ms ease 300ms;
+}
+
+
+.moving .main_con .right_img{
+	top:0;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+
+.moving .main_con .left_info{
+	bottom:0;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+
+
+
+
+.main_con .center_img{
+	width:611px;
+	height:337px;
+	position:absolute;
+	left:50%;
+	margin-left:-305px;
+	bottom:-50px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	transition:all 1000ms ease 300ms;
+
+}
+
+
+.moving .main_con .center_img
+{
+	bottom:0;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+
+

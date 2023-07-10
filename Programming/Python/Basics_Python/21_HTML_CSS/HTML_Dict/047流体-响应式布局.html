@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流体布局响应式布局</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+        }
+
+        .con a{
+            display: block;
+            /*width: calc(25% - 4px);*/
+
+            width: 25%;
+            height: 100px;
+            box-sizing: border-box;
+            background: gold;
+            text-align: center;
+            line-height: 100px;
+            float: left;
+            text-decoration: none;
+            color: #000000;
+
+            border: 2px solid #000000;
+        }
+
+        .box div{
+            width: 23%;
+            border: 2px solid #000000;
+            background: gold;
+            height: 200px;
+            margin: 1%;
+            float: left;
+            box-sizing: border-box;
+        }
+        @media (max-width: 800px) {
+            .box div{
+                width: 46%;
+                margin: 2%;
+            }
+        }
+        @media (max-width: 400px) {
+            .box div{
+                width: 94%;
+                margin: 3%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <a href="#">菜单文字</a>
+        <a href="#">菜单文字</a>
+        <a href="#">菜单文字</a>
+        <a href="#">菜单文字</a>
+    </div>
+
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

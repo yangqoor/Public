@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层级选择器</title>
+    <style type="text/css">
+
+        .box{
+            font-size: 20px;
+            line-height: 40px;
+            text-indent: 40px;
+        }
+
+        .box span{
+            color: red;
+            font-weight: bold;
+        }
+
+        .box em{
+            font-style: normal;
+            text-decoration: underline;
+            font-weight: bold;
+            color: pink;
+        }
+
+        .box .span02{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        主要应用在选择父元素下的<span>子元素</span>，或者子元素下面的子元素，可与标签元素结合使用，减少命名，同时也可以通过层级，防止命名冲突。
+        主要应用在选择<em>父元素</em>下的子元素，或者子元素下面的子元素，可与标签元素结合使用，减少命名，同时也可以通过层级，防止命名冲突。
+        主要应用在选择父元素下的子元素，或者<span class="span02">子元素</span>下面的子元素，可与标签元素结合使用，减少命名，同时也可以通过层级，防止命名冲突。
+        主要应用在选择父元素下的子元素，或者子元素下面的子元素，可与标签元素结合使用，减少命名，同时也可以通过层级，防止命名冲突。
+    </div>
+</body>
+</html>

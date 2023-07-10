@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*body本身带有8像素的margin*/
+        body{
+            margin: 0;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            margin-left: -100px;
+        }
+
+        .box02{
+            width: 202px;
+            height: 156px;
+            background-color: green;
+            margin: 50px auto 0;
+        }
+
+        .box02 div{
+            width: 200px;
+            height: 30px;
+            border: 1px solid gold;
+            /*margin的负值用于边框重合*/
+            margin-top: -1px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box02">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+﻿  main.cpp
+  Unknown compiler version - please run the configure tests and report the results
+e:\pcl_1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  splicing_point.vcxproj -> C:\My_Study\Visual_Studio\PCL\splicing_point\Debug\splicing_point.exe

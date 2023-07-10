@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript">
+		// 服务器运行环境
+		// 设置cookie 过期时间为7天，存在网站根目录下
+		//$.cookie('mycookie','ok!',{expires:7,path:'/'});
+
+		//读取cookie
+		var mycookie = $.cookie('mycookie');
+		alert(mycookie);
+
+
+
+	</script>
+</head>
+<body>
+	<h1>测试页面</h1>
+</body>
+</html>

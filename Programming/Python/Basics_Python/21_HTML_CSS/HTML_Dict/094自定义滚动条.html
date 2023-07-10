@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自定义滚动条</title>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../JS/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var h = $('.paragraph').outerHeight();
+
+			//整体文本的高度减去外面容器的高度
+			var hide = h-500;
+
+			$('.scroll_bar').draggable({
+				axis:'y',
+				containment:'parent',
+				opacity:0.6,
+				drag:function(ev,ui){
+					var nowtop = ui.position.top;
+					var nowscroll = parseInt(nowtop/290*hide);
+					$('.paragraph').css({top:-nowscroll});
+				}
+
+			});
+
+
+		})
+
+	</script>
+	<style type="text/css">
+		.scroll_con{
+			width:400px;
+			height:500px;
+			border:1px solid #ccc;
+			margin:50px auto 0;
+			position:relative;
+			overflow:hidden;
+		}
+
+		.paragraph{
+			width:360px;
+			position:absolute;
+			left:0;
+			top:0;
+			padding:10px 20px;
+			font-size:14px;
+			font-family:'Microsoft Yahei';
+			line-height:32px;
+			text-indent:2em;
+		}
+
+		.scroll_bar_con{
+			width:10px;
+			height:490px;
+			position:absolute;
+			right:5px;
+			top:5px;
+		}
+
+		.scroll_bar{
+			width:10px;
+			height:200px;
+			background-color:#ccc;
+			position:absolute;
+			left:0;
+			top:0;
+			cursor:pointer;
+			border-radius:5px;
+
+		}
+
+
+	
+
+	</style>
+</head>
+<body>
+	<div class="scroll_con">
+		<div class="paragraph">
+			2005年以后，互联网进入Web2.0时代，各种类似桌面软件的Web应用大量涌现，网站的前端由此发生了翻天覆地的变化。网页不再只是承载单一的文字和图片，各种富媒体让网页的内容更加生动，网页上软件化的交互形式为用户提供了更好的使用体验，这些都是基于前端技术实现的。以前会Photoshop和Dreamweaver就可以制作网页，现在只掌握这些已经远远不够了。无论是开发难度上，还是开发方式上，现在的网页制作都更接近传统的网站后台开发，所以现在不再叫网页制作，而是叫Web前端开发。Web前端开发在产品开发环节中的作用变得越来越重要，而且需要专业的前端工程师才能做好，这方面的专业人才近几年来备受青睐。Web前端开发是一项很特殊的工作，涵盖的知识面非常广，既有具体的技术，又有抽象的理念。简单地说，它的主要职能就是把网站的界面更好地呈现给用户。
+			掌握HTML是网页的核心，是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言，它消除了不同计算机之间信息交流的障碍。因此，它是目前网络上应用最为广泛的语言，也是构成网页文档的主要语言，学好HTML是成为Web开发人员的基本条件。
+学好CSS是网页外观的重要一点，CSS可以帮助把网页外观做得更加美观。
+学习JavaScript的基本语法，以及如何使用JavaScript编程将会提高开发人员的个人技能。
+了解Unix和Linux的基本知识虽然这两点很基础，但是开发人员了解Unix和Linux的基本知识是有益无害的。
+了解Web服务器当你对Apache的基本配置，htaccess配置技巧有一些掌握的话，将来必定受益，而且这方面的知识学起来也相对容易。
+
+		</div>
+
+		<div class="scroll_bar_con">
+			<div class="scroll_bar"></div>
+		</div>
+	
+	</div>
+
+	
+
+	
+</body>
+</html>

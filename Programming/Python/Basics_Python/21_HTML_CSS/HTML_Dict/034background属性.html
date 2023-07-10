@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background属性</title>
+    <style type="text/css">
+        body{
+            /*attachment fixed 网页背景不动内容动*/
+            background: url("images/0022.jpg") fixed;
+        }
+
+        .box{
+            width: 400px;
+            height: 200px;
+            border: 5px solid #000000;
+            margin: 50px auto 0;
+            /*background-color: cyan;
+            background-image: url("images/bg.jpg");
+            !*repeat-x 平铺x轴方向*!
+            background-repeat: repeat-x;
+            background-position: left 20px;*/
+            background: url("images/bg.jpg") left 20px no-repeat cyan;
+        }
+
+        .box02{
+            width: 100px;
+            height: 100px;
+            border: 5px solid black;
+            margin: 200px auto 0;
+
+            background: url("images/location_bg.jpg") -110px -150px no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        html5图片
+    </div>
+    <div class="box02">
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿  iterative_closest_point.cpp
+  Unknown compiler version - please run the configure tests and report the results
+e:\pcl_1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\pcl_1.8.1\include\pcl-1.8\pcl\sample_consensus\ransac.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\pcl_1.8.1\include\pcl-1.8\pcl\sample_consensus\model_types.h(99): error C4996: 'pcl::SAC_SAMPLE_SIZE': This map is deprecated and is kept only to prevent breaking existing user code. Starting from PCL 1.8.0 model sample size is a protected member of the SampleConsensusModel class
+  e:\pcl_1.8.1\include\pcl-1.8\pcl\sample_consensus\model_types.h(99): note: 参见“pcl::SAC_SAMPLE_SIZE”的声明
+e:\pcl_1.8.1\include\pcl-1.8\pcl\sample_consensus\sac_model_registration.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\pcl_1.8.1\include\pcl-1.8\pcl\sample_consensus\sac_model_registration.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\typeof\msvc\typeof_impl.hpp(125): error C2988: 不可识别的模板声明/定义
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\typeof\msvc\typeof_impl.hpp(133): note: 参见对正在编译的 类 模板 实例化 "boost::type_of::msvc_extract_type<ID,T>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(54): note: 参见对正在编译的 类 模板 实例化 "boost::arg<9>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(53): note: 参见对正在编译的 类 模板 实例化 "boost::arg<8>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(52): note: 参见对正在编译的 类 模板 实例化 "boost::arg<7>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(51): note: 参见对正在编译的 类 模板 实例化 "boost::arg<6>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(50): note: 参见对正在编译的 类 模板 实例化 "boost::arg<5>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(49): note: 参见对正在编译的 类 模板 实例化 "boost::arg<4>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(48): note: 参见对正在编译的 类 模板 实例化 "boost::arg<3>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(47): note: 参见对正在编译的 类 模板 实例化 "boost::arg<2>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(46): note: 参见对正在编译的 类 模板 实例化 "boost::arg<1>" 的引用
+e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\typeof\msvc\typeof_impl.hpp(125): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\typeof\msvc\typeof_impl.hpp(125): error C2913: 显式专用化；“boost::type_of::id2type_impl”不是类模板的专用化
+e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\typeof\msvc\typeof_impl.hpp(125): error C2059: 语法错误:“<”
+e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\typeof\msvc\typeof_impl.hpp(126): error C2334: “{”的前面有意外标记；跳过明显的函数体
+c:\my_study\visual_studio\pcl\iterative_closest_point\iterative_closest_point\iterative_closest_point.cpp(45): error C4996: 'pcl::Registration<PointSource,PointTarget,Scalar>::setInputCloud': [pcl::registration::Registration::setInputCloud] setInputCloud is deprecated. Please use setInputSource instead.
+          with
+          [
+              PointSource=pcl::PointXYZ,
+              PointTarget=pcl::PointXYZ,
+              Scalar=float
+          ]
+  e:\pcl_1.8.1\include\pcl-1.8\pcl\registration\registration.h(183): note: 参见“pcl::Registration<PointSource,PointTarget,Scalar>::setInputCloud”的声明
+          with
+          [
+              PointSource=pcl::PointXYZ,
+              PointTarget=pcl::PointXYZ,
+              Scalar=float
+          ]

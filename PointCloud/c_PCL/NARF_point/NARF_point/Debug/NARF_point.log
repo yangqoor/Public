@@ -1,0 +1,586 @@
+﻿  main.cpp
+  Unknown compiler version - please run the configure tests and report the results
+e:\pcl_1.8.1\include\pcl-1.8\pcl\point_traits.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\pcl_1.8.1\include\pcl-1.8\pcl\visualization\interactor_style.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\pcl_1.8.1\include\pcl-1.8\pcl\visualization\pcl_visualizer.h(1584): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(592): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(1354): note: 参见对正在编译的函数 模板 实例化“R boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>::operator ()<int,F,boost::_bi::rrlist5<A1,A2,A3,A4,A5>>(boost::_bi::type<int>,F &,A &,long)”的引用
+          with
+          [
+              R=int,
+              PointInT=pcl::PointWithRange,
+              F=boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,
+              A1=const pcl::PointCloud<pcl::PointWithRange> &,
+              A2=int,
+              A3=double,
+              A4=std::vector<int,std::allocator<int>> &,
+              A5=std::vector<float,std::allocator<float>> &,
+              A=boost::_bi::rrlist5<const pcl::PointCloud<pcl::PointWithRange> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(1354): note: 参见对正在编译的函数 模板 实例化“R boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>::operator ()<int,F,boost::_bi::rrlist5<A1,A2,A3,A4,A5>>(boost::_bi::type<int>,F &,A &,long)”的引用
+          with
+          [
+              R=int,
+              PointInT=pcl::PointWithRange,
+              F=boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,
+              A1=const pcl::PointCloud<pcl::PointWithRange> &,
+              A2=int,
+              A3=double,
+              A4=std::vector<int,std::allocator<int>> &,
+              A5=std::vector<float,std::allocator<float>> &,
+              A=boost::_bi::rrlist5<const pcl::PointCloud<pcl::PointWithRange> &,int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(138): note: 参见对正在编译的函数 模板 实例化“int boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<PointInT>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>::operator ()<const pcl::PointCloud<pcl::PointWithRange>&,T,double,std::vector<_Ty,std::allocator<_Ty>>&,std::vector<float,std::allocator<float>>&>(A1,A2 &&,A3 &&,A4,A5)”的引用
+          with
+          [
+              PointInT=pcl::PointWithRange,
+              _Ty=int,
+              T=int,
+              A1=const pcl::PointCloud<pcl::PointWithRange> &,
+              A2=int,
+              A3=double,
+              A4=std::vector<int,std::allocator<int>> &,
+              A5=std::vector<float,std::allocator<float>> &
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(138): note: 参见对正在编译的函数 模板 实例化“int boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<PointInT>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>::operator ()<const pcl::PointCloud<pcl::PointWithRange>&,T,double,std::vector<_Ty,std::allocator<_Ty>>&,std::vector<float,std::allocator<float>>&>(A1,A2 &&,A3 &&,A4,A5)”的引用
+          with
+          [
+              PointInT=pcl::PointWithRange,
+              _Ty=int,
+              T=int,
+              A1=const pcl::PointCloud<pcl::PointWithRange> &,
+              A2=int,
+              A3=double,
+              A4=std::vector<int,std::allocator<int>> &,
+              A5=std::vector<float,std::allocator<float>> &
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(132): note: 编译 类 模板 成员函数 "int boost::detail::function::function_obj_invoker5<FunctionObj,R,T0,T1,T2,T3,T4>::invoke(boost::detail::function::function_buffer &,T0,T1,T2,T3,T4)" 时
+          with
+          [
+              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>,
+              R=int,
+              T0=const pcl::PointCloud<pcl::PointWithRange> &,
+              T1=int,
+              T2=double,
+              T3=std::vector<int,std::allocator<int>> &,
+              T4=std::vector<float,std::allocator<float>> &
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(925): note: 参见对正在编译的函数 模板 实例化“int boost::detail::function::function_obj_invoker5<FunctionObj,R,T0,T1,T2,T3,T4>::invoke(boost::detail::function::function_buffer &,T0,T1,T2,T3,T4)”的引用
+          with
+          [
+              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>,
+              R=int,
+              T0=const pcl::PointCloud<pcl::PointWithRange> &,
+              T1=int,
+              T2=double,
+              T3=std::vector<int,std::allocator<int>> &,
+              T4=std::vector<float,std::allocator<float>> &
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(925): note: 参见对正在编译的 类 模板 实例化 "boost::detail::function::function_obj_invoker5<FunctionObj,R,T0,T1,T2,T3,T4>" 的引用
+          with
+          [
+              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>,
+              R=int,
+              T0=const pcl::PointCloud<pcl::PointWithRange> &,
+              T1=int,
+              T2=double,
+              T3=std::vector<int,std::allocator<int>> &,
+              T4=std::vector<float,std::allocator<float>> &
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(716): note: 参见对正在编译的函数 模板 实例化“void boost::function5<R,T0,T1,T2,T3,T4>::assign_to<Functor>(Functor)”的引用
+          with
+          [
+              R=int,
+              T0=const pcl::PointCloud<pcl::PointWithRange> &,
+              T1=int,
+              T2=double,
+              T3=std::vector<int,std::allocator<int>> &,
+              T4=std::vector<float,std::allocator<float>> &,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(716): note: 参见对正在编译的函数 模板 实例化“void boost::function5<R,T0,T1,T2,T3,T4>::assign_to<Functor>(Functor)”的引用
+          with
+          [
+              R=int,
+              T0=const pcl::PointCloud<pcl::PointWithRange> &,
+              T1=int,
+              T2=double,
+              T3=std::vector<int,std::allocator<int>> &,
+              T4=std::vector<float,std::allocator<float>> &,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1062): note: 参见对正在编译的函数 模板 实例化“boost::function5<R,T0,T1,T2,T3,T4>::function5<boost::_bi::bind_t<R,boost::_mfi::cmf5<R,pcl::search::Search<PointInT>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor,int)”的引用
+          with
+          [
+              R=int,
+              T0=const pcl::PointCloud<pcl::PointWithRange> &,
+              T1=int,
+              T2=double,
+              T3=std::vector<int,std::allocator<int>> &,
+              T4=std::vector<float,std::allocator<float>> &,
+              PointInT=pcl::PointWithRange,
+              _Ty=int,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1061): note: 参见对正在编译的函数 模板 实例化“boost::function5<R,T0,T1,T2,T3,T4>::function5<boost::_bi::bind_t<R,boost::_mfi::cmf5<R,pcl::search::Search<PointInT>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor,int)”的引用
+          with
+          [
+              R=int,
+              T0=const pcl::PointCloud<pcl::PointWithRange> &,
+              T1=int,
+              T2=double,
+              T3=std::vector<int,std::allocator<int>> &,
+              T4=std::vector<float,std::allocator<float>> &,
+              PointInT=pcl::PointWithRange,
+              _Ty=int,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1114): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<pcl::PointWithRange> &,int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::function<boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<PointInT>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor,int)”的引用
+          with
+          [
+              _Ty=int,
+              PointInT=pcl::PointWithRange,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1114): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<pcl::PointWithRange> &,int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::function<boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<PointInT>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor,int)”的引用
+          with
+          [
+              _Ty=int,
+              PointInT=pcl::PointWithRange,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
+          ]
+  e:\pcl_1.8.1\include\pcl-1.8\pcl\keypoints\impl\keypoint.hpp(106): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<pcl::PointWithRange> &,int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)> &boost::function<int (const pcl::PointCloud<pcl::PointWithRange> &,int,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::operator =<boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<PointInT>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor)”的引用
+          with
+          [
+              _Ty=int,
+              PointInT=pcl::PointWithRange,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
+          ]
+  e:\pcl_1.8.1\include\pcl-1.8\pcl\keypoints\impl\keypoint.hpp(106): note: 参见对正在编译的函数 模板 实例化“boost::function<int (const pcl::PointCloud<pcl::PointWithRange> &,int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)> &boost::function<int (const pcl::PointCloud<pcl::PointWithRange> &,int,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::operator =<boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<PointInT>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>>(Functor)”的引用
+          with
+          [
+              _Ty=int,
+              PointInT=pcl::PointWithRange,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf5<int,pcl::search::Search<pcl::PointWithRange>,const pcl::PointCloud<pcl::PointWithRange> &,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list6<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>,boost::arg<5>>>
+          ]
+  e:\pcl_1.8.1\include\pcl-1.8\pcl\keypoints\impl\keypoint.hpp(44): note: 编译 类 模板 成员函数 "bool pcl::Keypoint<pcl::PointWithRange,int>::initCompute(void)" 时
+  e:\pcl_1.8.1\include\pcl-1.8\pcl\keypoints\narf_keypoint.h(61): note: 参见对正在编译的 类 模板 实例化 "pcl::Keypoint<pcl::PointWithRange,int>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(54): note: 参见对正在编译的 类 模板 实例化 "boost::arg<9>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(53): note: 参见对正在编译的 类 模板 实例化 "boost::arg<8>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(52): note: 参见对正在编译的 类 模板 实例化 "boost::arg<7>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(51): note: 参见对正在编译的 类 模板 实例化 "boost::arg<6>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(50): note: 参见对正在编译的 类 模板 实例化 "boost::arg<5>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(49): note: 参见对正在编译的 类 模板 实例化 "boost::arg<4>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(48): note: 参见对正在编译的 类 模板 实例化 "boost::arg<3>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(47): note: 参见对正在编译的 类 模板 实例化 "boost::arg<2>" 的引用
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\placeholders.hpp(46): note: 参见对正在编译的 类 模板 实例化 "boost::arg<1>" 的引用
+e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(521): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(1342): note: 参见对正在编译的函数 模板 实例化“R boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>::operator ()<int,F,boost::_bi::rrlist4<A1,A2,A3,A4>>(boost::_bi::type<int>,F &,A &,long)”的引用
+          with
+          [
+              R=int,
+              PointInT=pcl::PointWithRange,
+              F=boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,
+              A1=int,
+              A2=double,
+              A3=std::vector<int,std::allocator<int>> &,
+              A4=std::vector<float,std::allocator<float>> &,
+              A=boost::_bi::rrlist4<int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\bind\bind.hpp(1342): note: 参见对正在编译的函数 模板 实例化“R boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>::operator ()<int,F,boost::_bi::rrlist4<A1,A2,A3,A4>>(boost::_bi::type<int>,F &,A &,long)”的引用
+          with
+          [
+              R=int,
+              PointInT=pcl::PointWithRange,
+              F=boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,
+              A1=int,
+              A2=double,
+              A3=std::vector<int,std::allocator<int>> &,
+              A4=std::vector<float,std::allocator<float>> &,
+              A=boost::_bi::rrlist4<int,double,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(138): note: 参见对正在编译的函数 模板 实例化“int boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<PointInT>,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>::operator ()<T,double,std::vector<_Ty,std::allocator<_Ty>>&,std::vector<float,std::allocator<float>>&>(A1 &&,A2 &&,A3,A4)”的引用
+          with
+          [
+              PointInT=pcl::PointWithRange,
+              _Ty=int,
+              T=int,
+              A1=int,
+              A2=double,
+              A3=std::vector<int,std::allocator<int>> &,
+              A4=std::vector<float,std::allocator<float>> &
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(138): note: 参见对正在编译的函数 模板 实例化“int boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<PointInT>,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>::operator ()<T,double,std::vector<_Ty,std::allocator<_Ty>>&,std::vector<float,std::allocator<float>>&>(A1 &&,A2 &&,A3,A4)”的引用
+          with
+          [
+              PointInT=pcl::PointWithRange,
+              _Ty=int,
+              T=int,
+              A1=int,
+              A2=double,
+              A3=std::vector<int,std::allocator<int>> &,
+              A4=std::vector<float,std::allocator<float>> &
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(132): note: 编译 类 模板 成员函数 "int boost::detail::function::function_obj_invoker4<FunctionObj,R,T0,T1,T2,T3>::invoke(boost::detail::function::function_buffer &,T0,T1,T2,T3)" 时
+          with
+          [
+              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>,
+              R=int,
+              T0=int,
+              T1=double,
+              T2=std::vector<int,std::allocator<int>> &,
+              T3=std::vector<float,std::allocator<float>> &
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(925): note: 参见对正在编译的函数 模板 实例化“int boost::detail::function::function_obj_invoker4<FunctionObj,R,T0,T1,T2,T3>::invoke(boost::detail::function::function_buffer &,T0,T1,T2,T3)”的引用
+          with
+          [
+              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>,
+              R=int,
+              T0=int,
+              T1=double,
+              T2=std::vector<int,std::allocator<int>> &,
+              T3=std::vector<float,std::allocator<float>> &
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(925): note: 参见对正在编译的 类 模板 实例化 "boost::detail::function::function_obj_invoker4<FunctionObj,R,T0,T1,T2,T3>" 的引用
+          with
+          [
+              FunctionObj=boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>,
+              R=int,
+              T0=int,
+              T1=double,
+              T2=std::vector<int,std::allocator<int>> &,
+              T3=std::vector<float,std::allocator<float>> &
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(716): note: 参见对正在编译的函数 模板 实例化“void boost::function4<R,T0,T1,T2,T3>::assign_to<Functor>(Functor)”的引用
+          with
+          [
+              R=int,
+              T0=int,
+              T1=double,
+              T2=std::vector<int,std::allocator<int>> &,
+              T3=std::vector<float,std::allocator<float>> &,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(716): note: 参见对正在编译的函数 模板 实例化“void boost::function4<R,T0,T1,T2,T3>::assign_to<Functor>(Functor)”的引用
+          with
+          [
+              R=int,
+              T0=int,
+              T1=double,
+              T2=std::vector<int,std::allocator<int>> &,
+              T3=std::vector<float,std::allocator<float>> &,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1062): note: 参见对正在编译的函数 模板 实例化“boost::function4<R,T0,T1,T2,T3>::function4<boost::_bi::bind_t<R,boost::_mfi::cmf4<R,pcl::search::Search<PointInT>,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>>(Functor,int)”的引用
+          with
+          [
+              R=int,
+              T0=int,
+              T1=double,
+              T2=std::vector<int,std::allocator<int>> &,
+              T3=std::vector<float,std::allocator<float>> &,
+              PointInT=pcl::PointWithRange,
+              _Ty=int,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1061): note: 参见对正在编译的函数 模板 实例化“boost::function4<R,T0,T1,T2,T3>::function4<boost::_bi::bind_t<R,boost::_mfi::cmf4<R,pcl::search::Search<PointInT>,int,int,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>>(Functor,int)”的引用
+          with
+          [
+              R=int,
+              T0=int,
+              T1=double,
+              T2=std::vector<int,std::allocator<int>> &,
+              T3=std::vector<float,std::allocator<float>> &,
+              PointInT=pcl::PointWithRange,
+              _Ty=int,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1114): note: 参见对正在编译的函数 模板 实例化“boost::function<int (int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::function<boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<PointInT>,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>>(Functor,int)”的引用
+          with
+          [
+              _Ty=int,
+              PointInT=pcl::PointWithRange,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>
+          ]
+  e:\pcl_1.8.1\3rdparty\boost\include\boost-1_64\boost\function\function_template.hpp(1114): note: 参见对正在编译的函数 模板 实例化“boost::function<int (int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::function<boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<PointInT>,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>>(Functor,int)”的引用
+          with
+          [
+              _Ty=int,
+              PointInT=pcl::PointWithRange,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>
+          ]
+  e:\pcl_1.8.1\include\pcl-1.8\pcl\keypoints\impl\keypoint.hpp(100): note: 参见对正在编译的函数 模板 实例化“boost::function<int (int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)> &boost::function<int (int,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::operator =<boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<PointInT>,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>>(Functor)”的引用
+          with
+          [
+              _Ty=int,
+              PointInT=pcl::PointWithRange,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>
+          ]
+  e:\pcl_1.8.1\include\pcl-1.8\pcl\keypoints\impl\keypoint.hpp(100): note: 参见对正在编译的函数 模板 实例化“boost::function<int (int,double,std::vector<int,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)> &boost::function<int (int,double,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &)>::operator =<boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<PointInT>,int,int,std::vector<_Ty,std::allocator<_Ty>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<PointInT>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>>(Functor)”的引用
+          with
+          [
+              _Ty=int,
+              PointInT=pcl::PointWithRange,
+              Functor=boost::_bi::bind_t<int,boost::_mfi::cmf4<int,pcl::search::Search<pcl::PointWithRange>,int,int,std::vector<int,std::allocator<int>> &,std::vector<float,std::allocator<float>> &>,boost::_bi::list5<boost::reference_wrapper<boost::shared_ptr<pcl::search::Search<pcl::PointWithRange>>>,boost::arg<1>,boost::arg<2>,boost::arg<3>,boost::arg<4>>>
+          ]
+vtkCommonColor-8.0-gd.lib(vtkColorSeries.obj) : warning LNK4099: 未找到 PDB“vtkCommonColor.pdb”(使用“vtkCommonColor-8.0-gd.lib(vtkColorSeries.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonColor.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkAbstractArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkAbstractArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkArrayCoordinates.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkArrayCoordinates.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkArrayExtents.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkArrayExtents.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkArrayIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkArrayIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkArrayIteratorTemplateInstantiate.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkArrayIteratorTemplateInstantiate.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkArrayRange.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkArrayRange.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkBitArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkBitArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkBitArrayIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkBitArrayIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkBoxMuellerRandomSequence.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkBoxMuellerRandomSequence.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkCallbackCommand.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkCallbackCommand.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkCharArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkCharArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkCollection.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkCollection.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkCollectionIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkCollectionIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkCommand.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkCommand.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkCommonInformationKeyManager.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkCommonInformationKeyManager.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkDataArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkDataArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkDebugLeaks.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkDebugLeaks.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkDebugLeaksManager.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkDebugLeaksManager.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkDoubleArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkDoubleArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkDynamicLoader.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkDynamicLoader.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkFloatArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkFloatArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkGarbageCollector.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkGarbageCollector.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkGarbageCollectorManager.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkGarbageCollectorManager.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkGaussianRandomSequence.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkGaussianRandomSequence.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkIdList.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkIdList.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkIdTypeArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkIdTypeArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkIndent.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkIndent.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformation.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformation.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationDataObjectKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationDataObjectKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationDoubleKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationDoubleKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationDoubleVectorKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationDoubleVectorKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationIdTypeKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationIdTypeKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationInformationKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationInformationKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationInformationVectorKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationInformationVectorKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationIntegerKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationIntegerKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationIntegerPointerKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationIntegerPointerKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationIntegerVectorKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationIntegerVectorKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationKeyLookup.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationKeyLookup.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationKeyVectorKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationKeyVectorKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationObjectBaseKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationObjectBaseKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationObjectBaseVectorKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationObjectBaseVectorKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationRequestKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationRequestKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationStringKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationStringKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationStringVectorKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationStringVectorKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationUnsignedLongKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationUnsignedLongKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationVariantKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationVariantKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationVariantVectorKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationVariantVectorKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInformationVector.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInformationVector.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkInstantiator.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkInstantiator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkIntArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkIntArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkLargeInteger.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkLargeInteger.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkLongArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkLongArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkLongLongArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkLongLongArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkLookupTable.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkLookupTable.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkMath.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkMath.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkMinimalStandardRandomSequence.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkMinimalStandardRandomSequence.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkMultiThreader.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkMultiThreader.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkMutexLock.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkMutexLock.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkObjectBase.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkObjectBase.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkObject.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkObject.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkObjectFactoryCollection.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkObjectFactoryCollection.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkObjectFactory.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkObjectFactory.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkOStreamWrapper.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkOStreamWrapper.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkOStrStreamWrapper.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkOStrStreamWrapper.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkOutputWindow.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkOutputWindow.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkOverrideInformation.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkOverrideInformation.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkPoints.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkPoints.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkPriorityQueue.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkPriorityQueue.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkRandomSequence.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkRandomSequence.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkScalarsToColors.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkScalarsToColors.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkShortArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkShortArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkSignedCharArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkSignedCharArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkSimpleCriticalSection.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkSimpleCriticalSection.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkSmartPointerBase.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkSmartPointerBase.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkSortDataArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkSortDataArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkStdString.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkStdString.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkStringArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkStringArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkTimeStamp.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkTimeStamp.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkUnicodeStringArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkUnicodeStringArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkUnicodeString.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkUnicodeString.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkUnsignedCharArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkUnsignedCharArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkUnsignedIntArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkUnsignedIntArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkUnsignedLongArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkUnsignedLongArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkUnsignedLongLongArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkUnsignedLongLongArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkUnsignedShortArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkUnsignedShortArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkVariantArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkVariantArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkVariant.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkVariant.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkVoidArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkVoidArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkAtomic.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkAtomic.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonCore-8.0-gd.lib(vtkWin32OutputWindow.obj) : warning LNK4099: 未找到 PDB“vtkCommonCore.pdb”(使用“vtkCommonCore-8.0-gd.lib(vtkWin32OutputWindow.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkAbstractCellLinks.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkAbstractCellLinks.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkAbstractCellLocator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkAbstractCellLocator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkAbstractPointLocator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkAbstractPointLocator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkAdjacentVertexIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkAdjacentVertexIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkAMRBox.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkAMRBox.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkAnnotation.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkAnnotation.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkAnnotationLayers.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkAnnotationLayers.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkArrayData.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkArrayData.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkBiQuadraticQuad.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkBiQuadraticQuad.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkBiQuadraticQuadraticHexahedron.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkBiQuadraticQuadraticHexahedron.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkBiQuadraticQuadraticWedge.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkBiQuadraticQuadraticWedge.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkBiQuadraticTriangle.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkBiQuadraticTriangle.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkBox.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkBox.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkCell3D.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkCell3D.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkCellArray.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkCellArray.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkCell.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkCell.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkCellData.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkCellData.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkCellIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkCellIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkCellLinks.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkCellLinks.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkCellLocator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkCellLocator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkCellTypes.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkCellTypes.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkCompositeDataSet.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkCompositeDataSet.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkCompositeDataIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkCompositeDataIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkConvexPointSet.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkConvexPointSet.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkCubicLine.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkCubicLine.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkDataSetCellIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkDataSetCellIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkDataObject.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkDataObject.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkDataObjectTypes.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkDataObjectTypes.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkDataObjectTree.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkDataObjectTree.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkDataObjectTreeIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkDataObjectTreeIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkDataSetAttributes.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkDataSetAttributes.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkDataSet.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkDataSet.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkDirectedAcyclicGraph.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkDirectedAcyclicGraph.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkDirectedGraph.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkDirectedGraph.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkDistributedGraphHelper.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkDistributedGraphHelper.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkEdgeListIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkEdgeListIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkEdgeTable.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkEdgeTable.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkEmptyCell.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkEmptyCell.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkFieldData.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkFieldData.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkGenericCell.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkGenericCell.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkGraph.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkGraph.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkGraphEdge.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkGraphEdge.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkGraphInternals.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkGraphInternals.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkHexagonalPrism.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkHexagonalPrism.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkHexahedron.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkHexahedron.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkHierarchicalBoxDataIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkHierarchicalBoxDataIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkHierarchicalBoxDataSet.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkHierarchicalBoxDataSet.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkHyperOctreeCursor.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkHyperOctreeCursor.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkHyperOctree.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkHyperOctree.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkHyperTree.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkHyperTree.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkHyperTreeCursor.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkHyperTreeCursor.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkHyperTreeGrid.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkHyperTreeGrid.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkImageData.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkImageData.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkImplicitFunction.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkImplicitFunction.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkIncrementalPointLocator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkIncrementalPointLocator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkInEdgeIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkInEdgeIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkLine.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkLine.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkLocator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkLocator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkMarchingSquaresLineCases.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkMarchingSquaresLineCases.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkMarchingCubesTriangleCases.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkMarchingCubesTriangleCases.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkMeanValueCoordinatesInterpolator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkMeanValueCoordinatesInterpolator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkMergePoints.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkMergePoints.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkMultiBlockDataSet.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkMultiBlockDataSet.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkMultiPieceDataSet.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkMultiPieceDataSet.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkMutableDirectedGraph.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkMutableDirectedGraph.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkMutableUndirectedGraph.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkMutableUndirectedGraph.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkNonLinearCell.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkNonLinearCell.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkOrderedTriangulator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkOrderedTriangulator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkOutEdgeIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkOutEdgeIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPath.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPath.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPentagonalPrism.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPentagonalPrism.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPixel.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPixel.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPlaneCollection.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPlaneCollection.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPlane.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPlane.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPlanes.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPlanes.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPointData.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPointData.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPointLocator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPointLocator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPointSet.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPointSet.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPointSetCellIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPointSetCellIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPolyData.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPolyData.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPolygon.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPolygon.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPolyhedron.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPolyhedron.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPolyLine.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPolyLine.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPolyVertex.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPolyVertex.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkPyramid.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkPyramid.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuad.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuad.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuadraticEdge.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuadraticEdge.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuadraticHexahedron.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuadraticHexahedron.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuadraticLinearQuad.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuadraticLinearQuad.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuadraticLinearWedge.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuadraticLinearWedge.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuadraticPolygon.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuadraticPolygon.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuadraticPyramid.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuadraticPyramid.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuadraticQuad.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuadraticQuad.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuadraticTetra.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuadraticTetra.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuadraticTriangle.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuadraticTriangle.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuadraticWedge.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuadraticWedge.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkQuadric.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkQuadric.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkRectilinearGrid.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkRectilinearGrid.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkReebGraph.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkReebGraph.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkSelection.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkSelection.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkSelectionNode.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkSelectionNode.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkStructuredData.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkStructuredData.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkStructuredGrid.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkStructuredGrid.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkStructuredPoints.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkStructuredPoints.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkTable.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkTable.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkTetra.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkTetra.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkTree.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkTree.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkTriangle.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkTriangle.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkTriangleStrip.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkTriangleStrip.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkTriQuadraticHexahedron.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkTriQuadraticHexahedron.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkUndirectedGraph.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkUndirectedGraph.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkUniformGrid.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkUniformGrid.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkUnstructuredGrid.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkUnstructuredGrid.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkUnstructuredGridBase.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkUnstructuredGridBase.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkUnstructuredGridCellIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkUnstructuredGridCellIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkVertex.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkVertex.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkVoxel.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkVoxel.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkWedge.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkWedge.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkBoundingBox.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkBoundingBox.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkAtom.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkAtom.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkBond.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkBond.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkMolecule.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkMolecule.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkNonOverlappingAMR.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkNonOverlappingAMR.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkOverlappingAMR.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkOverlappingAMR.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkAMRInformation.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkAMRInformation.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkAMRDataInternals.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkAMRDataInternals.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkUniformGridAMR.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkUniformGridAMR.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonDataModel-8.0-gd.lib(vtkUniformGridAMRDataIterator.obj) : warning LNK4099: 未找到 PDB“vtkCommonDataModel.pdb”(使用“vtkCommonDataModel-8.0-gd.lib(vtkUniformGridAMRDataIterator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonDataModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkAlgorithm.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkAlgorithm.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkAlgorithmOutput.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkAlgorithmOutput.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkCompositeDataPipeline.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkCompositeDataPipeline.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkDemandDrivenPipeline.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkDemandDrivenPipeline.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkExecutive.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkExecutive.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkExtentTranslator.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkExtentTranslator.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkFilteringInformationKeyManager.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkFilteringInformationKeyManager.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkInformationExecutivePortKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkInformationExecutivePortKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkInformationExecutivePortVectorKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkInformationExecutivePortVectorKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkInformationIntegerRequestKey.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkInformationIntegerRequestKey.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkStreamingDemandDrivenPipeline.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkStreamingDemandDrivenPipeline.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonExecutionModel-8.0-gd.lib(vtkTrivialProducer.obj) : warning LNK4099: 未找到 PDB“vtkCommonExecutionModel.pdb”(使用“vtkCommonExecutionModel-8.0-gd.lib(vtkTrivialProducer.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonExecutionModel.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonMath-8.0-gd.lib(vtkMatrix3x3.obj) : warning LNK4099: 未找到 PDB“vtkCommonMath.pdb”(使用“vtkCommonMath-8.0-gd.lib(vtkMatrix3x3.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonMath.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonMath-8.0-gd.lib(vtkMatrix4x4.obj) : warning LNK4099: 未找到 PDB“vtkCommonMath.pdb”(使用“vtkCommonMath-8.0-gd.lib(vtkMatrix4x4.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonMath.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonMisc-8.0-gd.lib(vtkErrorCode.obj) : warning LNK4099: 未找到 PDB“vtkCommonMisc.pdb”(使用“vtkCommonMisc-8.0-gd.lib(vtkErrorCode.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonMisc.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonMisc-8.0-gd.lib(vtkHeap.obj) : warning LNK4099: 未找到 PDB“vtkCommonMisc.pdb”(使用“vtkCommonMisc-8.0-gd.lib(vtkHeap.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonMisc.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonSystem-8.0-gd.lib(vtkTimerLog.obj) : warning LNK4099: 未找到 PDB“vtkCommonSystem.pdb”(使用“vtkCommonSystem-8.0-gd.lib(vtkTimerLog.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonSystem.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonTransforms-8.0-gd.lib(vtkAbstractTransform.obj) : warning LNK4099: 未找到 PDB“vtkCommonTransforms.pdb”(使用“vtkCommonTransforms-8.0-gd.lib(vtkAbstractTransform.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonTransforms.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonTransforms-8.0-gd.lib(vtkHomogeneousTransform.obj) : warning LNK4099: 未找到 PDB“vtkCommonTransforms.pdb”(使用“vtkCommonTransforms-8.0-gd.lib(vtkHomogeneousTransform.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonTransforms.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonTransforms-8.0-gd.lib(vtkLinearTransform.obj) : warning LNK4099: 未找到 PDB“vtkCommonTransforms.pdb”(使用“vtkCommonTransforms-8.0-gd.lib(vtkLinearTransform.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonTransforms.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonTransforms-8.0-gd.lib(vtkMatrixToLinearTransform.obj) : warning LNK4099: 未找到 PDB“vtkCommonTransforms.pdb”(使用“vtkCommonTransforms-8.0-gd.lib(vtkMatrixToLinearTransform.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonTransforms.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkCommonTransforms-8.0-gd.lib(vtkTransform.obj) : warning LNK4099: 未找到 PDB“vtkCommonTransforms.pdb”(使用“vtkCommonTransforms-8.0-gd.lib(vtkTransform.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkCommonTransforms.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkRenderingCore-8.0-gd.lib(vtkAbstractMapper3D.obj) : warning LNK4099: 未找到 PDB“vtkRenderingCore.pdb”(使用“vtkRenderingCore-8.0-gd.lib(vtkAbstractMapper3D.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkRenderingCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkRenderingCore-8.0-gd.lib(vtkAbstractMapper.obj) : warning LNK4099: 未找到 PDB“vtkRenderingCore.pdb”(使用“vtkRenderingCore-8.0-gd.lib(vtkAbstractMapper.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkRenderingCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkRenderingCore-8.0-gd.lib(vtkActor.obj) : warning LNK4099: 未找到 PDB“vtkRenderingCore.pdb”(使用“vtkRenderingCore-8.0-gd.lib(vtkActor.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkRenderingCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkRenderingCore-8.0-gd.lib(vtkMapper.obj) : warning LNK4099: 未找到 PDB“vtkRenderingCore.pdb”(使用“vtkRenderingCore-8.0-gd.lib(vtkMapper.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkRenderingCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkRenderingCore-8.0-gd.lib(vtkProp3D.obj) : warning LNK4099: 未找到 PDB“vtkRenderingCore.pdb”(使用“vtkRenderingCore-8.0-gd.lib(vtkProp3D.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkRenderingCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkRenderingCore-8.0-gd.lib(vtkProp.obj) : warning LNK4099: 未找到 PDB“vtkRenderingCore.pdb”(使用“vtkRenderingCore-8.0-gd.lib(vtkProp.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkRenderingCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkRenderingCore-8.0-gd.lib(vtkProperty.obj) : warning LNK4099: 未找到 PDB“vtkRenderingCore.pdb”(使用“vtkRenderingCore-8.0-gd.lib(vtkProperty.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkRenderingCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkRenderingCore-8.0-gd.lib(vtkAssemblyNode.obj) : warning LNK4099: 未找到 PDB“vtkRenderingCore.pdb”(使用“vtkRenderingCore-8.0-gd.lib(vtkAssemblyNode.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkRenderingCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkRenderingCore-8.0-gd.lib(vtkAssemblyPath.obj) : warning LNK4099: 未找到 PDB“vtkRenderingCore.pdb”(使用“vtkRenderingCore-8.0-gd.lib(vtkAssemblyPath.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkRenderingCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtkRenderingCore-8.0-gd.lib(vtkAssemblyPaths.obj) : warning LNK4099: 未找到 PDB“vtkRenderingCore.pdb”(使用“vtkRenderingCore-8.0-gd.lib(vtkAssemblyPaths.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtkRenderingCore.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtksys-8.0-gd.lib(EncodingC.obj) : warning LNK4099: 未找到 PDB“vtksys.pdb”(使用“vtksys-8.0-gd.lib(EncodingC.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtksys.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtksys-8.0-gd.lib(Directory.obj) : warning LNK4099: 未找到 PDB“vtksys.pdb”(使用“vtksys-8.0-gd.lib(Directory.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtksys.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtksys-8.0-gd.lib(DynamicLoader.obj) : warning LNK4099: 未找到 PDB“vtksys.pdb”(使用“vtksys-8.0-gd.lib(DynamicLoader.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtksys.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtksys-8.0-gd.lib(EncodingCXX.obj) : warning LNK4099: 未找到 PDB“vtksys.pdb”(使用“vtksys-8.0-gd.lib(EncodingCXX.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtksys.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtksys-8.0-gd.lib(RegularExpression.obj) : warning LNK4099: 未找到 PDB“vtksys.pdb”(使用“vtksys-8.0-gd.lib(RegularExpression.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtksys.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+vtksys-8.0-gd.lib(SystemTools.obj) : warning LNK4099: 未找到 PDB“vtksys.pdb”(使用“vtksys-8.0-gd.lib(SystemTools.obj)”或在“C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\vtksys.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  NARF_point.vcxproj -> C:\My_Study\Visual_Studio\PCL\NARF_point\Debug\NARF_point.exe

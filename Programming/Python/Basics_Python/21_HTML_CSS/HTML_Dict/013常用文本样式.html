@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常用文本样式</title>
+    <style type="text/css">
+/*       font：是否加粗 字号/行高 字体；*/
+        div{
+            /*font-size: 20px;*/
+            /*font-family: "楷体";*/
+            /*line-height: 30px;*/
+            font: normal 20px/30px "楷体";
+            color: brown;
+            /*text-indent首行缩进*/
+            text-indent: 24px;
+        }
+        em{
+            font-style: normal;
+        }
+        span{
+            font-style: italic;
+            color: aqua;
+            font-weight: bold;
+        }
+        /* a 标签默认宽度是文字的宽度*/
+        a{
+            text-decoration: none;
+        }
+        /* p 标签默认宽度是网页的宽度*/
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>HTML</span>是 <em>HyperText Mark-up Language</em> 的首字母简写，意思是超文本标记语言，超文本指的是超链接，标记指的是标签，
+        是一种用来制作网页的语言，这种语言由一个个的标签组成，用这种语言制作的文件保存的是一个文本文件，文件的扩展名为
+        html或者htm，一个html文件就是一个网页，html文件用编辑器打开显示的是文本，可以用文本的方式编辑它，如果用浏览器打
+        开，浏览器会按照标签描述内容将文件渲染成网页，显示的网页可以从一个网页链接跳转到另外一个网页。
+    </div>
+    <p>这是一个 p 标签</p>
+    <a href="http:www.baidu.com">百度一下</a>
+</body>
+</html>

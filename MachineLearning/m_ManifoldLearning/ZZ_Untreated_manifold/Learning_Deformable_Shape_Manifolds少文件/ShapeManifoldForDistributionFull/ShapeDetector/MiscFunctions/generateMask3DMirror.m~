@@ -1,0 +1,56 @@
+% Samuel Rivera
+%  May 22, 2010
+% 
+% Copyright (C) 2009, 2010 Samuel Rivera, Liya Ding, Onur Hamsici, Paulo
+%   Gotardo, Fabian Benitez-Quiroz, Di You, and the Computational Biology and 
+%   Cognitive Science Lab (CBCSL).
+% 
+% Contact: Samuel Rivera (sriveravi@gmail.com)
+% 
+
+function k = generateMask3DMirror(  maskFolder, firstList, secondList )
+
+if length(firstList) ~= length(secondList)
+    error( 'SR: Make sure both vectors same length');
+end
+
+k = 0;
+numFrames = length(firstList);
+
+for desiredNumTestSamples = 2: 5%:numFrames
+    firstList = firstList(:);
+    secondList = secondList(:);
+    
+    for startIndex = 1:numFrames
+        
+        firstList = circshift(firstList', [0, startIndex-1])
+        secondList = circshift(secondList', [0, startIndex-1])
+        
+        k = k+1;
+        maskFile = [maskFolder 'maskFile' int2str(k) '.mat'];
+        cvMaskFile1 = [ maskFolder 'CVmaskFile' int2str(k) '.' int2str(1) '.mat'];
+        cvMaskFile2 = [ maskFolder 'CVmaskFile' int2str(k) '.' int2str(2) '.mat'];
+
+        %update training/testing partitions
+%         
+%         WORKING RIGHT HERE 
+%         
+%         trainThis = mod((startIndex:startIndex+desiredNumTestSamples)', numFrames );
+%         testThis = mod((startIndex:startIndex+desiredNumTestSamples)',  numFrames);
+        trainThis = circshift(    (startIndex:startIndex+desiredNumTestSamples)', numFrames );
+        testThis = mod((startIndex:startIndex+desiredNumTestSamples)',  numFrames);
+        
+
+        trainThis = firstList( 1: );
+        testThis = secondList( 1: );
+
+        
+        save( maskFile , 'trainThis', 'testThis');
+        save( cvMaskFile1, 'trainThis', 'testThis' );
+        temp = testThis;
+        testThis = trainThis;
+        trainThis = temp;      
+        
+        save( cvMaskFile2, 'trainThis', 'testThis' );
+    end
+end

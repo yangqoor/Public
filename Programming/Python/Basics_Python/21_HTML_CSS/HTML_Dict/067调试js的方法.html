@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	   window.onload = function(){
+
+	   	var oBody = document.getElementById('body01');
+
+	   	var iNum01 = 12;
+
+	   	// alert 会阻止程序的运行
+		//alert(iNum01);
+
+		console.log(iNum01);
+
+		oBody.style.backgroundColor = 'gold';
+
+		var iNum02 = 24;
+
+		var iNum03 = 36;
+
+		//alert(iNum02);
+
+		console.log(iNum02);
+
+		setInterval(function(){
+			iNum03++;
+
+			//console.log(iNum03);
+
+			document.title = iNum03;
+
+		},100)
+
+
+
+	   }
+		
+		
+
+
+
+	</script>
+</head>
+<body id="body01">
+	
+</body>
+</html>

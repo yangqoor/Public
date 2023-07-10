@@ -1,0 +1,49 @@
+Maximum Variance Unfolding (original code + landmark version + Laplacian regularized version (fastMVU)) [Previously called Semidefinite Embedding (SDE)] 
+ (See also http://homepage.tudelft.nl/19j49/Matlab_Toolbox_for_Dimensionality_Reduction.html ) 
+ 
+ 
+ MVU and landmarkMVU requires:
+ CSDP  (https://projects.coin-or.org/Csdp/)
+ (You might have to ensure that csdp is in the path, or change csdp.m to piont to the executable.)
+
+fastMVU requires:
+ Sedumi (http://sedumi.ie.lehigh.edu/)
+ 
+ 
+ Just call mvu from within Matlab to see a demo. 
+ 
+ If you use MVU in scientific work, please cite:
+ @article{weinberger2006unsupervised,
+   title={Unsupervised learning of image manifolds by semidefinite programming},
+   author={Weinberger, K.Q. and Saul, L.K.},
+   journal={International Journal of Computer Vision},
+   volume={70},
+   number={1},
+   pages={77--90},
+   year={2006},
+   publisher={Springer}
+ }
+ 
+ 
+ If you use landmark MVU in scientific work, please cite:
+ @inproceedings{weinberger2005nonlinear,
+   title={Nonlinear dimensionality reduction by semidefinite programming and kernel matrix factorization},
+   author={Weinberger, K.Q. and Packer, B.D. and Saul, L.K.},
+   booktitle={Proceedings of the tenth international workshop on artificial intelligence and statistics},
+   pages={381--388},
+   year={2005}
+ }
+ 
+ If you use fastMVU in scientific work, please cite:
+ @article{weinberger2007graph,
+   title={Graph Laplacian regularization for large-scale semidefinite programming},
+   author={Weinberger, K.Q. and Sha, F. and Zhu, Q. and Saul, L.K.},
+   journal={Advances in neural information processing systems},
+   volume={19},
+   pages={1489},
+   year={2007},
+   publisher={MIT; 1998}
+ }
+ 
+ 
+ 

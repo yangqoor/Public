@@ -1,0 +1,155 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>main_spectra</title><meta name="generator" content="MATLAB 7.14"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-09-26"><meta name="DC.source" content="main_spectra.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, tt, code { font-size:12px; }
+pre { margin:0px 0px 20px; }
+pre.error { color:red; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">I. &#28165;&#31354;&#29615;&#22659;&#21464;&#37327;</a></li><li><a href="#2">II. &#35757;&#32451;&#38598;/&#27979;&#35797;&#38598;&#20135;&#29983;</a></li><li><a href="#5">III. &#25968;&#25454;&#24402;&#19968;&#21270;</a></li><li><a href="#8">IV. ELM&#21019;&#24314;/&#35757;&#32451;</a></li><li><a href="#9">V. ELM&#20223;&#30495;&#27979;&#35797;</a></li><li><a href="#11">VI. &#32467;&#26524;&#23545;&#27604;</a></li><li><a href="#14">VII. &#32472;&#22270;</a></li></ul></div><h2>I. &#28165;&#31354;&#29615;&#22659;&#21464;&#37327;<a name="1"></a></h2><pre class="codeinput">clear <span class="string">all</span>
+clc
+</pre><h2>II. &#35757;&#32451;&#38598;/&#27979;&#35797;&#38598;&#20135;&#29983;<a name="2"></a></h2><p>1. &#23548;&#20837;&#25968;&#25454;</p><pre class="codeinput">load <span class="string">spectra_data.mat</span>
+</pre><p>2. &#38543;&#26426;&#20135;&#29983;&#35757;&#32451;&#38598;&#21644;&#27979;&#35797;&#38598;</p><pre class="codeinput">temp = randperm(size(NIR,1));
+
+<span class="comment">% &#35757;&#32451;&#38598;&#8212;&#8212;50&#20010;&#26679;&#26412;</span>
+P_train = NIR(temp(1:50),:)';
+T_train = octane(temp(1:50),:)';
+
+<span class="comment">% &#27979;&#35797;&#38598;&#8212;&#8212;10&#20010;&#26679;&#26412;</span>
+P_test = NIR(temp(51:end),:)';
+T_test = octane(temp(51:end),:)';
+N = size(P_test,2);
+</pre><h2>III. &#25968;&#25454;&#24402;&#19968;&#21270;<a name="5"></a></h2><p>1. &#35757;&#32451;&#38598;</p><pre class="codeinput">[Pn_train,inputps] = mapminmax(P_train);
+Pn_test = mapminmax(<span class="string">'apply'</span>,P_test,inputps);
+</pre><p>2. &#27979;&#35797;&#38598;</p><pre class="codeinput">[Tn_train,outputps] = mapminmax(T_train);
+Tn_test = mapminmax(<span class="string">'apply'</span>,T_test,outputps);
+</pre><h2>IV. ELM&#21019;&#24314;/&#35757;&#32451;<a name="8"></a></h2><pre class="codeinput">[IW,B,LW,TF,TYPE] = elmtrain(Pn_train,Tn_train,30,<span class="string">'sig'</span>,0);
+</pre><h2>V. ELM&#20223;&#30495;&#27979;&#35797;<a name="9"></a></h2><pre class="codeinput">tn_sim = elmpredict(Pn_test,IW,B,LW,TF,TYPE);
+</pre><p>1. &#21453;&#24402;&#19968;&#21270;</p><pre class="codeinput">T_sim = mapminmax(<span class="string">'reverse'</span>,tn_sim,outputps);
+</pre><h2>VI. &#32467;&#26524;&#23545;&#27604;<a name="11"></a></h2><pre class="codeinput">result = [T_test' T_sim'];
+</pre><p>1. &#22343;&#26041;&#35823;&#24046;</p><pre class="codeinput">E = mse(T_sim - T_test);
+</pre><p>2. &#20915;&#23450;&#31995;&#25968;</p><pre class="codeinput">N = length(T_test);
+R2=(N*sum(T_sim.*T_test)-sum(T_sim)*sum(T_test))^2/((N*sum((T_sim).^2)-(sum(T_sim))^2)*(N*sum((T_test).^2)-(sum(T_test))^2));
+</pre><h2>VII. &#32472;&#22270;<a name="14"></a></h2><pre class="codeinput">figure(1)
+plot(1:N,T_test,<span class="string">'r-*'</span>,1:N,T_sim,<span class="string">'b:o'</span>)
+grid <span class="string">on</span>
+legend(<span class="string">'&#30495;&#23454;&#20540;'</span>,<span class="string">'&#39044;&#27979;&#20540;'</span>)
+xlabel(<span class="string">'&#26679;&#26412;&#32534;&#21495;'</span>)
+ylabel(<span class="string">'&#36763;&#28919;&#20540;'</span>)
+string = {<span class="string">'&#27979;&#35797;&#38598;&#36763;&#28919;&#20540;&#21547;&#37327;&#39044;&#27979;&#32467;&#26524;&#23545;&#27604;(ELM)'</span>;[<span class="string">'(mse = '</span> num2str(E) <span class="string">' R^2 = '</span> num2str(R2) <span class="string">')'</span>]};
+title(string)
+</pre><img vspace="5" hspace="5" src="main_spectra_01.png" alt=""> <p class="footer"><br>
+      Published with MATLAB&reg; 7.14<br></p></div><!--
+##### SOURCE BEGIN #####
+%% I. 清空环境变量
+clear all
+clc
+
+%% II. 训练集/测试集产生
+%%
+% 1. 导入数据
+load spectra_data.mat
+
+%%
+% 2. 随机产生训练集和测试集
+temp = randperm(size(NIR,1));
+
+% 训练集——50个样本
+P_train = NIR(temp(1:50),:)';
+T_train = octane(temp(1:50),:)';
+
+% 测试集——10个样本
+P_test = NIR(temp(51:end),:)';
+T_test = octane(temp(51:end),:)';
+N = size(P_test,2);
+
+%% III. 数据归一化
+%%
+% 1. 训练集
+[Pn_train,inputps] = mapminmax(P_train);
+Pn_test = mapminmax('apply',P_test,inputps);
+%%
+% 2. 测试集
+[Tn_train,outputps] = mapminmax(T_train);
+Tn_test = mapminmax('apply',T_test,outputps);
+
+%% IV. ELM创建/训练
+[IW,B,LW,TF,TYPE] = elmtrain(Pn_train,Tn_train,30,'sig',0);
+
+%% V. ELM仿真测试
+tn_sim = elmpredict(Pn_test,IW,B,LW,TF,TYPE);
+%%
+% 1. 反归一化
+T_sim = mapminmax('reverse',tn_sim,outputps);
+
+%% VI. 结果对比
+result = [T_test' T_sim'];
+%%
+% 1. 均方误差
+E = mse(T_sim - T_test);
+
+%%
+% 2. 决定系数
+N = length(T_test);
+R2=(N*sum(T_sim.*T_test)-sum(T_sim)*sum(T_test))^2/((N*sum((T_sim).^2)-(sum(T_sim))^2)*(N*sum((T_test).^2)-(sum(T_test))^2)); 
+
+%% VII. 绘图
+figure(1)
+plot(1:N,T_test,'r-*',1:N,T_sim,'b:o')
+grid on
+legend('真实值','预测值')
+xlabel('样本编号')
+ylabel('辛烷值')
+string = {'测试集辛烷值含量预测结果对比(ELM)';['(mse = ' num2str(E) ' R^2 = ' num2str(R2) ')']};
+title(string)
+##### SOURCE END #####
+--></body></html>

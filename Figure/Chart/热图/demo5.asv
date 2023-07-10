@@ -1,0 +1,8 @@
+% demo5
+figure()
+Data=rand(25,30)-.5;
+SHM=SHeatmap(Data,'Format','sq');
+SHM.draw();
+
+% colormap(bone) 
+colormap(slanCM(136))

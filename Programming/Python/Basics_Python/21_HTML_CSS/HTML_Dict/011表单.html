@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <h1>注册表单</h1>
+
+    <form action="" method="post">
+        <div>
+            <label for="username">用户名：</label>
+            <input type="text" name="username" id="username"/>
+        </div>
+        <br />
+        <div>
+            <label for="password">密&nbsp;&nbsp;&nbsp;码：</label>
+            <input type="password" name="password" id="password"/>
+        </div>
+        <br />
+        <div>
+            <label>性&nbsp;&nbsp;&nbsp;别：</label>
+            <input type="radio" name="gender" value="0" id="male"> <label for="male">男</label>
+			<input type="radio" name="gender" value="1" id="female"> <label for="female">女</label>
+        </div>
+        <br />
+        <div>
+            <label>爱&nbsp;&nbsp;&nbsp;好：</label>
+            <input type="checkbox" name="hobby" value="study" />学习
+            <input type="checkbox" name="hobby" value="python" />python
+            <input type="checkbox" name="hobby" value="frontend" />前端
+        </div>
+        <br />
+        <div>
+            <label>文&nbsp;&nbsp;&nbsp;件：</label>
+            <input type="file">
+        </div>
+        <br />
+        <div>
+            <label>个人介绍：</label>
+            <textarea name="info" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br />
+        <div>
+            <label>籍&nbsp;&nbsp;&nbsp;贯：</label>
+            <select name="site">
+                <option value="1">北京</option>
+                <option value="2">河北</option>
+                <option value="3">天津</option>
+                <option value="4">上海</option>
+                <option value="0">苏章</option>
+            </select>
+        </div>
+        <br />
+<!--        隐藏的表单域，用来存储值-->
+        <input type="hidden" name="hi" value="12">
+        <br />
+        <div>
+            <input type="submit" name="" value="提交">
+<!--            用图片控件代替submit按钮提交，一般会导致提交两次，不建议使用。-->
+<!--            <input type="image" src="./images/text_pop.jpg" name=""></input>-->
+            <input type="reset" name="" value="重置">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,174 @@
+版本信息
+Microsoft JDBC Driver 6.0 for SQL Server
+2018 年 2 月
+
+------------
+简介
+------------
+此文件包含最新或其他重要信息，是 Microsoft JDBC  
+Driver 6.0 for SQL Server 文档。在安装 JDBC 驱动程序之前，应 
+通读此文件。
+
+你的反馈对我们非常重要，我们将力求即时对你的反馈 
+做出回复。有关使用 JDBC 驱动程序博客和在线论坛提供反馈的信息，
+请参阅 Microsoft JDBC Driver 6.0 for SQL Server 页面，网址为 http://msdn.microsoft.com/data/jdbc。
+
+
+------------
+安装
+------------
+install.txt 中提供了有关安装 JDBC 驱动程序的说明。 请参阅该文件，了解 
+有关在 Windows 和 Unix 操作系统上安装 JDBC 驱动程序的详细信息。
+
+
+---------------------------
+支持的操作系统
+---------------------------
+Microsoft JDBC Driver 6.0 for SQL Server 支持的操作系统包括：
+  Windows Server 2008 SP2
+  Windows Server 2008 R2 SP1
+  Windows Server 2012
+  Windows Server 2012 R2
+  Windows Vista SP2
+  Windows 7 SP1
+  Windows 8
+  Windows 8.1
+  Windows 10
+  Linux
+  UNIX
+
+上面的列表是某些受支持的操作系统的示例。JDBC 驱动程序 
+可在任何支持使用 Java 虚拟机 (JVM) 的操作系统上工作。但 
+Oracle Solaris (x86)、SUSE Linux 以及 Windows Vista Service Pack 2 或更高版本的操作系统 
+已经过测试。
+
+
+----------------
+版本内容
+----------------
+Microsoft JDBC Driver 6.0 for SQL Server 可执行 zip 或 tar 文件将解压出以下文件 
+在指定位置（相对于选定的安装目录）解包以下文件：
+
+<安装目录>\sqljdbc_<版本>\<语言>\install.txt
+<安装目录>\sqljdbc_<版本>\<语言>\release.txt
+<安装目录>\sqljdbc_<版本>\<语言>\license.txt
+<安装目录>\sqljdbc_<版本>\<语言>\jre7\sqljdbc41.jar
+<安装目录>\sqljdbc_<版本>\<语言>\jre8\sqljdbc42.jar
+<安装目录>\sqljdbc_<版本>\<语言>\auth\x86\sqljdbc_auth.dll
+<安装目录>\sqljdbc_<版本>\<语言>\auth\x64\sqljdbc_auth.dll
+<安装目录>\sqljdbc_<版本>\<语言>\samples\<示例文件...>
+<安装目录>\sqljdbc_<版本>\<语言>\xa\xa_install.sql
+<安装目录>\sqljdbc_<版本>\<语言>\xa\x86\sqljdbc_xa.dll
+<安装目录>\sqljdbc_<版本>\<语言>\xa\x64\sqljdbc_xa.dll
+
+有关每个组件的详细信息，请参阅联机文档 
+Microsoft JDBC Driver for SQL Server 文档：
+https://msdn.microsoft.com/en-us/library/dn197850(v=sql.10).aspx
+
+文档：
+-------------
+此包中包括版本信息、安装说明以及许可条款。
+联机可找到所有其他文档。
+
+请注意，已中止脱机帮助文件。
+
+
+JAR 文件：
+---------
+为支持后向兼容和可能的升级方案，JDBC Driver 6.0 的每个安装包都包含
+两个 JAR 文件：sqljdbc41.jar 和 sqljdbc42.jar。 
+
+
+功能特定的文件：
+---------
+Azure Active Directory 和集成身份验证（在 Windows 上）组件包含在身份验证目录中。
+
+JDBC 分布式事务组件包含在 xa 目录中。
+
+
+示例：
+-------
+演示 JDBC 驱动程序各种功能的示例应用程序包含在示例
+"sample"目录中。有关每个示例以及如何运行它们的详细信息，请参阅联机 
+文档。
+
+
+-----------
+更改列表
+-----------
+从 6.0.8112.100 6.0.8112.200 的更改：
+
+在编译器中进行了更改，以缓解 Spectre 和 Meltdown 相关漏洞。
+
+从 6.0.7728.100 6.0.8112.100 的更改：
+
+修复了 LOGIN7 数据包不包含驱动程序版本号的问题。
+
+从 6.0.7507.100 6.0.7728.100 的更改：
+
+修复了 sqljdbc_xa.dll 中的问题，此前事务可能导致 SQL Server 中句柄泄漏。
+
+从 4.2 到 6.0 的更改：
+
+新增功能：Always Encrypted - 应用程序开发人员现可利用 Always Encrypted 功能， 
+该功能在 SQL Server 2016 CTP（或更高版本）中可用。JDBC 驱动程序这样实现 Always Encrypted 功能：以透明方式 
+加密和解密存储在 SQL Server 中加密数据库列中的敏感数据。有关详细信息，请参阅： 
+请参阅有关通过 JDBC 驱动程序使用 Always Encrypted 的 MSDN 文档。
+
+新增功能：国际化域名 - JDBC 驱动程序现在支持 
+服务器和示例名称的国际化域名 (IDN)。有关详细信息，请参阅通过 JDBC 驱动程序使用 IDN 的 MSDN 文档。
+
+新增功能：表值参数 - 通过表值参数，可将多行数据 
+从客户端应用程序轻松封送到 SQL Server，而不需要多次往返或特殊服务器端逻辑来处理数据。
+可以使用表值参数来封装客户端应用程序中的数据行， 
+并以单个参数化命令将数据发送到服务器。有关详细信息，请参阅表值参数的 MSDN 文档。
+
+新增功能：Azure Active Directory (AAD) - AAD 身份验证是使用 AAD 中的标识 
+连接到 Azure SQL 数据库 v12 的机制。使用 AAD 身份验证以集中管理数据库用户的标识 
+并将其作为 SQL Server 身份验证的一种替代方法。JDBC Driver 6.0 允许将 JDBC 连接字符串中的 AAD 凭据指定为 
+连接到 Azure SQL DB。有关详细信息，请参阅设置 JDBC 驱动程序的连接属性的 MSDN 文档。
+
+改进：AlwaysOn 可用性组 (AG) - 驱动程序现在支持透明连接到 AlwaysOn 可用性 
+组。驱动程序快速发现服务器基础结构的当前 AlwaysOn 拓扑，并以透明的方式连接到 
+当前的活动服务器。有关详细信息，请参阅 
+关于设置 JDBC 驱动程序的连接属性的 MSDN 文档。
+
+改进：JDBC 驱动程序现在支持用预定义语句检索参数元数据以实现复杂查询 
+（如子查询/联接）。请注意此改进仅在使用 SQL Server 2012 和更新版本时才可用。
+
+
+------------
+已知问题
+------------
+下面是有关 Microsoft JDBC Driver 6.0 for SQL Server 的已知问题：
+
+1) 使用 SQL SERVER 2008 OR 2008 R2 时的参数元数据限制
+
+1.a) PreparedStatement.getParameterMetadata() 在与参数化 MERGE 查询一起使用
+时引发 SQLException
+1.b) 预定义语句的参数元数据不适用于具有子查询/联接的查询。
+
+
+2) JavaKerberos 和 IBM VM
+
+如果在 Windows 环境下运行，可能会需要 
+在配置文件中指定 principalname 以便让 Java Kerberos 工作。例如：
+SQLJDBCDriver {
+  com.ibm.security.auth.module.Krb5LoginModule required
+  seDefaultCcache=true
+  credsType=initiator
+  principal=principalname@principaldomain;
+};
+
+
+3) 与 SQL AZURE 的连接被断开
+
+连接到 SQL Azure 时，空闲连接在处于不活动状态一定时间后可能被某个 
+网络组件（如防火墙）终止。若要避免通过网络组件断开空闲连接，
+应在加载驱动程序的操作系统上设定以下注册表 
+设置（或其非 Windows 等效项）：
+           
+注册表设置                                                                                                                                       推荐值
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\KeepAliveTime            30000
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\KeepAliveInterval         1000
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\TcpMaxDataRetransmission  10

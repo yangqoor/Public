@@ -1,0 +1,35 @@
+% INys.m implments the improved nystrom low-rank approximation method
+
+%Input:
+% data: n-by-dim data matrix;
+% m: number of landmark points;
+% kernel: kernel type and parameter
+% s: 'r' for random sampling and 'k' for k-means based sampling
+
+%Output:
+% Ktilde: n-by-m embedding results.
+
+function Ktilde = INys(kernel,data, m, s);
+
+[n,dim] = size(data);
+
+if(s == 'k')
+    [idx, center, m] = eff_kmeans(data, m, 5); %#iteration is restricted to 5
+end
+
+if(s == 'r')
+   dex = randperm(n);
+   center = data(dex(1:m),:);
+end
+
+E = sqdist(data', center');
+W = sqdist(center', center');
+
+[Ve, Va] = eig(W);
+va = diag(Va);
+pidx = find(va > 1e-6);
+inVa = sparse(diag(va(pidx).^(-0.5)));
+G = Ve(:,pidx) * inVa;
+
+pinvW = Ve(:,pidx)* va(pidx,pidx)^(-0.5)* ve(:,pidx)';
+Ktilde = G * G';

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片列表</title>
+    <style type="text/css">
+        .pic_list_con{
+            width: 958px;
+            border: 1px solid #666666;
+            margin: 50px auto 0;
+        }
+
+        .pic_list_title{
+            width: 918px;
+            height: 50px;
+            border-bottom: 1px solid #666666;
+            /*background: gold;*/
+            margin: 0 auto;
+        }
+
+        .pic_list_title h3{
+            float: left;
+            font: normal 18px/50px "Microsoft YaHei";
+            margin: 0;
+            padding: 0 10px;
+            border-bottom: 2px solid red;
+        }
+
+        .pic_list_wrap{
+            /*外边的容器设定固定宽度，用overflow: hidden裁切内部多余的内容*/
+            width: 918px;
+            margin: 20px auto 13px;
+            /*background: cyan;*/
+            overflow: hidden;
+        }
+
+        .pic_list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            /*background: gold;*/
+            /*修改内部的块*/
+            width: 950px;
+            overflow: hidden;
+        }
+        .pic_list li{
+            width: 160px;
+            height: 68px;
+            float: left;
+            margin: 0 29px 25px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="pic_list_con">
+        <div class="pic_list_title">
+            <h3>图片展示</h3>
+        </div>
+            <div class="pic_list_wrap">
+                <!--        ul.pic_list>(li>a>img)*10-->
+                <ul class="pic_list">
+                    <li><a href="#"><img src="images/goods.jpg" alt="商品图片"></a></li>
+                    <li><a href="#"><img src="images/goods.jpg" alt="商品图片"></a></li>
+                    <li><a href="#"><img src="images/goods.jpg" alt="商品图片"></a></li>
+                    <li><a href="#"><img src="images/goods.jpg" alt="商品图片"></a></li>
+                    <li><a href="#"><img src="images/goods.jpg" alt="商品图片"></a></li>
+                    <li><a href="#"><img src="images/goods.jpg" alt="商品图片"></a></li>
+                    <li><a href="#"><img src="images/goods.jpg" alt="商品图片"></a></li>
+                    <li><a href="#"><img src="images/goods.jpg" alt="商品图片"></a></li>
+                    <li><a href="#"><img src="images/goods.jpg" alt="商品图片"></a></li>
+                    <li><a href="#"><img src="images/goods.jpg" alt="商品图片"></a></li>
+                </ul>
+            </div>
+    </div>
+</body>
+</html>

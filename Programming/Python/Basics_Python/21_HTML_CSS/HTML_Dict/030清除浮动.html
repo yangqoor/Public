@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动</title>
+    <style type="text/css">
+        .list{
+            width: 210px;
+            /*不给高度且需要浮动会需要清除浮动*/
+            /*height: 400px;*/
+            border: 1px solid #000;
+            margin: 50px auto 0;
+            list-style: none;
+            padding: 0;
+            /*方法1：*/
+            /*overflow: hidden;*/
+        }
+
+        .list li{
+            width: 50px;
+            height: 50px;
+            background-color: gold;
+            margin: 10px;
+            float: left;
+        }
+
+        /*.clearfix:before{
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after{
+            content: "";
+            display: table;
+            clear: both;
+        }*/
+        .clearfix:before,.clearfix:after{
+            content: "";
+            display: table;
+        }
+        .clearfix:after{
+            clear: both;
+        }
+        /*兼容ie清除浮动（ie可能不认after）*/
+        .clearfix{
+            zoom: 1;
+        }
+    </style>
+</head>
+<body>
+<!--    ul.list>li{$}*8-->
+<ul class="list clearfix">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+<!--    方法2：-->
+<!--    <div style="clear: both"></div>-->
+</ul>
+</body>
+</html>

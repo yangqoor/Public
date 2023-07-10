@@ -1,0 +1,8 @@
+﻿  一维histogram.cpp
+f:\my study\visual_studio\opencv\histogram\histogram\一维histogram.cpp(72): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+f:\my study\visual_studio\opencv\histogram\histogram\一维histogram.cpp(74): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+f:\my study\visual_studio\opencv\histogram\histogram\一维histogram.cpp(75): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+f:\my study\visual_studio\opencv\histogram\histogram\一维histogram.cpp(85): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+f:\my study\visual_studio\opencv\histogram\histogram\一维histogram.cpp(88): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  histogram.vcxproj -> F:\My Study\Visual_Studio\Opencv\histogram\Debug\histogram.exe
+  histogram.vcxproj -> F:\My Study\Visual_Studio\Opencv\histogram\Debug\histogram.pdb (Full PDB)

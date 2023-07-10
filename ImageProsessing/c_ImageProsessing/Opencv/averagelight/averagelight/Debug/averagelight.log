@@ -1,0 +1,3 @@
+﻿  main.cpp
+f:\my_study\visual_studio\opencv\averagelight\averagelight\main.cpp(41): error C3861: “cvCvtColor”: 找不到标识符
+f:\my_study\visual_studio\opencv\averagelight\averagelight\main.cpp(42): error C3861: “cvCvtColor”: 找不到标识符

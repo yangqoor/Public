@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<main_path_win>E:/Structured_Light_Data/</main_path_win>
+<main_path_linux>/home/rukun/Structured_Light_Data/</main_path_linux>
+<data_set_path>"20170410/StatueForward/"</data_set_path>
+<dyna_mat_path>dyna/</dyna_mat_path>
+<dyna_mat_name>dyna_mat</dyna_mat_name>
+<dyna_mat_suffix>".png"</dyna_mat_suffix>
+<ipro_mat_path>ipro/</ipro_mat_path>
+<ipro_mat_name>ipro_mat</ipro_mat_name>
+<ipro_mat_suffix>".xml"</ipro_mat_suffix>
+<depth_mat_path>result/depth_mat/</depth_mat_path>
+<depth_mat_name>depth_mat</depth_mat_name>
+<depth_mat_suffix>".txt"</depth_mat_suffix>
+<ipro_output_path>result/ipro_mat/</ipro_output_path>
+<ipro_output_name>ipro_mat</ipro_output_name>
+<ipro_output_suffix>".txt"</ipro_output_suffix>
+<point_cloud_path>result/point_cloud/</point_cloud_path>
+<point_cloud_name>pc</point_cloud_name>
+<point_cloud_suffix>".txt"</point_cloud_suffix>
+<point_show_path>result/show/</point_show_path>
+<point_show_name>show</point_show_name>
+<point_show_suffix>".png"</point_show_suffix>
+<trace_path>result/trace/</trace_path>
+<trace_name>trace</trace_name>
+<trace_suffix>".txt"</trace_suffix>
+</opencv_storage>

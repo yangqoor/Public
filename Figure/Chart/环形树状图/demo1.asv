@@ -1,0 +1,7 @@
+
+TreeSet={[],[]};
+k=1;
+for i=1:50
+   TreeSet{k,1}='CLASS A';
+   
+end

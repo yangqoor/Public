@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .menu{
+            /*固定在页面顶部的悬浮菜单*/
+            height: 80px;
+            background-color: gold;
+            /*绝对定位和固定定位的块元素和行内元素会自动转化为行内块元素*/
+            position: fixed;
+            width: 960px;
+            top: 0;
+            /*居中定位，先定位到50%，后用margin负值拉回去*/
+            left: 50%;
+            margin-left: -480px;
+        }
+
+        .con{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            margin: 50px auto 0;
+            position: relative;
+            top: 100px;
+            border-radius: 14px;
+        }
+
+        .box02{
+            width: 28px;
+            height: 28px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            line-height: 28px;
+
+            position: absolute;
+            left: 86px;
+            top: -14px;
+            /*设置圆角：半径*/
+            border-radius: 14px;
+        }
+
+        .popup{
+            width: 500px;
+            height: 300px;
+            border: 1px solid #000;
+            background-color: #fff;
+            position: fixed;
+            left: 50%;
+            margin-left: -251px;
+            top: 50%;
+            margin-top: -151px;
+            z-index: 9999;
+        }
+        .popup h2{
+            background-color: gold;
+            margin: 10px;
+            height: 40px;
+        }
+        .mask{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            left: 0;
+            top: 0;
+            opacity: 0.5;
+            z-index: 9998;
+        }
+
+        .pop_con{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">菜单文字</div>
+    <div class="con">
+        <div class="box02">5</div>
+    </div>
+    <div class="pop_con">
+        <div class="popup">
+            <h2>弹框标题</h2>
+            弹框
+        </div>
+        <div class="mask"></div>
+    </div>
+
+</body>
+</html>

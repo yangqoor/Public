@@ -1,0 +1,74 @@
+This code is distributed as is without warranty.  If you use this
+for your research, please cite:
+
+Learning deformable shape manifolds,
+Samuel Rivera and Aleix M. Martinez, Pattern Recognition.
+Volume 45, Issue 4, April 2012, Pages 1792-1801
+
+% 
+% Copyright (C) 2009, 2010 Samuel Rivera, Liya Ding, Onur Hamsici, Paulo
+%   Gotardo, Fabian Benitez-Quiroz, Di You and the Computational Biology and 
+%   Cognitive Science Lab (CBCSL).
+% 
+% Contact: Samuel Rivera (rivera.162@osu.edu)
+% 
+%
+%--------------------------------------------------------------------
+% INSTALLATION:
+% To install, add the directories recursively to path
+%
+%           Example MATLAB code to add paths: addpath( 'ShapeManifoldForDistributionFull');
+%  			for recursive: addpath(  genpath( 'ShapeManifoldForDistributionFull' ) );
+%			
+%           This implementation makes use of the Particle Swarm toolbox written
+%             by Sam Chen for tuning the parameters.  See 'ParticleSwarm/license.txt'
+%             for copyright and licensing information.        
+%
+%----------------------------------------------------------------
+% Usage:
+%     The main shape detection function is 'superSimpleShapeDetector'. 
+%         See example1.m for how to use the code.  
+%         This does shape detection with Kernel Ridge regression, and the DTS shape model.
+%           
+%         Faces should be detected by a face detector and standardized to specific
+%         size and location before applying the algorithm. We do not provide
+%         those codes, but the Viola Jones face detector is freely available through opencv.
+%
+%
+%   run  'help superSimpleShapeDetector' for instructions and examples.  Note that this runs the
+%      code in the most straightforward configuration (Kernel Ridge regression, and the DTS shape model).
+%      There are many more options that can be specified by adjusting parameters,
+%      inside that function, but not all those options are implemented, and not all
+%      the required packages (such as for SVM) are included.  It essentially is a wrapper function
+%      for 'runShapedetectorWhole'
+%
+%     The REAL shape detection function is runShapedetectorWhole.  run 
+%       'help runShapedetectorWhole' for instructions and examples.  This is FULL code, allowing missing data,
+%        image rotation, etc.  Not everything is coded and debugged, and not all necessary
+%        functions for those extra options are included, so use these different options
+%        at your own risk.
+% 
+%     I assume all directories have '/' at the end.  This will work on Linux,
+%        OSX, and Windows platforms.
+%        
+%     To create new database use "createNewDatabase"  (in MiscFunctions folder )
+%    
+%     To mark faces use "faceShapeMarkingMain".
+%     
+%     To format the marked/new faces using the VJ face detector, use 
+%         'detectAndStandardizeFaces'.  You will need the appropriate c++ Viola Jones code.
+%
+
+
+Frequent Issues:
+- If you get an index out of bounds type error, check to make sure that 
+the data was loaded properly.  The images and matrices will be in the folder
+called 'CommonData' inside the dataDirectory folder.  This by default is 'OutputData'
+unless you gave it a different argument. If the contents of those .mat files are
+[], you may need to fix the markedDatabaseDirectory argument.
+
+When there is an error, check to see if it starts with 'SR'.  I clearly explain
+what the error is and how to fix it in those cases.
+
+
+

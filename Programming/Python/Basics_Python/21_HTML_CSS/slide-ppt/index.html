@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/slide2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$.ajax({
+				url:'js/data.json',
+				type:'get',
+				dataType:'json'
+			})
+			.done(function(dat){
+
+				$('.user_login_btn').hide();
+
+				$('.user_info em').html(dat.name);
+
+				$('.user_info').show();	
+				
+			})
+			.fail(function(){
+				alert('服务器超时！')
+			})
+
+		})
+
+	</script>
+	<title>天天生鲜-首页</title>
+</head>
+<body>
+
+	<!--  页面顶部	 -->
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">欢迎来到天天生鲜!</div>
+			
+			<div class="top_user_info fr">
+				<div class="user_login_btn fl">
+					<a href="">登录</a>
+					<span>|</span>
+					<a href="">注册</a>
+				</div>
+
+				<div class="user_info fl">
+					欢迎您：<em>张山</em>
+				</div>
+
+				<div class="user_link fl">
+					<span>|</span>
+					<a href="">我的购物车</a>
+					<span>|</span>
+					<a href="">我的订单</a>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+
+	<div class="center_con">
+		<!--  logo	 -->
+		<a href="index.html" class="logo fl"><img src="images/logo.png" alt="天天生鲜网站logo"></a>
+
+		<!--  搜索	 -->
+		<div class="search_con fl">	
+			<form>				
+				<input type="text" name="" class="input_txt fl" placeholder="搜索">
+				<input type="submit" name="" value="搜素" class="input_sub fr">
+			</form>
+		</div>
+		
+		<!--  购物车	 -->
+		<div class="chart_con fr">
+			<a href="#" class="fl">我的购物车</a>
+			<span class="fr">5</span>
+		</div>
+	
+	</div>
+
+	<div class="main_menu_con">		
+		<div class="main_menu">
+			<h2 class="fl">全部商品分类</h2>
+			<ul class="fl">
+				<li><a href="">首页</a></li>
+				<li><a href="">手机生鲜</a></li>
+				<li><a href="">抽奖</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="center_con2">
+		
+		<ul class="sub_menu fl">
+			<li><a href="">新鲜水果</a></li>
+			<li><a href="" class="icon02">新鲜水果</a></li>
+			<li><a href="" class="icon03">新鲜水果</a></li>
+			<li><a href="" class="icon04">新鲜水果</a></li>
+			<li><a href="" class="icon05">新鲜水果</a></li>
+			<li><a href="" class="icon06">新鲜水果</a></li>
+		</ul>
+
+
+		<div class="slide fl">
+			
+			<ul class="slide_list">
+				<li><a href=""><img src="images/slide.jpg" alt="专题图片" /></a></li>
+				<li><a href=""><img src="images/slide02.jpg" alt="专题图片" /></a></li>
+				<li><a href=""><img src="images/slide03.jpg" alt="专题图片" /></a></li>
+				<li><a href=""><img src="images/slide04.jpg" alt="专题图片" /></a></li>
+			</ul>
+
+			<div class="prev"></div>
+			<div class="next"></div>
+
+			<ul class="points">
+				<!-- <li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li> -->
+			</ul>
+		</div>
+		<div class="adv fr">
+			<a href="#"><img src="images/adv01.jpg" alt="广告图片"></a>
+			<a href="#"><img src="images/adv02.jpg" alt="广告图片"></a>
+		</div>
+	</div>
+
+
+	
+	<div class="common_model">
+		
+		<div class="common_title">
+			<h3>新鲜水果</h3>
+			<ul>
+				<li><span>|</span></li>
+				<li><a href="">加州提子</a></li>
+				<li><a href="">加州提子</a></li>
+				<li><a href="">加州提子</a></li>
+			</ul>
+			<a href="#" class="more fr">查看更多 &gt;</a>
+		</div>
+
+
+		<div class="common_goods_con">
+			<div class="common_banner fl">
+				<a href="#"><img src="images/banner01.jpg" alt="商品banner"></a>
+			</div>
+
+			<ul class="common_goods_list fl">
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+			</ul>
+
+		</div>
+
+
+
+	</div>
+
+
+
+	<div class="common_model">
+		
+		<div class="common_title">
+			<h3>海鲜水产</h3>
+			<ul>
+				<li><span>|</span></li>
+				<li><a href="">加州提子</a></li>
+				<li><a href="">加州提子</a></li>
+				<li><a href="">加州提子</a></li>
+			</ul>
+			<a href="#" class="more fr">查看更多 &gt;</a>
+		</div>
+
+
+		<div class="common_goods_con">
+			<div class="common_banner fl">
+				<a href="#"><img src="images/banner02.jpg" alt="商品banner"></a>
+			</div>
+
+			<ul class="common_goods_list fl">
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+			</ul>
+
+		</div>
+
+
+
+	</div>
+
+	<div class="common_model">
+		
+		<div class="common_title">
+			<h3>猪牛羊肉</h3>
+			<ul>
+				<li><span>|</span></li>
+				<li><a href="">加州提子</a></li>
+				<li><a href="">加州提子</a></li>
+				<li><a href="">加州提子</a></li>
+			</ul>
+			<a href="#" class="more fr">查看更多 &gt;</a>
+		</div>
+
+
+		<div class="common_goods_con">
+			<div class="common_banner fl">
+				<a href="#"><img src="images/banner03.jpg" alt="商品banner"></a>
+			</div>
+
+			<ul class="common_goods_list fl">
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+				<li>
+					<h4>草莓</h4>
+					<a href="#"><img src="images/goods_pic.jpg" alt="商品图片"></a>
+					<div>¥ 38.00</div>
+				</li>
+			</ul>
+
+		</div>
+
+
+
+	</div>
+
+	<div class="footer">
+		
+		<div class="footer_links">
+			<a href="">关于我们</a>
+			<span>|</span>
+			<a href="">联系我们</a>
+			<span>|</span>
+			<a href="">招聘人才</a>
+			<span>|</span>
+			<a href="">友情链接</a>
+		</div>
+
+		<p class="copyright">
+			CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved<br />
+电话：010-****888    京ICP备*******8号
+
+		</p>
+	</div>
+
+
+
+</body>
+</html>

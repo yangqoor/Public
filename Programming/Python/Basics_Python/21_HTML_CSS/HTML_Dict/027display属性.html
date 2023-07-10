@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display属性</title>
+    <style type="text/css">
+        body{
+            font-size: 0;
+        }
+
+        .box{
+            width: 200px;
+            height: 100px;
+            background-color: gold;
+            font-size: 16px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        .con{
+            width: 200px;
+            font-size: 30px;
+
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            /*font-size: 16px;*/
+            background-color: gold;
+            display: none;
+        }
+
+        .con:hover .box2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">div元素</div>
+    <div class="box">div元素</div>
+    <br><br>
+    <div class="con">
+        <h3>悬停文字</h3>
+        <div class="box2">说明文字</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量和函数预解析</title>
+    <script type="text/javascript">
+        // 预解析会把变量的声明提前
+        alert(iNum)  // 弹出undefined
+
+        // 预解析会让函数的声明和定义提前
+        fnMyalert();
+
+        // 使用从未定义的变量，程序会报错
+        // alert(iNum2)
+
+        var iNum = 12;
+
+        function fnMyalert() {
+            alert('hello world')
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

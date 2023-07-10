@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var $a = $('.link');
+			var $img = $('#img01');
+			var $div = $('#div1');
+
+			// 读取class属性值
+			console.log( $a.prop('class') );
+
+			// 没有设置的属性读取为空
+			console.log( $a.prop('title') );
+
+
+			// 获取是图片的绝对地址
+			console.log($img.prop('src'));
+
+			//alert($img.prop('src'));
+
+
+			// 设置属性
+			$a.prop({'href':'http://www.baidu.com','title':'百度网链接'});
+
+
+			//console.log( $a.prop('title') );
+
+			//读取标签内包含的内容
+			console.log( $a.html() );
+
+			$div.html('<span>div里面的span元素</span>');
+
+
+
+		})
+
+
+	</script>
+</head>
+<body>
+	<a href="#" class="link">这是一个链接</a>
+	<img src="images/002.jpg" id="img01" alt="水果">
+
+	<div id="div1"></div>
+
+</body>
+</html>

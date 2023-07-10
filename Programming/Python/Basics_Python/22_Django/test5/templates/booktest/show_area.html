@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页</title>
+</head>
+<body>
+<ul>
+    {# 遍历获取每一条数据 #}
+    {#  {% for area in page.object_list %}#}
+    {% for area in page %}
+        <li>{{ area.atitle }}</li>
+    {% endfor %}
+</ul>
+{# 判断是否有上一页 #}
+{% if page.has_previous %}
+    <a href="/show_area{{ page.previous_page_number }}">&lt;上一页</a>
+{% endif %}
+
+{# 遍历显示页码的链接 #}
+{% for pindex in page.paginator.page_range %}
+    {# 判断是否是当前页 #}
+    {% if pindex == page.number %}
+        {{ pindex }}
+    {% else %}
+        <a href="/show_area{{ pindex }}">{{ pindex }}</a>
+    {% endif %}
+{% endfor %}
+
+{# 判断是否有下一页 #}
+{% if page.has_next %}
+    <a href="/show_area{{ page.next_page_number }}">下一页&gt;</a>
+{% endif %}
+</body>
+</html>

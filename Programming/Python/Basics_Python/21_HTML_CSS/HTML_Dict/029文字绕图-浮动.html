@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字绕图</title>
+    <style type="text/css">
+        .con{
+            width: 450px;
+            height: 210px;
+            border: 1px solid black;
+            margin: 50px auto 0;
+        }
+
+        .con img{
+            width: 80px;
+            height: 80px;
+            background-color: gold;
+            float: left;
+            margin: 10px;
+        }
+
+        .con div{
+            /*background-color: green;*/
+            height: 210px;
+            color: black;
+            font-size: 14px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <img src="images/person.png" height="80" width="80">
+        <div>1、浮动元素有左浮动(float:left)和右浮动(float:right)两种
+            2、浮动的元素会向左或向右浮动，碰到父元素边界、其他元素才停下来
+            3、相邻浮动的块元素可以并在一行，超出父级宽度就换行
+            4、浮动让行内元素或块元素自动转化为行内块元素(此时不会有行内块元素间隙问题)
+            5、浮动元素后面没有浮动的元素会占据浮动元素的位置，没有浮动的元素内的文字会避开浮动的元素，形成文字饶图的效果
+            6、父元素如果没有设置尺寸(一般是高度不设置)，父元素内整体浮动的元素无法撑开父元素，父元素需要清除浮动
+            7、浮动元素之间没有垂直margin的合并
+        </div>
+    </div>
+</body>
+</html>

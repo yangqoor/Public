@@ -1,0 +1,73 @@
+There are 2 folders and 14 MATLAB file included in 'reconstruction' folder
+
+
+FOLDER
+
+own_face ***********************************************************
+Contains 40 own captured images.
+Because of limited size of uploaded file, the taken space of original captured images have been compressed so image quality reduced with some degrees.
+
+
+uv_code ************************************************************
+precomputed (u,v) code for some data sets.
+Includes (u,v) code for: 
+      all synthetic data sets (6 sets totally)
+      2 provided real data sets: real_tea & real_crayon_delak
+      own captured data set
+
+
+
+MATLAB FILE
+
+get_code_uv.m ******************************************************
+Function used to get (u,v) code for each pixel
+
+
+get_depth.m ********************************************************
+Function used to get depth map and point cloud 
+
+
+get_pix_code.m *****************************************************
+Function used to get (u,v) code for whole image
+
+
+load_gray_channel.m ************************************************
+Function used to load colored image sequence and convert them to gray scale
+
+
+load_sequence.m ****************************************************
+Function used to load gray scale image sequence
+
+
+load_sequence_color.m **********************************************
+Function used to load colored image sequence
+
+
+load_own_calibration.m **********************************************
+used to load calibration matrices for own captured data
+
+
+load_real_calibration.m **********************************************
+used to load calibration matrices for provided real data
+
+
+load_synthetic_calibration.m ******************************************
+used to load calibration matrices for provided synthetic data
+
+
+reconstruction3D.m ****************************************************
+Function used to 3D reconstruction
+
+
+saveas_ply.m **********************************************************
+Function used to save point cloud as PLY file
+
+
+seq2gray.m ************************************************************
+Function used to convert colored image sequence to gray scale
+
+
+smooth_code.m *********************************************************
+Function used to smooth (u,v) code
+
+

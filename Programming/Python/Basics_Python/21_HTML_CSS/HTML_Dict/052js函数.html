@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js函数</title>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var oBtn = document.getElementById('btn01')
+            // 事件属性与函数关联，函数不能写 ()，写了会马上执行
+            oBtn.onclick = fnChange;
+
+            // 函数定义
+            function fnChange() {
+                var oDiv = document.getElementById('div1');
+                oDiv.style.color = 'blue';
+                oDiv.style.fontSize = '30px';
+            }
+
+            // 函数执行
+            // fnChange();
+
+            // 匿名函数
+            var oBtn2 = document.getElementById('btn02');
+            oBtn2.onclick = function () {
+                var oDiv = document.getElementById('div2');
+                oDiv.style.color = 'red';
+                oDiv.style.fontSize = '40px';
+            };
+
+            // 带参函数
+            function fnMyalert(a) {
+                alert(a);
+            }
+            fnMyalert('hello world');
+
+            function fnChangestyle(mystyle, val) {
+                var oDiv = document.getElementById('div3');
+                oDiv.style[mystyle] = val;
+            }
+            fnChangestyle('fontSize', '30px');
+            fnChangestyle('color', 'blue')
+
+            // 带返回值的函数
+            function fnAdd(a, b) {
+                var c = a + b;
+                return c
+            }
+            alert(fnAdd(2, 3));
+        }
+    </script>
+</head>
+<body>
+<!--    行间事件   行间调用函数名要()-->
+<!--    <div id="div1" onclick="fnMyalert()">这是第1个div</div>-->
+    <div id="div1">这是第1个div</div>
+    <br />
+    <input type="button" name="" value="改变div" id="btn01">
+    <br />
+    <div id="div2">这是第2个div</div>
+    <br />
+    <input type="button" name="" value="改变div2" id="btn02">
+    <br />
+    <div id="div3">这是第3个div</div>
+</body>
+</html>

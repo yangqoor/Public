@@ -1,0 +1,10 @@
+MATLAB code for "Learning Deformable Shape Manifolds", copyright 2012, Samuel Rivera and Aleix M. Martinez of the Computational Biology and Cognitive Science Lab at The Ohio State University.
+Use of this software is granted for basic research at non-for profit institutions only. Commercial use of this software is not permitted. Corporations or for-profit institutions interested in the use of this software should contact Prof. Aleix M. Martinez.
+If you use the code, please cite:
+Learning Deformable Shape Manifolds 
+Samuel Rivera, Aleix M. Martinez  
+Pattern Recognition, Vol. 45, No. 4, pp. 1792â€?801, 2012.
+The 'full' version loads images and associated landmark coordinates from individual files then does parameter tuning, eye detection, face rotation, and shape detection as described in the above paper.  It has many pieces so it may not be easy for users to modify.  See README within the .zip file for examples and documentation.  This package makes use of several additional toolboxes.  Please see contained directories for additional credit and license information.
+The 'basic' version does the simple shape detection, where you can input the images and landmarks which are pre-stored in matrices and detect a full shape.  It is meant to be modular and simple for those who want to understand the algorithm and would like to modify it.  It is recommended that you do your own parameter tuning. See README within the .zip file for examples and documentation. 
+
+

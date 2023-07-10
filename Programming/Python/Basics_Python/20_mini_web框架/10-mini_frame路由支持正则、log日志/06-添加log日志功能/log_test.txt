@@ -1,0 +1,4 @@
+2020-07-11 15:28:14,070 - log_test.py[line:27] - INFO: 这是 logger info message
+2020-07-11 15:28:14,070 - log_test.py[line:28] - WARNING: 这是 logger warning message
+2020-07-11 15:28:14,070 - log_test.py[line:29] - ERROR: 这是 logger error message
+2020-07-11 15:28:14,070 - log_test.py[line:30] - CRITICAL: 这是 logger critical message

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签</title>
+</head>
+<body>
+    <h1>表格</h1>
+
+    <!--border边框-->
+    <table border="1" width="300" height="100" align="center">
+        <!--  th表头 默认加粗居中 -->
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td align="center">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td align="center" valign="top">1</td>
+            <td align="right" valign="bottom">2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <!--  table>(tr>td*5)*6 -->
+    <table border="1" width="700" height="300" align="center">
+        <tr>
+            <td colspan="5">基本情况</td>
+<!--            <td></td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+<!--            <td></td>-->
+        </tr>
+        <tr>
+            <td width="15%"></td>
+            <td width="25%"></td>
+            <td width="15%"></td>
+            <td width="25%"></td>
+            <td rowspan="5"  width="20%"><img src="images/resume.jpg" alt="图片"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+<!--            <td></td>-->
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+<!--            <td></td>-->
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+<!--            <td></td>-->
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+<!--            <td></td>-->
+        </tr>
+    </table>
+
+</body>
+</html>

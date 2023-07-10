@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js元素</title>
+    <script type="text/javascript">
+        // window.onload 保证js在标签定义后再执行
+        window.onload = function(){
+            // document.getElementById('div1').style.color = 'red';
+            // document.getElementById('div1').style.fontSize = '30px';
+            // 代码简写
+            var oDiv = document.getElementById('div1');
+            var oA = document.getElementById('link');
+            var oDiv2 = document.getElementById('div2');
+            var oDiv3 = document.getElementById('div3');
+            // 写元素属性
+            oDiv.style.color = 'red';
+            oDiv.style.fontSize = '30px';
+            oA.href = 'http://www.baidu.com';
+            oA.title = '百度一下';
+            // 操作class属性写为className
+            oDiv2.className = 'box2';
+            // 读属性
+            var sId = oDiv.id;
+            alert(sId);
+
+            // []操作：属性名用变量来代替
+            // 等效于：oDiv3.style.color = 'blue';
+            var sMystyle = 'color';
+            var sValue = 'blue';
+            oDiv3.style[sMystyle] = sValue;
+
+            // innerHTML
+            // 读内容
+            var sTr = oDiv.innerHTML;
+            alert(sTr);
+
+            // 写内容
+            // oDiv.innerHTML = "这是第1个div元素"
+            oDiv.innerHTML = "<a href='http://www.baidu.com'>百度一下</a>"
+        }
+    </script>
+    <style type="text/css">
+        .box{
+            font-size: 20px;
+            color: gold;
+        }
+        .box2{
+            font-size: 30px;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" style="color: blue;">这是第一个div元素</div>
+    <a href="#" id="link">这是一个链接</a>
+    <div class="box" id="div2">这是第二个div元素</div>
+    <div class="box" id="div3">这是第三个div元素</div>
+
+</body>
+</html>

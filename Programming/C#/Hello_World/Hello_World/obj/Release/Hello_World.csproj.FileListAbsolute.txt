@@ -1,0 +1,12 @@
+D:\★Code\Visual_Studio\C#\Hello_World\Hello_World\bin\Release\Hello_World.exe.config
+D:\★Code\Visual_Studio\C#\Hello_World\Hello_World\bin\Release\Hello_World.exe
+D:\★Code\Visual_Studio\C#\Hello_World\Hello_World\bin\Release\Hello_World.pdb
+D:\★Code\Visual_Studio\C#\Hello_World\Hello_World\obj\Release\Hello_World.exe
+D:\★Code\Visual_Studio\C#\Hello_World\Hello_World\obj\Release\Hello_World.pdb
+E:\a_Study\Code\Visual_Studio\C#\Hello_World\Hello_World\bin\Release\Hello_World.exe.config
+E:\a_Study\Code\Visual_Studio\C#\Hello_World\Hello_World\bin\Release\Hello_World.exe
+E:\a_Study\Code\Visual_Studio\C#\Hello_World\Hello_World\bin\Release\Hello_World.pdb
+E:\a_Study\Code\Visual_Studio\C#\Hello_World\Hello_World\obj\Release\Hello_World.csprojAssemblyReference.cache
+E:\a_Study\Code\Visual_Studio\C#\Hello_World\Hello_World\obj\Release\Hello_World.csproj.CoreCompileInputs.cache
+E:\a_Study\Code\Visual_Studio\C#\Hello_World\Hello_World\obj\Release\Hello_World.exe
+E:\a_Study\Code\Visual_Studio\C#\Hello_World\Hello_World\obj\Release\Hello_World.pdb

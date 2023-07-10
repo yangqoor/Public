@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load filters %}
+<head>
+    <meta charset="UTF-8">
+    <title>模板过滤器</title>
+    <style>
+        .red {
+            background-color: red;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<ul>
+{% comment %}
+    {% for book in books %}
+        {# {% if book.id <= 2 %} #}
+        {# {% if book.id|mod %}#}
+        {% if book.id|mod_val:3 %}
+            <li class="red">{{ book.id }}--{{ book.btitle|length }}--{{ book.bpub_date|date:'Y年-m月-d日' }}</li>
+        {% else %}
+            <li class="green">{{ book.btitle }}--{{ book.bpub_date }}</li>
+        {% endif %}
+    {% endfor %}
+{% endcomment %}
+    <!-- <h1>html注释</h1> -->
+</ul>
+default过滤器:<br/>
+{{ content|default:'hello' }}
+</body>
+</html>

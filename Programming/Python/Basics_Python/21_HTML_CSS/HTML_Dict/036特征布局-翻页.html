@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>翻页</title>
+    <style type="text/css">
+        .pagenation{
+            list-style: none;
+            margin: 50px auto 0;
+            padding: 0;
+
+            width: 600px;
+            height: 40px;
+            border: 1px solid #666;
+            font-size: 0;
+            text-align: center;
+        }
+
+        .pagenation li{
+            display: inline-block;
+            height: 26px;
+            font-size: 12px;
+            margin: 7px 5px 0;
+
+        }
+
+        .pagenation li a{
+            display: block;
+            height: 26px;
+            line-height: 26px;
+            text-decoration: none;
+            padding: 0 10px;
+            font: normal 12px/26px "Microsoft YaHei";
+            color: #000000;
+            background-color: gold;
+        }
+
+        .pagenation li a:hover{
+            background-color: red;
+            color: #ffffff;
+        }
+
+        .menu{
+            list-style: none;
+            margin: 50px auto 0;
+            padding: 0;
+            width: 958px;
+            height: 40px;
+            border: 1px solid #666666;
+            text-align: center;
+            font-size: 0;
+        }
+        .menu li{
+            display: inline-block;
+            font-size: 14px;
+            height: 40px;
+        }
+        .menu li a{
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            font: normal 14px/40px "Microsoft YaHei";
+            text-decoration: none;
+            color: #000000;
+
+        }
+        .menu li a:hover{
+            color: orange;
+        }
+
+        .menu li span{
+            display: block;
+            height: 40px;
+            font: normal 14px/40px "Microsoft YaHei";
+            margin: 0 20px;
+        }
+
+        .menu02{
+            list-style: none;
+            margin: 50px auto 0;
+            padding: 0;
+            width: 960px;
+            height: 40px;
+            background-color: #55e8ea;
+            position: relative;
+        }
+        .menu02 li{
+            width: 100px;
+            height: 40px;
+            float: left;
+        }
+        .menu02 li a{
+            display: block;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            font: normal 14px/40px "Microsoft YaHei";
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .menu02 li a:hover{
+            background-color: #00619f;
+        }
+        .menu02 .new{
+            width: 33px;
+            height: 20px;
+            background: url("images/new.png") no-repeat;
+            position: absolute;
+            left: 432px;
+            top: -10px;
+
+        }
+    </style>
+</head>
+<body>
+    <!--    ul.pagenation>(li>a{$})*11-->
+    <ul class="pagenation">
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><span>...</span></li>
+        <li><a href="#">17</a></li>
+        <li><a href="#">18</a></li>
+        <li><a href="#">19</a></li>
+        <li><a href="#">20</a></li>
+        <li><a href="#">下一页</a></li>
+    </ul>
+
+<!--    ul.menu>(li>a{网站})*7-->
+    <ul class="menu">
+        <li><a href="#">网站</a></li>
+        <li><span>|</span></li>
+        <li><a href="#">网站</a></li>
+        <li><span>|</span></li>
+        <li><a href="#">网站</a></li>
+        <li><span>|</span></li>
+        <li><a href="#">网站</a></li>
+        <li><span>|</span></li>
+        <li><a href="#">网站</a></li>
+        <li><span>|</span></li>
+        <li><a href="#">网站</a></li>
+        <li><span>|</span></li>
+        <li><a href="#">网站</a></li>
+    </ul>
+
+    <ul class="menu02">
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">公司简介</a></li>
+        <li><a href="#">公司简介</a></li>
+        <li class="new"></li>
+    </ul>
+</body>
+</html>

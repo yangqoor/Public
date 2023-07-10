@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		
+		var re01 = new RegExp('a','i');
+		var re02 = /a/;
+		var re03 = /\d/;
+
+		var re04 = /\d+/;
+
+		var re05 = /^\d+$/;
+
+		var re06 = /^ab$/i;
+
+
+		var sTr01 = 'abcdefg';
+		var sTr02 = 'cdefgh';
+		var sTr03 = '1234abcd';
+		var sTr04 = '12345678';
+		var sTr05 = 'Ab';
+
+
+		//alert( re02.test(sTr01));
+
+		//alert(re02.test(sTr02));
+
+		//alert(re03.test(sTr03)); // 弹出true
+
+		//alert(re04.test(sTr03));
+
+		//alert(re05.test(sTr03));
+
+		//alert(re05.test(sTr04));
+
+		alert(re06.test(sTr05));
+
+
+
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

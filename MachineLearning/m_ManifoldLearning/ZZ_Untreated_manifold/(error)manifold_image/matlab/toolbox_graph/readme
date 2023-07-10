@@ -1,0 +1,15 @@
+Graph theory toolbox
+Copyright (c) 2007 Gabriel Peyre
+
+This toolbox contains useful functions to deal with graph and triangulation.
+
+The basic representation of a graph of n vertices is the adjacency matrix A where A(i,j)=1 if vertex i is linked to vertex j. A graph often comes with a geometric realization in R^d which an (d,n) matrix where vertex(:,i) is the position of the ith vertex.
+
+A triangulation of m faces and n vertex is represented through:
+* a set of faces which is a (3,m) matrix where face(:,i) are the vertices indexes of the ith face.
+* a set of vertex which is a (d,n) matrix.
+The toolbox contains function to deal more easily with a triangulation data structure, and allows to retrieve vertex and face 1-ring and switch from adjacency to faces.
+
+The graph part of the toolbox contains function to creates synthetic graph and compute shortest path (dijkstra and isomap algorithm).
+
+This toolbox contains a lot of function to deal with spectral theory of triangulation. You can load triangulations from files and then display the resulting mesh. It allows to compute various laplacian operator, and the to compute parameterization using spectral decomposition, harmonic mapping, free boundary harmonic mapping, and isomap. 

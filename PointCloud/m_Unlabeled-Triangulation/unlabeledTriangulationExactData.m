@@ -1,0 +1,37 @@
+        
+        X=rand(4,1);
+        Y=rand(4,1);
+        M=X'*Y+Y'*X;
+        random1=rand(3,1);
+        random2=rand(3,1);
+        focal_point1=6*random1/norm(random1);
+        focal_point2=6*random2/norm(random2);
+        homf1=[focal_point1 ;-1];
+        homf2=[focal_point2 ;-1];
+        f12=homf1*homf2'+homf2*homf1';
+        A1=[eye(3) focal_point1];
+        A2=[eye(3) focal_point2];
+        twidleA1=twidleMatrix(A1);
+        twidleA2=twidleMatrix(A2);
+        u1=A1*X;
+        v1=A1*Y;
+        u2=A2*X;
+        v2=A2*Y;
+        N1=u1*v1'+v1*u1';
+        N2=u2*v2'+v2*u2';
+        vecN1=[N1(1,:) N1(2,(2:end)) N1(3,3) zeros(1,6)]'
+        vecN2=[zeros(1,6) N2(1,:) N2(2,(2:end)) N2(3,3)]'
+        twidleB=[[twidleA1';twidleA2'] vecN1 vecN2]
+        kerB=null(twidleB);
+        vecM=rand(10,1);
+        M1=vecToSymmetric4x4Matrix(vecM)
+        vecM=rand(10,1);
+        M2=vecToSymmetric4x4Matrix(vecM)
+        M1=vecToSymmetric4x4Matrix(kerB(:,1));
+        M2=vecToSymmetric4x4Matrix(kerB(:,2));
+        alpha = sym('alpha');
+        cubicPoly=sym2poly(det(alpha*M1+(1-alpha)*M2));
+        alpha=roots(cubicPoly);
+        alpha=alpha(imag(alpha)==0);
+        F = [];
+        res=zeros(1,length(alpha));

@@ -1,0 +1,23 @@
+function result=connectedG(DD);
+
+% result = connecteddfs (DD)
+%
+% DD sparse graph
+%
+% Returns: result = 1 if connected 0 if not connected
+
+
+N=length(DD);
+DD=(DD~=0).*repmat((1:N)',1,N);
+checked=[1 zeros(1,N-1)]==1;
+oldnnz=0;
+
+i=1;
+while((nnz(checked)<N) & nnz(checked)>oldnnz)
+ oldnnz=nnz(checked);
+ next=any(DD(checked,:),1);
+ checked=or(next,checked);
+end;
+
+result=nnz(checked)==N;
+

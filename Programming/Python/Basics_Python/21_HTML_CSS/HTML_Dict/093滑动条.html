@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>drag</title>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../JS/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.dragbar').draggable({
+				axis:'x',
+
+				containment:'parent',
+				//containment:[0,0,600,0]
+				
+				//设置拖动时候的透明度
+				opacity:0.6,
+
+				drag:function(ev,ui){
+					//console.log(ui.position.left);
+
+					//获取拖动的距离					
+					var nowleft = ui.position.left;
+					$('.progress').css({width:nowleft});
+					$('.slide_count').val(parseInt(nowleft*100/570));
+				}
+
+			});
+		})
+	</script>
+	<style type="text/css">
+		.slidebar_con{
+			width:650px;
+			height:32px;
+			margin:50px auto 0;
+		}
+
+		.slidebar{
+			width:600px;
+			height:30px;
+			border:1px solid #ccc;			
+			float:left;
+			position:relative;
+		}
+
+		.slidebar .dragbar{
+			width:30px;
+			height:30px;
+			background-color:gold;
+			cursor:pointer;
+			position:absolute;
+			left:0;
+			top:0;
+		}
+
+		.slidebar .progress{
+			width:0px;
+			height:30px;
+			background-color:#f0f0f0;
+			position:absolute;
+			left:0;
+			top:0;
+		}
+
+		.slide_count{
+			padding:0;
+			float:right;
+			width:40px;
+			height:30px;
+			border:1px solid #ccc;
+			text-align:center;
+			font-size:16px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="slidebar_con">
+		<div class="slidebar">
+			<div class="progress"></div>
+			<div class="dragbar"></div>
+		</div>
+		<input type="text" name="" value="0" class="slide_count">
+	</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+<style>
+*{margin:0;padding:0;}
+body{font-size:12px;}
+#accordion{width:727px; height:350px; margin:100px auto 0 auto; position:relative; overflow:hidden; border:1px solid #CCC;}
+#accordion ul{list-style:none;}
+#accordion ul li{width:643px;height:350px; position:absolute; background:#FFF;}
+#accordion ul li span{display:block;width:20px; height:350px; float:left; text-align:center; color:#FFF; padding-top:5px; cursor:pointer;}
+#accordion ul li img{display:block; float:right;}
+.bar01{left:0px;}
+.bar02{left:643px;}
+.bar03{left:664px;}
+.bar04{left:685px;}
+.bar05{left:706px;}
+.bar01 span{background:#09E0B5;}
+.bar02 span{background:#3D7FBB;}
+.bar03 span{background:#5CA716;}
+.bar04 span{background:#F28B24;}
+.bar05 span{background:#7C0070;}
+</style>
+
+<script type="text/javascript">
+
+
+		$(function(){
+
+			var $li = $('#accordion li');
+
+			$li.click(function(){
+
+				//alert($(this).html());
+				$(this).animate({'left':21*$(this).index()});
+
+				//点击的li前面的li向左运动到各自的位置
+				$(this).prevAll().each(function(){
+
+					//这里的$(this)指的是循环选择的每个li
+					$(this).animate({'left':21*$(this).index()});
+
+				})
+
+
+				//   第5个li在右边的left值   727-21*1 等同于 727-21*(5-$(this).index())
+				//   第4个li在右边的left值   727-21*2 等同于 727-21*(5-$(this).index())
+				//   第3个li在右边的left值   727-21*3 等同于 727-21*(5-$(this).index())
+
+				$(this).nextAll().each(function(){
+
+					$(this).animate({'left':727-21*(5-$(this).index())});
+
+				})
+
+
+
+			})
+
+
+
+		})
+
+
+</script>
+
+
+<title>手风琴效果</title>
+</head>
+
+<body>
+<div id="accordion">
+	<ul>
+	<li class="bar01"><span>非洲景色01</span><img src="images/001.jpg" /></li>
+    <li class="bar02"><span>非洲景色02</span><img src="images/002.jpg" /></li>
+    <li class="bar03"><span>非洲景色03</span><img src="images/003.jpg" /></li>
+    <li class="bar04"><span>非洲景色04</span><img src="images/004.jpg" /></li>
+    <li class="bar05"><span>非洲景色05</span><img src="images/005.jpg" /></li>
+	</ul>
+</div>
+</body>
+</html>

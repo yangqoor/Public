@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="226"
+   name=""
+   committed-date="2006-11-14T01:06:54.305527Z"
+   url="https://svn.cis.upenn.edu/svnroot/lksmlg/common/algorithms/fastmvu/conformal3"
+   last-author="lksmlg"
+   kind="dir"
+   revision="226"/>
+<entry
+   committed-rev="226"
+   name="sdecca2.m"
+   text-time="2006-11-13T22:28:22.000000Z"
+   committed-date="2006-11-14T01:06:54.305527Z"
+   checksum="e1b9670f12167ab3c395a92031768eab"
+   last-author="lksmlg"
+   kind="file"/>
+<entry
+   name="mexCCACollectData.c"
+   kind="file"
+   deleted="true"
+   revision="229"/>
+<entry
+   committed-rev="226"
+   name="mexCCACollectData2.c"
+   text-time="2006-11-13T22:28:12.000000Z"
+   committed-date="2006-11-14T01:06:54.305527Z"
+   checksum="f904cf4e4464f8ec13eaa23d39853279"
+   last-author="lksmlg"
+   kind="file"/>
+<entry
+   committed-rev="226"
+   name="sparse_nn.m"
+   text-time="2006-11-13T22:28:22.000000Z"
+   committed-date="2006-11-14T01:06:54.305527Z"
+   checksum="f5c31cce9091758812e4befe04ebec50"
+   last-author="lksmlg"
+   kind="file"
+   prop-time="2006-11-13T22:30:58.000000Z"/>
+</wc-entries>

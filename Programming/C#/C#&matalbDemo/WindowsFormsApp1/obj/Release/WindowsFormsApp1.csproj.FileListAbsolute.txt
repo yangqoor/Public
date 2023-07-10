@@ -1,0 +1,10 @@
+D:\vs2017工程\matalbDemo\WindowsFormsApp1\bin\Release\WindowsFormsApp1.exe
+D:\vs2017工程\matalbDemo\WindowsFormsApp1\bin\Release\WindowsFormsApp1.pdb
+D:\vs2017工程\matalbDemo\WindowsFormsApp1\bin\Release\MyMatlabFunctionDemo.dll
+D:\vs2017工程\matalbDemo\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Form1.resources
+D:\vs2017工程\matalbDemo\WindowsFormsApp1\obj\Release\WindowsFormsApp1.Properties.Resources.resources
+D:\vs2017工程\matalbDemo\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.GenerateResource.Cache
+D:\vs2017工程\matalbDemo\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\vs2017工程\matalbDemo\WindowsFormsApp1\obj\Release\WindowsFormsApp1.exe
+D:\vs2017工程\matalbDemo\WindowsFormsApp1\obj\Release\WindowsFormsApp1.pdb
+D:\vs2017工程\matalbDemo\WindowsFormsApp1\obj\Release\WindowsFormsApp1.csprojResolveAssemblyReference.cache

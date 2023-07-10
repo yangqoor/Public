@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementById('div1');
+
+			function fnTimeleft(){
+				//实际开发中需要读取后台的时间，可以通过ajax来读取
+				var sNow = new Date();
+
+				// 未来时间：4月30日晚24点
+				var sFuture = new Date(2017,3,30,24,0,0);
+
+				//计算还有多少秒
+				var sLeft = parseInt((sFuture-sNow)/1000);
+
+				//计算还剩多少天
+				var iDays = parseInt(sLeft/86400);
+
+				// 计算还剩多少小时
+				var iHours  = parseInt((sLeft%86400)/3600);
+
+				// 计算还剩多少分
+				var iMinutes = parseInt(((sLeft%86400)%3600)/60);
+
+				// 计算还剩多少秒
+				var iSeconds = sLeft%60;
+
+				var sTr = '距离5月1日还剩：'+ iDays + '天' + fnTodou(iHours) + '时' + fnTodou(iMinutes) + '分'+ fnTodou(iSeconds) + '秒';
+
+
+				oDiv.innerHTML = sTr;
+			}
+
+			fnTimeleft();
+			setInterval(fnTimeleft,1000);
+
+
+			function fnTodou(n){
+
+				if(n<10)
+				{
+					return '0'+n;
+				}
+				else{
+					return n;
+				}
+			}
+
+
+
+		}
+
+
+	</script>
+</head>
+<style type="text/css">
+	div{
+		text-align:center;
+		font-size:30px;
+		color:pink;
+	}
+</style>
+<body>
+	<div id="div1"></div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../JS/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
+	<script type="text/javascript">
+		$(function(){
+
+			$('#btn01').click(function(){
+				
+				//$('#modal04').modal('show');
+				$('#modal04').modal({
+					show:true,
+					backdrop:'static'
+
+				});
+
+			})
+
+			$('#shutoff').click(function(){
+				$('#modal04').modal('hide');
+			})
+
+		})
+
+
+
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<button class="btn btn-primary" data-toggle="modal" data-target="#modal01">弹出大模态框</button>
+			<button class="btn btn-primary" data-toggle="modal" data-target="#modal02">弹出中等模态框</button>
+			<button class="btn btn-primary" data-toggle="modal" data-target="#modal03">弹出小的模态框</button>
+			<button class="btn btn-primary" id="btn01">js控制的弹框</button>
+		</div>
+	</div>
+	
+	<!-- .modal>.modal-dialog>.modal-content>.modal-header+.modal-body+.modal-footer -->
+
+	<div class="modal fade" id="modal01">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					提示弹框
+				</div>
+
+				<div class="modal-body">
+					<p>文字内容</p>
+				</div>
+
+				<div class="modal-footer">
+					<button class="btn btn-primary">确定</button>
+					<button class="btn btn-default" data-dismiss = "modal">取消</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal02">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					提示弹框
+				</div>
+
+				<div class="modal-body">
+					<p>文字内容</p>
+				</div>
+
+				<div class="modal-footer">
+					<button class="btn btn-primary">确定</button>
+					<button class="btn btn-default" data-dismiss = "modal">取消</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal03">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					提示弹框
+				</div>
+
+				<div class="modal-body">
+					<p>文字内容</p>
+				</div>
+
+				<div class="modal-footer">
+					<button class="btn btn-primary">确定</button>
+					<button class="btn btn-default" data-dismiss = "modal">取消</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="modal04">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					提示弹框
+				</div>
+
+				<div class="modal-body">
+					<p>js控制的弹框</p>
+				</div>
+
+				<div class="modal-footer">
+					<button class="btn btn-primary">确定</button>
+					<button class="btn btn-default" id="shutoff">取消</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

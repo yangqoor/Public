@@ -1,0 +1,6 @@
+D:\★Code\Visual_Studio\C#\Hello_World\Hello_World\bin\Debug\Hello_World.exe.config
+D:\★Code\Visual_Studio\C#\Hello_World\Hello_World\bin\Debug\Hello_World.exe
+D:\★Code\Visual_Studio\C#\Hello_World\Hello_World\bin\Debug\Hello_World.pdb
+D:\★Code\Visual_Studio\C#\Hello_World\Hello_World\obj\Debug\Hello_World.csprojResolveAssemblyReference.cache
+D:\★Code\Visual_Studio\C#\Hello_World\Hello_World\obj\Debug\Hello_World.exe
+D:\★Code\Visual_Studio\C#\Hello_World\Hello_World\obj\Debug\Hello_World.pdb

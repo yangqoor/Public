@@ -1,0 +1,14 @@
+S-ISOMAP
+Description: S-ISOMAP is a manifold learning algorithm, which is a supervised variant of ISOMAP.
+
+Reference:   X. Geng, D.-C. Zhan, and Z.-H. Zhou. Supervised nonlinear dimensionality reduction for visualization and classification. IEEE Transactions on Systems, Man, and Cybernetics - Part B: Cybernetics, 2005, vol.35, no.6, pp.1098-1107.
+
+ATTN:        This package is free for academic usage. You can run it at your own risk. For other purposes, please contact Prof. Zhi-Hua Zhou (zhouzh@nju.edu.cn).
+
+Requirement: This package was developed with MATLAB.
+
+Data format: Refer the readme file in the package.
+
+ATTN2:       This package was developed by Mr. Xin Geng (gengx@lamda.nju.edu.cn). There is a ReadMe file roughly explaining the codes. But for any problem concerning the code, please feel free to contact Mr. Geng.
+
+Download:   [code] (32Kb)

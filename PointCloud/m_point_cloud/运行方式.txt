@@ -1,0 +1,1 @@
+打开point_cloud.m，运行，使用gui界面操作

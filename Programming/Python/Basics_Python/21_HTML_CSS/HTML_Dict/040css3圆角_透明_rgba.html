@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圆角</title>
+    <style type="text/css">
+        body{
+            background: url("images/news_list.jpg");
+        }
+        .box{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 3px solid #000000;
+            background-color: gold;
+            margin: 50px auto 0;
+
+            border-top-left-radius: 30px 60px;
+            border-top-right-radius: 100px;
+        }
+        .box01{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 3px solid #000000;
+            background-color: gold;
+            margin: 50px auto 0;
+
+            border-bottom-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+        .box02{
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            border: 3px solid #000000;
+            background-color: gold;
+            margin: 50px auto 0;
+
+            border-radius: 50%;
+        }
+
+        .box03{
+            width: 300px;
+            height: 100px;
+            background-color: #000000;
+            color: #ffffff;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+            /*盒子整体透明，包括文字*/
+            opacity: 0.3;
+            /*兼容ie*/
+            filter:alpha(opacity=30);
+        }
+        .box04{
+            width: 300px;
+            height: 100px;
+            /*只修改背景的透明度*/
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #ffffff;
+            font-size: 20px;
+            text-align: center;
+            line-height: 100px;
+            margin: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box01"></div>
+    <div class="box02"></div>
+    <div class="box03">这是一个div</div>
+    <div class="box04">这是一个div</div>
+</body>
+</html>

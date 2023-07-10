@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>层级菜单</title>
+	
+	
+	<style type="text/css">
+		body{
+			font-family:'Microsoft Yahei';
+		}
+		body,ul{
+			margin:0px;
+			padding:0px;
+		}
+		
+		ul{list-style:none;}
+
+
+		.menu{
+			width:200px;
+			margin:20px auto 0;
+		}
+
+		.menu .level1,.menu li ul a{
+			display:block;
+			width:200px;
+			height:30px;
+			line-height:30px;
+			text-decoration:none;
+			background-color:#3366cc;
+			color:#fff;
+			font-size:16px;
+			text-indent:10px;			
+		}
+
+		.menu .level1{
+			border-bottom:1px solid #afc6f6;
+			
+		}
+
+		.menu li ul a{
+			font-size:14px;
+			text-indent:20px;
+			background-color:#7aa1ef;
+					
+		}
+
+		.menu li ul li{
+			border-bottom:1px solid #afc6f6;
+		}
+
+		
+
+		.menu li ul{
+			display:none;
+		}
+
+		.menu li ul.current{
+			display:block;
+		}
+
+		.menu li ul li a:hover{
+			background-color:#f6b544;
+		}
+
+
+	</style>
+	
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+
+	<script type="text/javascript">
+		
+		$(function(){
+
+			$('.level1').click(function(){
+
+				//当前点击的元素紧挨的同辈元素向下展开，再跳到此元素的父级(li),
+				// 再跳到此父级的其他的同辈元素(li),选择其他同辈元素(li)的子元素ul，然后将它向上收起。
+
+				// 通过stop() 可以修正反复点击导致的持续动画的问题
+				$(this).next().stop().slideToggle().parent().siblings().children('ul').slideUp();
+
+
+
+
+			})
+
+		})
+
+	</script>
+</head>
+<body>
+	<ul class="menu">
+		<li>
+			<a href="#" class="level1">水果</a>
+			<ul class="current">
+				<li><a href="#">苹果</a></li>
+				<li><a href="#">梨子</a></li>
+				<li><a href="#">葡萄</a></li>
+				<li><a href="#">火龙果</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#" class="level1">海鲜</a>
+			<ul>
+				<li><a href="#">蛏子</a></li>
+				<li><a href="#">扇贝</a></li>
+				<li><a href="#">龙虾</a></li>
+				<li><a href="#">象拔蚌</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#" class="level1">肉类</a>
+			<ul>
+				<li><a href="#">内蒙古羊肉</a></li>
+				<li><a href="#">进口牛肉</a></li>
+				<li><a href="#">野猪肉</a></li>				
+			</ul>
+		</li>
+		<li>
+			<a href="#" class="level1">蔬菜</a>
+			<ul>
+				<li><a href="#">娃娃菜</a></li>
+				<li><a href="#">西红柿</a></li>
+				<li><a href="#">西芹</a></li>
+				<li><a href="#">胡萝卜</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#" class="level1">速冻</a>
+			<ul>
+				<li><a href="#">冰淇淋</a></li>
+				<li><a href="#">湾仔码头</a></li>
+				<li><a href="#">海参</a></li>
+				<li><a href="#">牛肉丸</a></li>
+			</ul>
+		</li>
+		
+	</ul>
+</body>
+</html>

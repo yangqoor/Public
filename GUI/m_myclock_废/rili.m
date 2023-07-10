@@ -1,0 +1,33 @@
+function f=rili(ti)
+global h3
+a=calendar(ti(1),ti(2));
+for i=1:6
+    for j=1:7
+        if a(i,j)==0
+     h(i*7+j)=uicontrol(gcf,'Style','text','Units','normalized',...
+         'position',[0.45+0.06*j 0.65-0.08*i 0.06 0.08],'fontsize',13,...
+         'fontweight','bold','back',[0.6 0.8 0.1]);
+        else
+   h(i*7+j)=uicontrol(gcf,'Style','text','string',a(i,j),'Units','normalized',...
+         'position',[0.45+0.06*j 0.65-0.08*i 0.06 0.08],'fontsize',13,...
+         'fontweight','bold','back',[0.6 0.8 0.1]);
+         end
+         if a(i,j)==ti(3)
+             set(h(i*7+j),'back',[0.5 0.2 0.5]);
+         end
+    end
+end
+ h2=uicontrol(gcf,'Style','text','string','日  一  二  三  四  五  六',...
+     'Units','normalized', 'position',[0.51 0.65 0.42 0.1],'fontsize',16,...
+     'fontweight','bold','back',[0.2 0.8 0.2]);
+for m=1:3
+    h3(m)=uicontrol(gcf,'Style','text','string',num2str(ti(m)), 'Units','normalized', 'position',...
+    [0.39+0.13*m 0.78 0.09 0.08],'back',[0.9 0.8 0.8],'fontsize',13, 'fontweight','bold');
+end
+uicontrol(gcf,'Style','text','string','年', 'Units','normalized', 'position',...
+    [0.61 0.78 0.04 0.08],'back',[0.9 0.8 0.8],'fontsize',13, 'fontweight','bold');
+uicontrol(gcf,'Style','text','string','月', 'Units','normalized', 'position',...
+    [0.73 0.78 0.05 0.08],'back',[0.9 0.8 0.8],'fontsize',13, 'fontweight','bold');
+uicontrol(gcf,'Style','text','string','日', 'Units','normalized', 'position',...
+    [0.86 0.78 0.04 0.08],'back',[0.9 0.8 0.8],'fontsize',13, 'fontweight','bold');
+end

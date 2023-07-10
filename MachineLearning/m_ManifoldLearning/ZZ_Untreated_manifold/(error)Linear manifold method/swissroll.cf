@@ -1,0 +1,14 @@
+object g1=swissroll
+ include swissroll.speck
+eval poly off
+eval points on
+eval bgcolor 1 1 1
+eval psize 1e4
+eval clip - 1e8
+eval slum 10
+eval lum const 1
+eval ptsize 1 4
+eval cmap points3d.cmap
+eval color lab
+eval censize 0
+eval jump 0.880241 137.711 -0.0711837  -89.6331 94.7432 -93.6986  0.999994

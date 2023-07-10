@@ -1,0 +1,39 @@
+% Load parameters
+load ParaEpi.mat
+load GeneralPara.mat
+load ColorPara.mat
+
+% paramters:camera vectors
+% cam_obs_vecs = cell(total_frame_num, 1);
+cam_est_vecs = cell(total_frame_num, 1);
+
+% parameters: depth vectors
+d_depth_coarse_vecs = cell(total_frame_num, 1);
+depth_coarse_vecs = cell(total_frame_num, 1);
+depth_fine_vecs = cell(total_frame_num, 1);
+
+% Set initial frame info
+cam_obs_vecs = fun_ReadCamVecFromFile(FilePath, ...
+    CamInfo, ...
+    total_frame_num);
+[d_depth_coarse_vecs{1,1}, ...
+    depth_fine_vecs{1,1}, ...
+    corres_mat, ~] = fun_InitDepthVec(FilePath, ...
+    CamInfo, ...
+    ProInfo, ...
+    ParaSet);
+cam_est_vecmat = fun_EstCamImage(depth_fine_vecs{1,1}, ...
+    ParaTable, ...
+    CamInfo, ...
+    ProInfo, ...
+    EpiLine, ...
+    ParaSet);
+envir_light = 15;
+cam_est_vecs{1,1} = sum(cam_est_vecmat,2) + envir_light;
+
+% Iteration part
+error_value = zeros(total_frame_num, max_iter_num);
+cam_obs_vecs{start_frame,1} = cam_obs_vecs{1,1};
+cam_est_vecs{start_frame,1} = cam_est_vecs{1,1};
+d_depth_coarse_vecs{start_frame,1} = d_depth_coarse_vecs{start_frame,1};
+depth_fine_vecs{start_frame,1} = depth_fine_vecs{1,1};

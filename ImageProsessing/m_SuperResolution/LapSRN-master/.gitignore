@@ -1,0 +1,6 @@
+datasets/
+imdb/
+results/
+models/
+*.jpg
+*.png

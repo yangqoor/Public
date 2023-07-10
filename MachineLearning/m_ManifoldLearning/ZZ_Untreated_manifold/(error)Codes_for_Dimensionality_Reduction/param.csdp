@@ -1,0 +1,16 @@
+axtol=1.000000e-08
+atytol=1.000000e-08
+objtol=1.000000e-08
+pinftol=1.000000e+08
+dinftol=1.000000e+08
+maxiter=100
+minstepfrac=9.000000e-01
+maxstepfrac=9.700000e-01
+minstepp=1.000000e-08
+minstepd=1.000000e-08
+usexzgap=1
+tweakgap=0
+affine=0
+printlevel= 1
+printlevel=1
+printlevel=0

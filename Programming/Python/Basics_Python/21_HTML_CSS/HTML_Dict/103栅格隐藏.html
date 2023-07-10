@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>bootstrap文档</title>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="../JS/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
+	<style type="text/css">		
+		div[class*='col-']{
+			background-color:gold;
+			border:1px solid #000;
+			height:50px;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+		<h2>栅格隐藏</h2>
+		</div>
+	</div>
+
+	<div class="container">		
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6">1</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">2</div>
+			<div class="col-lg-3 col-md-4 col-sm-6">3</div>
+			<div class="col-lg-3 col-md-4 hidden-md col-sm-6 hidden-xs">4</div>
+		</div>	
+	</div>
+
+	
+</body>
+</html>

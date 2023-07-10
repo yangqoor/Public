@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>运算语句</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var oIn01 = document.getElementById('input01');
+            var oIn02 = document.getElementById('input02');
+            var oBtn01 = document.getElementById('btn01');
+            var oBtn02 = document.getElementById('btn02');
+            var oBtn03 = document.getElementById('btn03');
+            oBtn01.onclick = function () {
+                var iVal01 = parseInt(oIn01.value);
+                var iVal02 = parseInt(oIn02.value);
+                alert(iVal01 + iVal02)
+            };
+            oBtn02.onclick = function () {
+                var iVal01 = parseInt(oIn01.value);
+                var iVal02 = parseInt(oIn02.value);
+                alert(iVal01 % iVal02)
+            };
+            oBtn03.onclick = function () {
+                var iVal01 = oIn01.value;
+                var iVal02 = oIn02.value;
+                // 相同类型的变量才能用"=="
+                if (iVal01 === iVal02)
+                {
+                    alert("相等");
+                }
+                else
+                {
+                    alert("不相等");
+                }
+
+            };
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="input01"> &nbsp;&nbsp;&nbsp;
+    <input type="text" id="input02">
+    <input type="button" value="求和" id="btn01">
+    <input type="button" value="求余" id="btn02">
+    <input type="button" value="判等" id="btn03">
+
+</body>
+</html>

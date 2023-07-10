@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>块元素-内联元素-内联块元素</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+        }
+
+        .block1{
+            background-color: gold;
+            /*如果没有设置宽度，默认的宽度为父级宽度100%*/
+            width: 100px;
+            height: 50px;
+        }
+
+        .block2{
+            background-color: green;
+            width: 100px;
+            height: 50px;
+        }
+
+        .inline1{
+            width: 500px;
+            height: 200px;
+            border: 1px solid #000;
+            margin: 50px auto 0;
+            /*将内联元素的父级设置font-size为0，内联元素自身再设置font-size*/
+            /*解决内联元素间隙*/
+            font-size: 0;
+        }
+
+        .inline1 a{
+            background-color: gold;
+            /*内联元素不支持宽高、margin和padding的上下*/
+            width: 300px;
+            /*margin: 20px;*/
+            /*padding的上下只是拓宽了背景*/
+            padding: 0 20px;
+            font-size: 16px;
+        }
+        .inline2{
+            width: 500px;
+            height: 40px;
+            border: 1px solid #000;
+            margin: 50px auto 0;
+            text-align: center;
+        }
+
+        /*内联块元素支持所有的样式*/
+        .inline-block{
+            width: 500px;
+            height: 200px;
+            border: 1px solid #000;
+            margin: 50px auto 0;
+            font-size: 0;
+        }
+
+        .inline-block a{
+            background-color: gold;
+            width: 100px;
+            height: 50px;
+            font-size: 16px;
+            margin: 10px;
+            padding: 10px;
+            /*none 元素隐藏且不占位置
+            block 元素以块元素显示
+            inline 元素以内联元素显示
+            inline-block 元素以内联块元素显示*/
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="block1">div块元素</div>
+    <p class="block2">p元素</p>
+    <div class="inline1">
+        <div class="block1"></div>
+        <div class="block2"></div>
+        <a href="#">链接1</a>
+        <a href="#">链接2</a>
+        <a href="#">链接3</a>
+        <a href="#">链接4</a>
+        <a href="#">链接5</a>
+   </div>
+    <div class="inline2">
+        <a href="#">链接文字1</a>
+    </div>
+    <div class="inline-block">
+        <a href="#">链接1</a>
+        <a href="#">链接2</a>
+        <a href="#">链接3</a>
+        <a href="#">链接4</a>
+        <a href="#">链接5</a>
+    </div>
+</body>
+</html>

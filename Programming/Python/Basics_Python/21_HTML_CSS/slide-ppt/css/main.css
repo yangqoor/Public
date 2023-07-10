@@ -1,0 +1,435 @@
+body{
+	font-family:'Microsoft Yahei';
+	font-size:12px;
+}
+
+
+
+/*  页面顶部样式   */
+.header_con{
+	height:29px;
+	background-color:#f7f7f7;
+	border-bottom:1px solid #ddd;
+}
+
+.header{
+	width:1200px;
+	height:29px;
+	margin:0 auto;
+}
+
+.welcome,.user_login_btn,.user_info,.user_link{
+	height:29px;
+	line-height:29px;
+	color:#666;
+}
+
+.user_login_btn a,.user_link a{
+	color:#666;
+}
+
+.user_login_btn a:hover,.user_link a:hover{
+	color:#ff8800;
+}
+
+.user_login_btn span,.user_link span{
+	color:#cecece;
+	padding:0 12px;
+}
+
+.user_info{
+	display:none;
+}
+
+.user_info em{
+	color:#ff8800;
+}
+
+
+.center_con{
+	width:1200px;
+	height:115px;
+	margin:0 auto;
+}
+
+.logo{
+	width:151px;
+	height:59px;
+	margin:29px 0 0 17px;
+}
+
+.search_con{
+	width:616px;
+	height:38px;
+	border:1px solid #37ab40;
+	margin:34px 0 0 124px;
+	background:url(../images/icons.png) 10px 10px no-repeat;
+}
+
+.input_txt{
+	width:480px;
+	height:38px;
+	border:0px;
+	margin-left:36px;
+	outline:none;
+}
+
+.input_sub{
+	width:100px;
+	height:38px;
+	background-color:#37ab40;
+	/* 去掉设置尺寸后产生的边框 */
+	border:0px;
+	font-size:14px;
+	color:#fff;
+
+	/*  设置鼠标悬停时鼠标指针的形状为手型  */
+	cursor:pointer;
+}
+
+
+.chart_con{
+	width:200px;
+	height:40px;
+	margin-top:34px;
+}
+
+.chart_con a{
+	width:158px;
+	height:38px;
+	border:1px solid #ddd;
+	line-height:38px;
+	text-indent:56px;
+	font-size:14px;
+	color:#37ab40;
+	background:url(../images/icons.png) 12px -42px no-repeat #f7f7f7;
+}
+
+.chart_con span{
+	width:40px;
+	height:40px;
+	background-color:#ff8800;
+	text-align:center;
+	line-height:40px;
+	font-size:18px;
+	color:#fff;
+	font-weight:bold;
+}
+
+
+.main_menu_con{
+	height:40px;
+	border-bottom:2px solid #37ab40;
+	
+}
+
+
+.main_menu{
+	width:1200px;
+	height:40px;
+	margin:0 auto;
+
+}
+
+.main_menu h2{
+	width:200px;
+	height:40px;
+	background-color:#37ab40;
+	font:normal 14px/40px 'Microsoft Yahei';
+	color:#fff;
+	text-align:center;
+}
+
+.main_menu ul{
+	overflow: hidden;
+}
+
+.main_menu li{
+	float:left;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+}
+
+.main_menu li a{
+	padding:0 22px;
+	border-left:1px solid #ddd;
+	font-size:14px;
+	color:#666;
+	margin-left:-1px;
+}
+
+.main_menu li a:hover{
+	color:#ff8800;
+}
+
+
+.center_con2{
+	width:1200px;
+	height:270px;
+	
+	margin:0 auto;
+}
+
+.sub_menu{
+	width:200px;
+	height:270px;
+	
+}
+
+.sub_menu li{
+	width:198px;
+	height:44px;
+	border:1px solid #eee;
+	border-top:0px;
+	background:url(../images/icons.png) 177px -385px no-repeat;
+}
+
+.sub_menu li a{
+	display:block;
+	height:44px;
+	line-height:44px;
+	font-size:14px;
+	color:#333;
+	text-indent:71px;
+	background:url(../images/icons.png) 32px -90px no-repeat;
+
+}
+
+.sub_menu li .icon02{
+	background-position:30px -140px;
+}
+
+.sub_menu li .icon03{
+	background-position:32px -190px;
+}
+
+.sub_menu li .icon04{
+	background-position:34px -240px;
+}
+
+.sub_menu li .icon05{
+	background-position:32px -290px;
+}
+
+.sub_menu li .icon06{
+	background-position:32px -340px;
+}
+
+
+.slide{
+	width:760px;
+	height:270px;
+	background-color:gold;
+	position:relative;
+	overflow:hidden;
+}
+
+
+.slide_list{
+	position:absolute;
+	left:0;
+	top:0;
+	width:760px;
+	height:270px;
+}
+
+
+
+.slide_list li{
+	width:760px;
+	height:270px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.prev{
+	position:absolute;
+	left:11px;
+	top:122px;
+	width:15px;
+	height:23px;
+	background:url(../images/icons.png) -1px -450px no-repeat;
+	cursor:pointer;
+}
+
+.next{
+	position:absolute;
+	right:11px;
+	top:122px;
+	width:15px;
+	height:23px;
+	background:url(../images/icons.png) -1px -500px no-repeat;
+	cursor:pointer;
+}
+
+
+
+.points{
+	position:absolute;
+	left:0;
+	bottom:9px;
+	width:100%;
+	height:11px;
+	font-size:0;
+	text-align:center;
+}
+
+.points li{
+	display:inline-block;
+	width:11px;
+	height:11px;
+	background-color:#9f9f9f;
+	margin:0 5px;
+	border-radius:50%;
+	cursor:pointer;
+}
+
+.points .active{
+	background-color:#cecece;
+}
+
+
+
+
+.adv{
+	width:240px;
+	height:270px;
+	background-color: pink;
+}
+
+
+/* 解决图片底部出现3像素空白的bug */
+
+.adv img{
+	display:block;
+}
+
+
+.common_model{
+	width:1200px;
+	height:335px;
+	margin:21px auto 0;
+	
+}
+
+.common_title{
+	height:33px;
+	border-bottom:2px solid #42ad46;
+}
+
+.common_title h3{
+	float:left;
+	height:33px;
+	font:bold 16px/33px 'Microsoft Yahei';
+	color:#37ab40;
+
+}
+
+.common_title ul{
+	float:left;
+	margin-left:22px;
+
+}
+
+.common_title ul li{
+	float:left;
+	height:33px;
+	margin-left:15px;
+}
+
+.common_title ul li a,.common_title ul li span{
+	line-height:33px;
+	color:#666;
+}
+
+.common_title ul li a:hover{
+	color:#ff8800;
+}
+
+.common_title .more{
+	height:33px;
+	font:normal 12px/33px 'Microsoft Yahei';
+	color:#666;
+}
+
+.common_title .more:hover{
+	color:#ff8800;
+}
+
+.common_banner{
+	width:200px;
+	height:300px;
+}
+
+
+.common_goods_list{
+	width:1000px;
+	height:300px;
+}
+
+.common_goods_list li{
+	float:left;
+	width:249px;
+	height:299px;
+	border-right:1px solid #ededed;
+	border-bottom:1px solid #ededed;
+}
+
+.common_goods_list li h4{
+	height:52px;
+	font:normal 14px/52px 'Microsoft Yahei';
+	color:#666;
+	text-align:center;
+}
+
+.common_goods_list li a{
+	display:block;
+	width:180px;
+	height:180px;
+	margin:0 auto;
+}
+
+.common_goods_list li div{
+	text-align:center;
+	font:bold 20px/40px 'Microsoft Yahei';
+	color:#c40000;
+	margin-top:22px;
+}
+
+
+.footer{
+	margin-top:30px;
+	margin-bottom:34px;
+	border-top:2px solid #4ab14e;
+}
+
+.footer_links{
+	text-align:center;
+	margin-top:38px;
+}
+
+.footer_links a,.footer_links span{
+	color:#4e4e4e;
+	font-size:12px;
+
+}
+
+.footer_links a:hover{
+	color:#ff8800
+}
+
+.footer_links span{
+	margin:0 5px;
+}
+
+.copyright{
+	text-align:center;
+	font-size:12px;
+	color:#4e4e4e;
+	line-height:26px;
+	margin-top:9px 
+}
+
+

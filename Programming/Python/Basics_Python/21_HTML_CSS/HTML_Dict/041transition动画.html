@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition动画</title>
+    <style type="text/css">
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            /*动画属性 动画时间 效果 延迟*/
+            /*transition: width 500ms ease, height 500ms ease 1s,background-color 500ms ease 2s;*/
+            /*transition: width 500ms ease, height 500ms ease,background-color 500ms ease;*/
+            transition: all 1s ease;
+        }
+        .box:hover{
+            width: 600px;
+            height: 500px;
+            background-color: red;
+        }
+
+        .pic_con{
+            width: 299px;
+            height: 218px;
+            margin: 50px auto 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .pic_info{
+            position: absolute;
+            left: 0;
+            top: 218px;
+            width: 299px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #ffffff;
+            transition: all 500ms ease;
+        }
+        .pic_con:hover .pic_info{
+            top: 118px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="pic_con">
+        <img src="images/news_list.jpg" alt="新闻列表">
+        <div class="pic_info">
+            <h3>新闻列表</h3>
+            <p>新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻新闻</p>
+        </div>
+    </div>
+</body>
+</html>

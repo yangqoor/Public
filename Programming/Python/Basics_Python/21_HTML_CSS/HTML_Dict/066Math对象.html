@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		
+		var iPi = Math.PI;		
+
+		var arr = [];
+
+		for (var i=0;i<100;i++)
+		{	
+			// Math.random 只能返回从0到1之间的随机数，不包括0，也不包括1
+			var iNum = Math.random();
+			arr.push(iNum);
+		}
+		//alert(arr);
+
+		console.log(arr);
+
+		//向下取整，去掉小数部分
+		alert(Math.floor(5.6)); // 弹出5
+
+		//向上取整，去掉小数部分，整体加1
+		alert(Math.ceil(5.2))
+
+		// 10 - 20 之间的随机数
+		var iN01 = 10;
+		var iN02 = 20;
+		var arr2 = [];
+
+		for(var i=0;i<40;i++)
+		{
+			// 生成从10到20的随机数
+			var iNum02 = Math.floor((iN02-iN01+1)*Math.random()) + iN01;
+			arr2.push(iNum02);
+		}
+		console.log(arr2);
+
+		
+
+		
+
+
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

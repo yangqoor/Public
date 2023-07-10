@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 15px">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box01{
+            /*font-size最小12px*/
+            font-size: 12px;
+            width: 20em;
+            height: 10em;
+            background: lightblue;
+        }
+        .box02{
+            /*font-size最小12px*/
+            font-size: 20px;
+            width: 10em;
+            height: 10em;
+            background: lightgreen;
+        }
+        .p_box{
+            font-size: 20px;
+            /*首行缩进2字符*/
+            text-indent: 2em;
+        }
+
+        .box03{
+            font-size: 12px;
+            /*rem参照html的font-size*/
+            width: 20rem;
+            height: 10rem;
+            background: lightblue;
+            margin: 1rem;
+        }
+        .box04{
+            font-size: 20px;
+            width: 10rem;
+            height: 10rem;
+            background: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box01"></div>
+    <div class="box02"></div>
+    <p class="p_box">
+        首先了解em单位，em单位是参照元素自身的文字大小来设置尺寸，rem指的是参照根节点的文字大小，根节点指的是html标签，设置html标签的文字大小，其他的元素相关尺寸设置用rem，这样，所有元素都有了统一的参照标准，改变html文字的大小，就会改变所有元素用rem设置的尺寸大小。
+    </p>
+
+    <div class="box03"></div>
+    <div class="box04"></div>
+</body>
+</html>

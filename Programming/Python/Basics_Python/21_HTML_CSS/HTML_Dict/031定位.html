@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style type="text/css">
+        .con{
+            width: 400px;
+            height: 400px;
+            border: 1px solid #000;
+            margin: 50px auto 0;
+            position: relative;
+        }
+
+        .box01,.box02,.box03{
+            width: 300px;
+            height: 100px;
+            margin: 10px;
+        }
+        .box01{
+            background-color: green;
+            /*定位配合偏移一块儿使用*/
+            position: relative;/*相对定位,文档流的位置保留*/
+            left: 30px;
+            top: 30px;
+
+        }
+        .box02{
+            background-color: gold;
+            /*相对于定位了的父级  直到body  绝对定位*/
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+        .box03{
+            background-color: pink;
+            position: fixed;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box01"></div>
+        <div class="box02"></div>
+        <div class="box03"></div>
+    </div>
+</body>
+</html>

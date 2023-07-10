@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>无缝滚动</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+
+		.list_con{
+			
+			width:1000px;
+			height:200px;
+			border:1px solid #000;
+			margin:10px auto 0;
+			background-color:#f0f0f0;
+			position:relative;
+			overflow:hidden;
+		}
+
+		.list_con ul{
+			list-style:none;
+			width:2000px;
+			height:200px;
+			position:absolute;
+			left:0;
+			top:0;
+		}
+
+
+		.list_con li{
+			width:180px;
+			height:180px;
+			float:left;
+			margin:10px;
+		}
+
+		.btns_con{
+			width:1000px;
+			height:30px;
+			margin:50px auto 0;
+			position:relative;
+		}
+
+		.left,.right{
+			width:30px;
+			height:30px;
+			background-color:gold;
+			position:absolute;
+			left:-40px;
+			top:124px;
+			font-size:30px;
+			line-height:30px;
+			color:#000;
+			font-family: 'Arial';
+			text-align:center;
+			cursor:pointer;
+			border-radius:15px;
+			opacity:0.5;
+		}
+
+		.right{
+			left:1010px;			
+			top:124px;			
+		}
+
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementById('slide');
+			var oBtn01 = document.getElementById('btn01');
+			var oBtn02 = document.getElementById('btn02');
+
+
+			//通过标签获取元素，获取的是选择集，加上下标才能获取到元素			
+			var oUl = oDiv.getElementsByTagName('ul')[0];
+			var iLeft = 0;
+			var iSpeed = -2;
+			var iNowspeed = 0;
+
+			//将ul里面的内容复制一份，整个ul里面就包含了10个li
+			oUl.innerHTML = oUl.innerHTML + oUl.innerHTML;	
+
+			function moving(){
+				iLeft += iSpeed;
+
+				// 当ul向左滚动到第5个li时，瞬间将整个ul拉回到初始位置
+				if(iLeft<-1000)
+				{
+					iLeft=0;
+				}
+				//当ul在起始位置往右滚动时候，瞬间将整个ul拉回到往左的第5个li的位置
+				if(iLeft>0)
+				{
+					iLeft = -1000;
+				}
+
+				oUl.style.left = iLeft + 'px';
+			}
+
+			var timer = setInterval(moving,30);
+
+
+			oBtn01.onclick = function(){
+				iSpeed = -2;
+			}
+
+			oBtn02.onclick = function(){
+				iSpeed = 2;
+			}
+			// 当鼠标移入的时候
+			oDiv.onmouseover = function(){
+				iNowspeed = iSpeed;
+				iSpeed = 0;
+			}
+		    // 当鼠标移出的时候
+			oDiv.onmouseout = function(){
+				iSpeed = iNowspeed;
+			}
+
+		}
+
+
+	</script>
+</head>
+<body>
+	<div class="btns_con">
+		<div class="left" id="btn01">&lt;</div>
+		<div class="right" id="btn02">&gt;</div>
+	</div>
+	<div class="list_con" id="slide">
+		<ul>
+		<li><a href=""><img src="images/goods001.jpg" alt="商品图片"></a></li>
+		<li><a href=""><img src="images/goods002.jpg" alt="商品图片"></a></li>
+		<li><a href=""><img src="images/goods003.jpg" alt="商品图片"></a></li>
+		<li><a href=""><img src="images/goods004.jpg" alt="商品图片"></a></li>
+		<li><a href=""><img src="images/goods005.jpg" alt="商品图片"></a></li>
+		</ul>		
+	</div>
+</body>
+</html>

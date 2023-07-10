@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+
+		// 新建节点操作
+		$(function(){
+
+			// 通过html的字符串的方式添加节点性能最高
+			// 若原来已有内容，则会重写，添加需要先获取原来的内容
+			//$('#div1').html($('#div1').html()+'<a href="#">链接</a>')
+
+			// 新建一个带有属性的a元素，把它赋值给$a
+			$a = $('<a href="#">链接</a>');
+			$('#div1').append($a);
+
+			// 新建一个空的a元素
+			$a2 = $('<a>');
+
+			$p = $('<p>这是一个p元素</p>');
+
+			$h2 = $('<h2>这是一个h2</h2>');
+
+			$h3 = $('<h3>这是一个h3</h3>');
+
+			// 父元素内的后面放入子元素
+			//$('#div1').append($a);
+
+			//子元素放入到父元素内部的后面
+			$a.appendTo($('#div1'));
+
+			$('#div1').append($a2);
+
+			// 父元素内的前面放入子元素
+			//$('#div1').prepend($p);
+
+			//子元素放入到父元素内部的前面
+			$p.prependTo($('#div1'));
+
+			//$('#div1').after($h2);
+
+			$h2.insertAfter($('#div1'));
+
+			//$('#div1').before($h3);
+			$h3.insertBefore($('#div1'));
+
+		})
+
+		// d对已有的节点操作
+		$(function(){
+			//$('#p1').insertBefore($('#title01'));
+
+			$('#title01').before($('#p1'));
+			$('#span01').appendTo($('#p1'));
+
+			$('#link01').prependTo($('#p1'));
+
+			$('#title01').remove();
+		})
+
+	</script>
+</head>
+<body>
+	<div id="div1">
+		<h1>这是一个H1元素</h1>
+	</div>
+
+	<h1 id="title01">这是一个H1元素</h1>
+	<p id="p1">这是一个p元素</p>
+
+	<span id="span01">这是一个span元素</span>
+	<a href="#" id='link01'>链接</a>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+
+		// https://sug.so.360.cn/suggest?callback=suggest_so&encodein=utf-8&encodeout=utf-8&format=json&fields=word&word=d
+
+		$(function(){
+
+			$('#input01').keyup(function(){
+
+				var $val = $(this).val();
+
+				$.ajax({
+					url:'https://sug.so.360.cn/suggest?',
+					type:'get',
+					dataType:'jsonp',
+					data:{'word':$val}
+				})
+				.done(function(data){
+
+					//console.log(data);
+					
+					// 清空元素里面的内容
+					$('#list01').empty();
+
+					var dat = data.s;
+
+					for(var i=0;i<dat.length;i++)
+					{
+						var $newli = $('<li>');
+
+						$newli.html(dat[i]);
+
+						$newli.appendTo($('#list01'));
+					}
+
+				})
+			})
+
+
+
+		})
+
+
+		
+
+
+
+	</script>
+</head>
+<body>
+
+<input type="text" name="" id="input01">
+
+<ul id="list01">
+	
+</ul>
+	
+
+
+</body>
+</html>

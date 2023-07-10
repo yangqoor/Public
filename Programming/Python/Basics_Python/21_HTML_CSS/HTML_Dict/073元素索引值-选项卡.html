@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			var $li = $('.list li');
+
+			//alert($li.length); 弹出 8
+			//alert($li.eq(3).index()); 弹出3
+
+			alert( $li.filter('.myli').index() );
+		});
+
+		$(function(){
+			var $btn = $('.btns input');
+			var $div = $('.cons div');
+
+			$btn.click(function(){
+				// this 指的是原生的this，它表示当前点击的对象，使用jquery的对象需要用$(this)
+
+				// 当前点击的按钮加上current样式后，除了当前，其他的按钮去掉current样式
+				$(this).addClass('current').siblings().removeClass('current');
+
+				//alert( $(this).index() ; //弹出当前按钮的索引值
+				// 当前点击的按钮对应索引值的div加上active样式，其他的去掉active样式
+				$div.eq( $(this).index() ).addClass('active').siblings().removeClass('active');
+			})
+		})
+
+	</script>
+
+	<style type="text/css">
+		.btns input{
+			width:100px;
+			height:40px;
+			background-color:#ddd;
+			border:0;
+		}
+
+		.btns .current{
+			background-color:gold;
+		}
+
+
+		.cons div{
+			width:500px;
+			height:300px;
+			background-color:gold;
+			display:none;
+			text-align:center;
+			line-height:300px;
+			font-size:30px;
+		}
+
+		.cons .active{
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li class="myli">5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+	</ul>
+
+	<div class="btns">
+		<input type="button" name="" value="01" class="current">
+		<input type="button" name="" value="02">
+		<input type="button" name="" value="03">
+	</div>
+	<div class="cons">
+		<div class="active">选项卡一的内容</div>
+		<div>选项卡二的内容</div>
+		<div>选项卡三的内容</div>
+	</div>
+</body>
+</html>

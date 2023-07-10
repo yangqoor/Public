@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		
+		body{
+			margin:0;
+		}
+
+		.banner{
+			width:960px;
+			height:200px;
+			background-color:cyan;
+			margin:0 auto;
+		}
+
+		.menu{
+			width:960px;
+			height:80px;
+			background-color:gold;
+			margin:0 auto;
+			text-align:center;
+			line-height:80px;
+		}
+
+		.menu_back{
+			width:960px;
+			height:80px;
+			margin:0 auto;
+			display:none;
+		}
+
+		p{
+			text-align:center;
+			color:red;
+		}
+
+		.totop{
+			width:60px;
+			height:60px;
+			background-color:#000;
+			color:#fff;
+			position:fixed;
+			right:20px;
+			bottom:50px;
+			line-height:60px;
+			text-align:center;
+			font-size:40px;
+			border-radius:50%;
+			cursor:pointer;
+			display:none;
+		}
+
+	</style>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$menu = $('.menu');
+			$menu_back = $('.menu_back');
+			$totop = $('.totop');
+
+			$(window).scroll(function(){
+				//console.log('abc');
+
+				var iNum = $(document).scrollTop();
+				//document.title = iNum;
+
+				if(iNum>200)
+				{
+					$menu.css({
+						'position':'fixed',
+						'left':'50%',
+						'top':0,
+						// 'marginLeft':-480
+					});
+					// 解决菜单下的文字突然消失（菜单突然脱离文档流）
+					$menu_back.show();
+				}
+				else
+				{
+					$menu.css({
+						'position':'static',						
+						// 'marginLeft':'auto'
+					});
+
+					$menu_back.hide();
+				}
+
+
+				if(iNum>400){
+					// 淡入
+					$totop.fadeIn();
+				}
+				else
+				{
+					$totop.fadeOut();
+				}
+
+			})
+			$totop.click(function(){
+				$('html,body').animate({'scrollTop':0});
+			})
+
+
+		})
+
+
+
+	</script>
+</head>
+<body>
+	<div class="banner"></div>
+	<div class="menu">菜单</div>
+	<div class="menu_back"></div>
+
+	<div class="totop">↑</div>
+
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<p>文档内容</p>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+蔡登，何晓飞的源码
+包括：谱回归，降维，特征选择，主题模型，矩阵分解，稀疏编码，哈希，聚类，主动学习，矩阵学习。
+是一个很好的机器学习源码资料。
+Spectral regression : (a regression framework for efficient dimensionality reduction) 
+Dimensionality reduction (Subspace learning) 
+Feature selection 
+Topic modeling and GMM 
+Matrix factorization 
+Sparse coding 
+Hashing 
+Clustering 
+Active learning 
+Ranking and Metric learning 

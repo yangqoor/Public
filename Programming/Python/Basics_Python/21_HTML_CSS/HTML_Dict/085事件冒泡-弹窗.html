@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../JS/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+				// event 是发生事件的时候的事件对象，使用的时候，通过第一个参数传进来
+				$('.son').click(function(event){
+					
+					alert(1);
+
+					//通过event对象上的stopPropagation的方法阻止事件冒泡
+					//event.stopPropagation();
+
+				});
+
+				$('.father').click(function(event){
+					alert(2);
+
+					event.stopPropagation();
+				});
+
+				$('.grandfather').click(function(){
+					alert(3);
+
+					// 阻止事件冒泡和阻止默认行为的统一写法：
+					return false;
+				});
+
+				// 最顶级
+				$(document).click(function(){
+					alert(4);
+				});
+
+		});
+
+		// 弹窗
+		$(function(){
+
+			$('#btn').click(function(){
+				$('.pop_con').fadeIn();
+				return false;
+
+			})
+			$(document).click(function(){
+				$('.pop_con').fadeOut();
+
+			})
+			$('.pop').click(function(){
+
+				return false;
+
+			})
+			$('#close').click(function(){
+				$('.pop_con').fadeOut();
+			})
+
+		})
+	</script>
+	<style type="text/css">
+		
+		.grandfather{
+			width:300px;
+			height:300px;
+			background-color:green;
+
+			position:relative;
+		}
+
+		.father{
+			width:200px;
+			height:200px;
+			background-color:gold;
+		}
+
+
+		.son{
+			width:100px;
+			height:100px;
+			background-color: red;
+			position:absolute;
+
+			left:0;
+
+			top:200px;
+		}
+
+		.pop_con{
+			display:none;
+		}
+		.pop{
+			position:fixed;
+			width:500px;
+			height:300px;
+			background-color:#fff;
+			border:3px solid #000;
+			left:50%;
+			top:50%;
+			margin-left:-250px;
+			margin-top:-150px;
+			z-index:9999;
+		}
+
+		.mask{
+			position:fixed;
+			width:100%;
+			height:100%;
+			background-color:#000;
+			opacity:0.3;
+			filter:alpha(opacity=30);
+			left:0;
+			top:0;
+			z-index:9990;
+
+		}
+
+		.close{
+			float:right;
+			font-size:30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="grandfather">		
+		<div class="father">			
+			<div class="son"></div>
+		</div>
+	</div>
+
+	<input type="button" name="" value="弹出" id="btn">
+
+	<div class="pop_con">
+		<div class="pop">
+			弹框里面文字
+			投资金额：
+			<input type="text" name="">
+			<a href="#" id="close" class="close">×</a>
+		</div>
+		<div class="mask"></div>
+	</div>
+</body>
+</html>

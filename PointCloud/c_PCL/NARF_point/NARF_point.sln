@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NARF_point", "NARF_point\NARF_point.vcxproj", "{0425B5BA-514B-4E0B-B018-01967561D96C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0425B5BA-514B-4E0B-B018-01967561D96C}.Debug|x64.ActiveCfg = Debug|x64
+		{0425B5BA-514B-4E0B-B018-01967561D96C}.Debug|x64.Build.0 = Debug|x64
+		{0425B5BA-514B-4E0B-B018-01967561D96C}.Debug|x86.ActiveCfg = Debug|Win32
+		{0425B5BA-514B-4E0B-B018-01967561D96C}.Debug|x86.Build.0 = Debug|Win32
+		{0425B5BA-514B-4E0B-B018-01967561D96C}.Release|x64.ActiveCfg = Release|x64
+		{0425B5BA-514B-4E0B-B018-01967561D96C}.Release|x64.Build.0 = Release|x64
+		{0425B5BA-514B-4E0B-B018-01967561D96C}.Release|x86.ActiveCfg = Release|Win32
+		{0425B5BA-514B-4E0B-B018-01967561D96C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B8E33EC-E9D4-4599-A254-AEEB35980477}
+	EndGlobalSection
+EndGlobal

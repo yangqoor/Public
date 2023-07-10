@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    meta:vp-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视口</title>
+    <style type="text/css">
+        /*大一倍的图缩小以适配retia屏*/
+        .re{
+            width: 300px;
+            height: 215px;
+            /*background: gold;*/
+        }
+
+        .back_ground{
+            width: 200px;
+            height: 300px;
+            border: 2px solid #000000;
+            margin: 20px auto 0;
+
+            background: url("images/apple.png") no-repeat ;
+            /*background-size: 200px 200px;*/
+            /*background-size: 100% 100%;*/
+            /*cover背景图盖住盒子,contain盒子装的进背景图*/
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/pic1x.jpg" alt="">
+        <img src="images/pic2x.jpg" alt="" class="re">
+    </div>
+    <div class="back_ground">123</div>
+</body>
+</html>

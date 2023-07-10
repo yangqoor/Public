@@ -1,0 +1,10 @@
+function [Om,Dom]=Omega_w12(c,AA,U,delta,s);
+%ep=1e-8;
+zz=c;hs=diff(s');
+Dzx=diff(zz)./hs;DDz=diff(Dzx)./hs(2:end);
+r0=sum(DFF(zz).*log(DFF(zz)).*[hs(1);hs]);
+r1=sum(DFF(Dzx).*log(1+DFF(Dzx)).*hs);
+r2=DFF(zz(end)-12);
+r3=sum(DFF(DDz).*log(1+DFF(DDz)).*hs(2:end));
+%r2=sqrt(sum((zz.^2).*[hs(1);hs]));
+Om=r0+0*r1+r2+r3;Dom=[];

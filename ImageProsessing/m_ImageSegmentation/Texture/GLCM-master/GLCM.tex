@@ -1,0 +1,52 @@
+\documentclass[11pt]{report}
+\usepackage{subcaption}
+
+\begin{document}
+
+\section*{Law's Texture}
+Watch this space.
+
+\section*{Normalizing the GLCM}
+For a $K\times K$ matrix. The term $P(i,j)$ is the $ij$th term of G divided by the sum of the elements of $G$
+\section*{Histogram}
+Essentially tally up the number of occurrences of each gray-level value in the image.
+\subsection*{Quantization}
+Reduce the number of gray-levels by placing a range of values in a bin. Doing this you can reduce a $256\times256$ GLCM to a $8\times8$. This can increase performance and makes it easier to work with sequences of images.
+
+\section*{Variance}
+This feature puts relatively high weights on the elements that differ from the average value of $P(i,j)$. GLCM Variance uses the GLCM, therefore it deals specifically with the dispersion around the mean of combinations of reference and neighbor pixels, encoding contextual (2. order) information. Using $i$ or $j$ gives the same result since the GLCM is symmetric. Note that the contextualness is an integral part of this measure; one can measure the variance in pixels in one direction. Thus it is not the same as 1. order statistic variance.
+\begin{equation}
+\sum_{i=1}^{K}\sum_{j=1}^{K}(i - \mu)^2 \cdot P(i,j)
+\end{equation}
+
+\section*{Entropy}
+Inhomogeneous scenes have high entropy, while a homogeneous scene has low entropy. Maximum entropy has been reached when all 2. order probabilities are equal. The maximum value is $2 \cdot log_2 \cdot G$
+\begin{equation}
+-\sum_{i=1}^{K}\sum_{j=1}^{K}P(i,j) \cdot log(P(i,j))
+\end{equation}
+
+\section*{Angular Second Moment}
+ASM is a measure of homogeneity of an image. Homogenous scene will contain a few gray levels, giving a GLCM with few but high values of $P(i,j)$. Thus the sum of squares will be high. Homogenous; clustering.
+\begin{equation}
+\sum_{i=1}^{K}\sum_{j=1}^{K}P(i,j)^2
+\end{equation}
+
+\section*{Contrast (Inertia)}
+This measure of contrast or local intensity variation will favor contributions from $P(i,j)$ away from the diagonal, i.e. $i \neq j$. Good as an edge detector.
+\begin{equation}
+\sum_{i=1}^{K}\sum_{j=1}^{K}(i-j)^2 \cdot P(i,j)
+\end{equation}
+
+\section*{Inverse Difference Moment (Homogeneity)}
+IDM is also influenced by the homogeneity of the image. Because of the weighting factor $\frac{1}{1+(i-j)^2}$ IDM will get small contributions from inhomogeneous areas $(i \neq j)$. The result is a low IDM value for inhomogeneous images and a relatively higher value for homogeneous images. From the book - measures spatial closeness of the distribution of elements in G to the diagonal.
+\begin{equation}
+\sum_{i=1}^{K}\sum_{j=1}^{K} \frac{1}{1+(i-j)^2} \cdot P(i,j)
+\end{equation}
+
+\section*{Correlation}
+A measure of how correlated a pixel is to its neighbor over the entire image. Range of values is $1$ to $-1$, corresponding to perfect positive and perfect negative correlations. This measure is not defined if either standard deviation is zero.
+\begin{equation}
+\sum_{i=1}^{K}\sum_{j=1}^{K}\frac{(i-\mu_i)(j-\mu_j)P(i,j)}{\sigma_i^2\sigma_j^2}
+\end{equation}
+
+\end{document}

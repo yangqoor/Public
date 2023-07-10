@@ -1,0 +1,9 @@
+Fix needed:
+- Correct matrix reshaping in freqResp() and other appropriate functions.
+
+Improvements:
+- The first direction is: add more functions to fanalyzer class. For example: plot magnitude from coefficients of SOS filter and etc.
+
+- The second direction is to add appropriate C-implementations for digital filters, like FIR, IIR different forms and filter structure for SOS, what are will works with fsaver class.
+
+

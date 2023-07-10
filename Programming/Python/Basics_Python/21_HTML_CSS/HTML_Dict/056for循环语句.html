@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for循环</title>
+    <script type="text/javascript">
+        for (var i=0;i<2;i++)
+        {
+            alert('ok!');
+        }
+
+        var aList = ['a', 'b', 'c', 'd'];
+        var iLen = aList.length;
+        for (var i=0;i<iLen;i++)
+        {
+            alert(aList[i]);
+        }
+        
+        window.onload = function () {
+            var oUl = document.getElementById('list')
+            var aList = ['美人鱼1', '美人鱼2', '美人鱼3', '美人鱼4', '美人鱼5'];
+            var iLen = aList.length;
+            var sTr = '';
+            for(var i=0;i<iLen;i++)
+            {
+                sTr += '<li>' + aList[i] + '</li>'
+            }
+            oUl.innerHTML = sTr;
+
+            var oDiv1 = document.getElementById('div1');
+            var aList = [2,3,3,4,5,5,3,3,4,6,1,2,2,3,4];
+            var iLen = aList.length;
+            var aList2 = [];
+            oDiv1.innerHTML = aList;
+            oDiv1.onclick = function () {
+                for(var i=0;i<iLen;i++)
+                {
+                    if(aList.indexOf(aList[i])==i)
+                    {
+                        aList2.push(aList[i]);
+                    }
+                }
+                oDiv1.innerHTML = aList2;
+
+            }
+
+
+
+
+
+        }
+    </script>
+    <style type="text/css">
+        .list{
+            list-style: none;
+            margin: 50px auto 0;
+            padding: 0;
+            width: 300px;
+            height: 305px;
+        }
+        .list li{
+            height: 60px;
+            border-bottom: 1px dotted #000000;
+            font: normal 16px/60px 'Microsoft YaHei';
+        }
+
+    </style>
+</head>
+<body>
+<!--    ul.list>li{美人鱼$}*5-->
+    <ul class="list" id="list">
+<!--        <li>美人鱼1</li>-->
+<!--        <li>美人鱼2</li>-->
+<!--        <li>美人鱼3</li>-->
+<!--        <li>美人鱼4</li>-->
+<!--        <li>美人鱼5</li>-->
+    </ul>
+
+    <div id="div1">数组去重</div>
+</body>
+</html>

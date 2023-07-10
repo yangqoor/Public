@@ -1,0 +1,47 @@
+/* Style Sheet Last updated - 10/17/2000 */ 
+/* This style sheet is for IE 4.02 and up */ 
+
+
+/* BODY = default paragraph font */ 
+	body		{bgcolor: #ffffff; font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 100%; }
+
+
+/* HYPERLINKS */ 
+	a:link, a:visited	{color: "#0000FF"; text-decoration:"none"; }
+	a:active, a:hover	{color: "#990099"; cursor:hand;text-decoration:"underline"; }
+	.pop		{text-decoration: none; }
+	A.qindex {}
+	A.qindexRef {}
+	A.el { text-decoration: none; font-weight: bold }
+	A.elRef { font-weight: bold }
+	A.code { text-decoration: none; font-weight: normal; color: #4444ee }
+	A.codeRef { font-weight: normal; color: #4444ee }
+	A:hover { text-decoration: none; background-color: #f2f2ff }
+
+
+	
+/* TABLES */ 
+	table	{font-size: 100%; margin-top: 1em; margin-bottom: 0em;}
+	th		{text-align: left; background: #CCCCCC; margin: .25em; }
+	tr		{}
+	td		{margin: .25em; border-bottom: 1  }
+	td.md 	{ background-color: #f2f2ff; font-weight: bold; }
+	td.mdname1 { background-color: #f2f2ff; font-weight: bold; color: #602020; }
+	td.mdname { background-color: #f2f2ff; font-weight: bold; color: #602020; width: 600px; }
+
+/* PARAGRAPH */
+	p		{margin-top: .6em; margin-bottom: .6em; }
+
+/* Heading styles---------------------------------------------------------------------------- */ 
+
+	h1		{font-size: 200%; margin-top: .4em; margin-bottom: .5em; text-align: center;}
+	h2		{font-size: 150%; margin-top: .5em; margin-bottom: .5em; text-align: left;}
+	h3		{font-size: 120%; margin-top: 1.2em; margin-bottom: .5em; font-weight: bold;}
+	h4		{font-size: 110%; margin-top: 1.2em; font-weight: bold;}
+	h5		{font-size: 100%; margin-top: 1.2em; font-weight: bold;}
+	.lproch		{font-weight: bold ;margin-top: 1.2em; }/* Heading 9,List Procedure Heading,lproch */ 
+
+/* Defined List styles ----------------------------------------------------------------------- */
+
+	dt		{font-weight: bold; }
+	dd		{margin-left: 2em; margin-bottom: .6em; }

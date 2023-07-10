@@ -1,0 +1,5 @@
+2017-11-07 12:31:15,575 - mini_frame.py[line:250] - INFO: 访问的是，/index.html
+2017-11-07 12:32:18,424 - mini_frame.py[line:250] - INFO: 访问的是，/center.html
+2017-11-07 12:32:19,013 - mini_frame.py[line:250] - INFO: 访问的是，/index.html
+2017-11-07 12:32:24,804 - mini_frame.py[line:250] - INFO: 访问的是，/indeskdjfksjdfkjskdfjksdjkfx.html
+2017-11-07 12:32:24,806 - mini_frame.py[line:266] - WARNING: 没有对应的函数....
