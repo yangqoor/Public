@@ -1,0 +1,28 @@
+clear,clf;
+N=[10 17 25];%ÕóÔªÊý
+K=length(N);
+I0=0;
+I=ones(1,N(K));
+lemda=1;
+r=lemda*(1:K);
+theta=linspace(0,pi/2,200);%0:pi/200:pi/2;
+fai=linspace(0,2*pi,200);
+[E1,Ev1]=CircleArray_v(N(1),r(1),I(1:N(1)),theta);
+[E2,Ev2]=CircleArray_v(N(2),r(2),I(1:N(2)),theta);
+[E3,Ev3]=CircleArray_v(N(3),r(3),I(1:N(3)),theta);
+%[E4,Ev4]=CircleArray_v(N(4),r(4),I(1:N(4)),theta);
+E=E1+E2+E3;
+Ev=Ev1+Ev2+Ev3;
+Elog=20*log10(abs(E+I0)/max(max(abs(E+I0))));
+Evlog=20*log10(abs(Ev)/max(max(abs(Ev))));
+figure(1);
+plot(theta,Evlog(1,:),'k');
+hold on;
+plot(theta,Elog(1,:),'k:');
+grid on;
+axis([0,pi/2,-70,0]);
+hold off;
+figure(2);
+X=meshgrid(theta);
+Y=(meshgrid(fai))';
+surf(X,Y,Elog);

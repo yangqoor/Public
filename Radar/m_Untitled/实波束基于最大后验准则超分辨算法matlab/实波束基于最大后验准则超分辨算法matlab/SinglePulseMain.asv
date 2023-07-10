@@ -1,0 +1,238 @@
+%单脉冲前视成像
+%author：王震
+% time：2016-10-11
+clc;
+clear all;
+close all;
+%% 参数设置
+if 0
+Nr = 2048;
+NrNew = 848;
+Na =1;
+Tp =10e-6;
+Br = 80e6;
+Fs = 120e6;
+C=299792458;
+Lambda = 0.0176348499;
+ku = -12;
+kv = 18;
+Data_Sum_a =zeros(NrNew,1);
+beta =4.2;%波束宽度
+Va = 35;%天线扫描角速度
+N = 16;%将方位向N等分
+CpiNum =80;
+end
+%%   惯导解算
+%ZDGDanalysis;
+
+%%  仿回波数据 产生单点目标回波
+if 1
+disp('仿回波数据 产生点目标回波');
+%参数定义
+A=4.2*pi/180;          %方位向波束宽度，弧度
+L=0.0176348499;        %波长
+Tp=10e-6;              %脉宽
+B=80e6;                %带宽
+fs=120e6;              %采样率
+PRF=500;               %重频
+PRT=1/PRF;             %脉冲重复周期
+v=65;                 %飞机速度
+c=299792458;                 %光速
+C = 299792458;     
+aziangle =-18.25:0.1:21.25;% 共80的CPI，一个CPI一个Prt
+theta = aziangle/180*pi;
+CpiNum = length(theta);% CPI 个数
+
+d = 0.009;%通道1、2的间距,阵元间距为0.5倍波长
+R = 7000;%目标点到通道1、2的间距，设目标在通道1、2中间
+Rn = sqrt(R^2+(50*d)^2);
+
+fc=c/L;%载频
+Kr=B/Tp;  %调频系数
+Rmin = 6900;
+tmin=2*6621/c-Tp/2;
+tmax=2*7680/c+Tp/2;
+dt=1/fs;
+tr=tmin:dt:tmax;
+Nt=length(tr);
+
+Sr1=zeros(CpiNum,Nt);
+Sr2=zeros(CpiNum,Nt);
+% 方向图函数
+thetaB =atan(50*d/(2*R));%波束最大指向角
+F11= zeros(100,396);
+F22= zeros(100,396);
+
+% 设每个通道100个阵元
+for k =1:100
+F11(k,:) = exp(1j*k*(2*pi/L)*d*(sin(theta)-sin(thetaB)));%通道1的方向图
+end
+F1 = sum(F11);
+
+for k=1:100
+F22 (k,:)= exp(1j*k*(2*pi/L)*d*(sin(theta)-sin(-thetaB)));%通道2的方向图
+end 
+F2 = sum(F22);
+FSum = abs(F1)+abs(F2);%和通道方向图
+FSub = abs(F1)-abs(F2);%差通道方向图
+
+F1db = 20*log10(abs(F1)./max(abs(F1)));
+F2db = 20*log10(abs(F2)./max(abs(F2)));
+FSumdb = 20*log10(abs(FSum)./max(abs(FSum)));
+FSubdb = 20*log10(abs(FSub)./max(abs(FSub)));
+
+figure(1);
+subplot(2,1,1);
+plot(aziangle,F1db);
+xlabel('方位角（°）');
+ylabel('归一化（dB）')
+title('通道1天线方向图归一化图');
+
+subplot(2,1,2);
+plot(aziangle,F2db);
+xlabel('方位角（°）');
+ylabel('归一化（dB）')
+title('通道2天线方向图归一化图');
+
+figure(2);
+plot(aziangle,FSumdb);
+xlabel('方位角（°）');
+ylabel('归一化（dB）')
+hold on;
+plot(aziangle,FSubdb,'r');
+hold off;
+legend('和通道归一化方向图','方位差通道归一化方向图');
+
+% 构造和通道的数据
+for i=1:CpiNum
+    for j=1:2
+        Sr1(i,:)=FSum(i).*(exp(-1i*4*pi*Rn/L+1i*pi*Kr*(tr-2*Rn/c).^2).*(abs(tr-2*Rn/c)<Tp/2));
+    end 
+end
+figure(3);
+subplot(211);
+imagesc(real(Sr1));colormap gray;%回波信号(实部)灰度图
+xlabel('距离向/m');ylabel('方位向/m');
+title('和通道回波信号实部的灰度图');
+
+%构造方位差通道的数据
+
+for i=1:CpiNum
+    for j=1:2
+        Sr2(i,:)=FSub(i).*(exp(-1i*4*pi*Rn/L+1i*pi*Kr*(tr-2*Rn/c).^2).*(abs(tr-2*Rn/c)<Tp/2));
+    end 
+end
+subplot(212);
+imagesc(real(Sr2));colormap gray;%回波信号(实部)灰度图
+xlabel('距离向/m');ylabel('方位向/m');
+title('方位差回波信号实部的灰度图');
+FidWrite1= fopen('E:\matlabfile\graduatefile\单脉冲前视成像仿真数据matlab\SimulateDataSum.bin','w');%生成仿真数据文件
+FidWrite2= fopen('E:\matlabfile\graduatefile\单脉冲前视成像仿真数据matlab\SimulateDataSub.bin','w');%生成仿真数据文件
+
+SrSumData=zeros(1,2*Nt);
+SrAziData=zeros(1,2*Nt);
+% 构造和通道数据
+for k = 1:CpiNum
+SrSumData(1:2:end) = real(Sr1(k,:));
+SrSumData(2:2:end) = imag(Sr1(k,:));
+fwrite(FidWrite1,SrSumData,'float32')
+end
+% 构造方位差通道数据
+for k = 1:CpiNum
+SrAziData(1:2:end) = real(Sr2(k,:));
+SrAziData(2:2:end) = imag(Sr2(k,:));
+fwrite(FidWrite2,SrAziData,'float32')
+end
+fclose all;
+end
+%% 成像参数
+Na =1;
+Nr =Nt;
+Prf = PRF;
+Fs = fs;
+Br = B;
+NrNew = 848;
+ku = -12;
+kv = 18;
+N = 10;
+
+ta = (-Na/2:Na/2-1)'/Prf;            %方位慢时间
+tr = Rmin*2/C + (0:Nr-1)'/Fs;       %距离快时间
+fa = [0:Na/2-1 -Na/2:-1]'/Na*Prf;   %方位频率
+fr = [0:Nr/2-1 -Nr/2:-1]'/Nr*Fs;    %距离频率
+
+%% 读取和路、方位差、俯仰差路数据
+disp('读取和路、差路数据')
+FolderImageOutPut = 'E:\matlabfile\graduatefile\单脉冲前视成像仿真数据matlab\';
+FidReadSum = fopen([FolderImageOutPut 'SimulateDataSum.bin'],'r');
+FidReadSub = fopen([FolderImageOutPut 'SimulateDataSub.bin'],'r');
+FidReadReal = fopen('EcholRealSum.dat','w');
+FidReadImag = fopen('EcholImagSum.dat','w');
+
+dataline = zeros(CpiNum,Nr);
+for k = 1:CpiNum
+   DataSum = fread(FidReadSum,Nr*2,'float32');
+   dataline(k,:) = DataSum(1:2:2*Nr)+1j*DataSum(2:2:2*Nr);
+   fwrite(FidReadReal,DataSum(1:2:end),'float32');
+   fwrite(FidReadImag,DataSum(2:2:end),'float32');
+   
+   DataSub =  fread(FidReadSub,Nr*2,'float32'); 
+   fwrite(FidReadReal,DataSub(1:2:end),'float32');
+   fwrite(FidReadImag,DataSub(2:2:end),'float32');
+    
+end
+fclose all;
+figure(4);
+imagesc(abs(dataline)),colormap gray;
+title('原始数据灰度图');
+
+
+
+%%  距离向脉压
+disp('距离向脉压')
+StepRanCompSum;
+% %% 单脉冲积累
+% disp('矩阵转置');
+% CornerTurn(['RanCompRealSum.dat'],['RanCompTurnRealSum.dat'],Na,NrNew,2);
+% CornerTurn(['RanCompImageSum.dat'],['RanCompTurnImageSum.dat'],Na,NrNew,2);
+% 
+% CornerTurn(['RanCompRealAzi.dat'],['RanCompTurnRealAzi.dat'],Na,NrNew,2);
+% CornerTurn(['RanCompImageAzi.dat'],['RanCompTurnImageAzi.dat'],Na,NrNew,2);
+% 
+% CornerTurn(['RanCompRealEle.dat'],['RanCompTurnRealEle.dat'],Na,NrNew,2);
+% CornerTurn(['RanCompImageEle.dat'],['RanCompTurnImageEle.dat'],Na,NrNew,2);
+% disp('单脉冲积累');
+% SinglePulseSum;
+
+%% 单脉冲测角
+MeasureAngle;
+%% 方位向重新定位
+disp('方位向重定位');
+AziReLocal;
+
+%% 削峰量化
+%ResultDisplayRaw('AziReLocalRealSum.dat','AziReLocalImagSum.dat',[FolderImageOutPut 'AziReLocalData.raw'],CpiNum*N,NrNew);
+
+Quantification;
+%% 出图 
+
+%FidRead = fopen('AziReLocalData.raw','r');
+FidRead = fopen( 'AziReLocalData.dat' ,'r');
+
+Line = zeros(NrNew,CpiNum*N);
+for k = 1:CpiNum*N
+    
+    datareal = fread(FidRead,NrNew,'uint8');
+    Line(:,k) = datareal;
+end
+disp('出图');
+yaxis = tr*C;
+xaxis =a_Azi_0(1):(a_Azi_0(CpiNum)-a_Azi_0(1))/(CpiNum*N-1):a_Azi_0(CpiNum) ;
+figure;
+imagesc(xaxis,yaxis,abs(Line)),colormap gray;
+title ('单脉冲前视成像实测数据仿真图');
+xlabel('方位角 X(°)');
+ylabel('距离向 Y(m)');
+
+
+

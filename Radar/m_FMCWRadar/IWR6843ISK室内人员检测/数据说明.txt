@@ -1,0 +1,4 @@
+adc_data_0duomubiao.bin 两个目标
+adc_data_0jiaofan.bin 一个角反
+adc_data_0renzhizou.bin 一个目标
+adc_data_wuren.bin 没有人

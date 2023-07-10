@@ -1,0 +1,1 @@
+openExample('phased/RangeSpeedResponsePatternOfTargetExample')
