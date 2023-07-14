@@ -1,20 +1,20 @@
 
 clc
 clear
-f = [pwd '\²âÊÔ.docx'];% pwd ÓÃÓÚµ±Ç°¹¤×÷Ä¿Â¼µÄÂ·¾¶
+f = [pwd '\ï¿½ï¿½ï¿½ï¿½.docx'];% pwd ï¿½ï¿½ï¿½Úµï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½Â·ï¿½ï¿½
 try    
-    Word = actxGetRunningServer('Word.Application');  %Æô¶¯wordÒýÇæ
+    Word = actxGetRunningServer('Word.Application');  %ï¿½ï¿½ï¿½ï¿½wordï¿½ï¿½ï¿½ï¿½
 catch    
     Word = actxserver('Word.Application'); 
 end
-Word.Visible = 1;    % »òset(Word, 'Visible', 1);   %ÉèÖÃ¿É¼û
-if exist(f,'file')    %²âÊÔÎÄ¼þ´æÔÚµÄ»°
-    Document = Word.Documents.Open(f);      %»ñµÃÎÄµµµÄ¶ÔÏóDocument
-else                %²»´æÔÚÔò´´½¨Ìí¼Ó
+Word.Visible = 1;    % ï¿½ï¿½set(Word, 'Visible', 1);   %ï¿½ï¿½ï¿½Ã¿É¼ï¿½
+if exist(f,'file')    %ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ÚµÄ»ï¿½
+    Document = Word.Documents.Open(f);      %ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½Ä¶ï¿½ï¿½ï¿½Document
+else                %ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò´´½ï¿½ï¿½ï¿½ï¿½ï¿½
     Document = Word.Documents.Add;       
-    Document.SaveAs(f);        %±£´æÎÄµµ
+    Document.SaveAs(f);        %ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½
 end
-Selection = Word.Selection;               %¹â±êËùÔÚ´¦
+Selection = Word.Selection;               %ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½
 Selection.Start=0;
 a=[];
 num=Document.Range.end;
@@ -22,6 +22,6 @@ ii=0;
 while ii<=num
     ii=ii+1;
     a=[a,Selection.text];
-    Selection.MoveRight;     %¹â±êÏòÓÒÒÆ¶¯Ò»¸ñ
+    Selection.MoveRight;     %ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½Ò»ï¿½ï¿½
 end
-a=a(1:num)             %È¡ÎÄ±¾ÓÐÄÚÈÝµÄ²¿·Ö£¬Ò²ÐíÓÉÓÚºº×ÖÕ¼ÓÐÁ½¸ö×Ö½Ú£¬ËùÒÔÒ»°ã¶ÁÈ¡ºóaµÄ³¤¶È¶¼ÊÇÎÄ±¾³¤¶ÈµÄÁ½±¶×óÓÒ¡£
+a=a(1:num)             %È¡ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ²ï¿½ï¿½Ö£ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½Úºï¿½ï¿½ï¿½Õ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½È¡ï¿½ï¿½aï¿½Ä³ï¿½ï¿½È¶ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò¡ï¿½
