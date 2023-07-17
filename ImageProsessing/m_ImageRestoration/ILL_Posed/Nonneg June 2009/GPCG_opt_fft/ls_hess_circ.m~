@@ -1,0 +1,27 @@
+  function [Hx] = wls_hess(Params,x);
+  
+%  Compute penalized, weighted least squares matrix-vector product
+%  H*x, where
+%      H = T'*W*T + alpha*L.
+
+  global TOTAL_HESS_EVALS 
+  TOTAL_HESS_EVALS = TOTAL_HESS_EVALS + 1;
+
+%  Initialize parameters and vectors.
+
+  t_hat   = Params.blurring_operator;
+  gam     = Params.reg_param;
+  L       = Params.reg_operator;
+  nx      = Params.nx;
+  ny      = Params.ny;
+  const   = Params.const;
+  my_fft  = Params.my_fft;
+  my_ifft = Params.my_ifft;
+  
+%  Compute Hessian vector product.
+  
+  Fourier_x = fft2(x);
+  T_Fx = t_hat.*Fourier_x;
+  Lx = L*x(:);  
+  Hx = real(ifft2(conj(t_hat).*((1/const)*T_Fx))) + ...
+                                             gam*reshape(Lx,nx,ny);

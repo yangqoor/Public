@@ -1,0 +1,5 @@
+  function[T_sparse] = T_sparse_circ(array2mat,sparse_psf)
+
+%  Get sparse preconditioner.
+
+  T_sparse = sparse(feval(array2mat,sparse_psf));

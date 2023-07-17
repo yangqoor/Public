@@ -1,0 +1,11 @@
+To Run, type
+
+% First generate your data and save what you need in a structure array 
+% named Data.
+
+>> SetupSatellite
+
+% Then run the optimization routine with initial guess f_0, and 
+% and regularization matrix RegMat
+
+>> [f_poisson,histout] = PoissonMAPestimator(f_0,Data,RegMat);

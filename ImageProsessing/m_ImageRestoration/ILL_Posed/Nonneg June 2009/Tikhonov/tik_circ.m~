@@ -1,0 +1,10 @@
+%  tik_circ.m
+%
+%  Compute the unconstrained least squares solution in the BCCB case.
+%  f_reconstruct = (S*S+alpha I)^-1 S*d.
+%  First load the Data.
+
+  alpha = 2e-8; % input('Regularization parameter alpha = '); 
+  S = Data.BCCB_kernel_fft;
+  d = Data.noisy_data;
+  f_reconstruct =  real(ifft2(1./(abs(S)^2+alpha)).*conj(S).*fft2(d));

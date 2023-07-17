@@ -1,0 +1,7 @@
+    if Data.type == 'circ'   % Take unconstrained least squares solution
+      c_hat = Data.BCCB_kernel_fft;
+      d = Data.noisy_data;
+      const = Data.Poiss_bkgrnd + Data.gaussian_stdev^2;
+      inv_hat = conj(c_hat) ./ (abs(c_hat).^2 + const*alpha);
+      f_0 = bccb_mult_fft(d,inv_hat);
+    else

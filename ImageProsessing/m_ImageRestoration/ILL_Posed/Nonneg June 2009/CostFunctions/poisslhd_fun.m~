@@ -1,0 +1,45 @@
+  function [J,Params,g] = poisslhd_fun(f,Params)
+  
+%  Evaluate penalized Poisson log likelihood cost functional
+%      J(f) = sum[(T*f+c) -(d+sig^2).*log(T*f+c)] + alpha/2*f'*L*f.
+%  Here d is a realization from a statistical distribution
+%      d ~ Poisson(T*f) + Poisson(b) + normal(0,sig^2).
+%  The first term in J(f) is the log likelihood functional for the
+%  distributional approximation
+%      d_i + sig^2 ~ Poisson([T*f]_i) + Poisson(b) + Poisson(sig^2).
+%  The constant c = b + sig^2. 
+%    The gradient of J is given by 
+%      g(f) = T'*[(T*f+b-d)./(T*f+c)] + alpha*L*f.
+
+  %  Declare global variables and initialize parameters and vectors.
+
+  global TOTAL_COST_EVALS TOTAL_GRAD_EVALS
+  TOTAL_COST_EVALS = TOTAL_COST_EVALS + 1;
+
+  Tmult   = Params.Tmult_fn;
+  alpha   = Params.reg_param;
+  L       = Params.reg_operator;
+  t_hat   = Params.blurring_operator;
+  d       = Params.data;
+  b       = Params.Poiss_bkgrnd;
+  sig     = Params.gaussian_stdev;
+  nx      = Params.nx;
+  ny      = Params.ny;
+  
+  %  Compute J(f).  
+
+  c = b + sig^2;
+  dps = d + sig^2;
+  Tfpc = feval(Tmult,f,t_hat) + c;
+  Params.Tfpc = Tfpc;
+  aLf = alpha*(L*f(:));
+  J = sum(Tfpc(:) - dps(:).*log(Tfpc(:))) + .5*(f(:)'*aLf);
+
+  %  Compute grad J(f).
+  
+  if nargout == 3
+    q = (Tfpc - dps) ./ Tfpc;
+    g = feval(Tmult,q,conj(t_hat)) + reshape(aLf,nx,ny);
+    TOTAL_GRAD_EVALS = TOTAL_GRAD_EVALS + 1;
+  end
+
