@@ -1,0 +1,359 @@
+<html xmlns:mwsh="http://www.mathworks.com/namespace/mcode/v1/syntaxhighlight.dtd">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      -->
+      <title>d</title>
+      <meta name="generator" content="MATLAB 7.1">
+      <meta name="date" content="2007-06-25">
+      <meta name="m-file" content="d"><style>
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows.  On Gecko-based browsers, the shrink-to-fit doesn't work. */ 
+p,h1,h2,div.content div {
+  /* for MATLAB's browser */
+  width: 600px;
+  /* for Mozilla, but the "width" tag overrides it anyway */
+  max-width: 600px;
+  /* for IE */
+  width:expression(document.body.clientWidth > 620 ? "600px": "auto" );
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head>
+   <body>
+      <div class="content"><pre class="codeinput"><span class="comment">%______________________________________________________________25/06/07___</span>
+<span class="comment">%|   Regular solution sub-function         |    H.C.Eng.Ali &Ouml;zg&uuml;l (C)(R)  |</span>
+<span class="comment">%|_________________________________________|______________________________|</span>
+<span class="comment">%|Sub Function Application                 |</span>
+<span class="comment">%|                                         |</span>
+<span class="comment">%| [Solution]=regsolution( func(R) )       |</span>
+<span class="comment">%|_________________________________________|</span>
+<span class="comment">% [Syntax]</span>
+<span class="comment">%    [ssolution] = regsolution(func)</span>
+<span class="comment">%    func = function(R-parameter)</span>
+<span class="comment">%</span>
+<span class="comment">%    The [ssolution] is the symbolic expression on general maple's [solve.m]</span>
+<span class="comment">%    function. "R" parameter is selected as symbolic variable for [ssolution.m]</span>
+<span class="comment">%    This solution sub-function outputs are returned the regular solution</span>
+<span class="comment">%    technique with solution's roots order-degree</span>
+<span class="comment">%</span>
+<span class="comment">% [Example];</span>
+<span class="comment">%    regsolution((R^10-4)*(R^2+1)^4*sin(R))   &lt;--|</span>
+<span class="comment">%</span>
+<span class="comment">% *** Equation's roots &amp;&amp; order-degree</span>
+<span class="comment">%        0             1.0000</span>
+<span class="comment">%        0 + 1.0000i   4.0000</span>
+<span class="comment">%        0 - 1.0000i   4.0000</span>
+<span class="comment">%   1.1487             1.0000</span>
+<span class="comment">%  -1.1487             1.0000</span>
+<span class="comment">%  -0.9293 - 0.6752i   1.0000</span>
+<span class="comment">%   0.9293 + 0.6752i   1.0000</span>
+<span class="comment">%  -0.3550 - 1.0925i   1.0000</span>
+<span class="comment">%   0.3550 + 1.0925i   1.0000</span>
+<span class="comment">%  -0.3550 + 1.0925i   1.0000</span>
+<span class="comment">%   0.3550 - 1.0925i   1.0000</span>
+<span class="comment">%  -0.9293 + 0.6752i   1.0000</span>
+<span class="comment">%   0.9293 - 0.6752i   1.0000    %</span>
+<span class="comment">%</span>
+<span class="comment">%  *** Generaly solution with maple solve function's output</span>
+<span class="comment">%  solution = solve((R^10-4)*(R^2+1)^4*sin(R),R)</span>
+<span class="comment">%</span>
+<span class="comment">%                                                                   sqrt(-1)</span>
+<span class="comment">%                                                                   sqrt(-1)</span>
+<span class="comment">%                                                                   sqrt(-1)</span>
+<span class="comment">%                                                                   sqrt(-1)</span>
+<span class="comment">%                                                                  -sqrt(-1)</span>
+<span class="comment">%                                                                  -sqrt(-1)</span>
+<span class="comment">%                                                                  -sqrt(-1)</span>
+<span class="comment">%                                                                  -sqrt(-1)</span>
+<span class="comment">%                                                                    2^(1/5)</span>
+<span class="comment">%                                                                   -2^(1/5)</span>
+<span class="comment">%  -((1/4*5^(1/2)-1/4+1/4*sqrt(-1)*2^(1/2)*(5+5^(1/2))^(1/2))*2^(2/5))^(1/2)</span>
+<span class="comment">%   ((1/4*5^(1/2)-1/4+1/4*sqrt(-1)*2^(1/2)*(5+5^(1/2))^(1/2))*2^(2/5))^(1/2)</span>
+<span class="comment">% -((-1/4*5^(1/2)-1/4+1/4*sqrt(-1)*2^(1/2)*(5-5^(1/2))^(1/2))*2^(2/5))^(1/2)</span>
+<span class="comment">%  ((-1/4*5^(1/2)-1/4+1/4*sqrt(-1)*2^(1/2)*(5-5^(1/2))^(1/2))*2^(2/5))^(1/2)</span>
+<span class="comment">% -((-1/4*5^(1/2)-1/4-1/4*sqrt(-1)*2^(1/2)*(5-5^(1/2))^(1/2))*2^(2/5))^(1/2)</span>
+<span class="comment">%  ((-1/4*5^(1/2)-1/4-1/4*sqrt(-1)*2^(1/2)*(5-5^(1/2))^(1/2))*2^(2/5))^(1/2)</span>
+<span class="comment">%  -((1/4*5^(1/2)-1/4-1/4*sqrt(-1)*2^(1/2)*(5+5^(1/2))^(1/2))*2^(2/5))^(1/2)</span>
+<span class="comment">%   ((1/4*5^(1/2)-1/4-1/4*sqrt(-1)*2^(1/2)*(5+5^(1/2))^(1/2))*2^(2/5))^(1/2)</span>
+
+clc
+clear
+
+syms <span class="string">R</span> <span class="string">real</span>
+regsolution ( (R^6-196)^10*(R-5)^4*(R^2+5), 1);
+</pre><pre class="codeoutput">Generaly solution equation with non-regular roots
+ 
+ans =
+ 
+                                     sqrt(-1)*5^(1/2)
+                                    -sqrt(-1)*5^(1/2)
+                                                    5
+                                                    5
+                                                    5
+                                                    5
+                                            -14^(1/3)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                             14^(1/3)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                            -14^(1/3)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                             14^(1/3)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                            -14^(1/3)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                             14^(1/3)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                            -14^(1/3)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                             14^(1/3)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                            -14^(1/3)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                             14^(1/3)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                            -14^(1/3)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                             14^(1/3)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                            -14^(1/3)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                             14^(1/3)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                            -14^(1/3)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                             14^(1/3)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                            -14^(1/3)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                             14^(1/3)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                            -14^(1/3)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                             14^(1/3)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ 
+ 
+Generaly solution equation with regular format
+ 
+ans =
+ 
+                                                    5
+                                                    5
+                                                    5
+                                                    5
+                                             14^(1/3)
+                                             14^(1/3)
+                                             14^(1/3)
+                                             14^(1/3)
+                                             14^(1/3)
+                                             14^(1/3)
+                                             14^(1/3)
+                                             14^(1/3)
+                                             14^(1/3)
+                                             14^(1/3)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)+1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+ -(-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+  (-1/2*14^(2/3)-1/2*sqrt(-1)*3^(1/2)*14^(2/3))^(1/2)
+                                     sqrt(-1)*5^(1/2)
+                                    -sqrt(-1)*5^(1/2)
+                                            -14^(1/3)
+                                            -14^(1/3)
+                                            -14^(1/3)
+                                            -14^(1/3)
+                                            -14^(1/3)
+                                            -14^(1/3)
+                                            -14^(1/3)
+                                            -14^(1/3)
+                                            -14^(1/3)
+                                            -14^(1/3)
+ 
+ 
+Regular solution equation.s with order-degree roots
+
+ssolution =
+
+   5.0000             4.0000          
+   2.4101            10.0000          
+  -1.2051 - 2.0872i  10.0000          
+   1.2051 + 2.0872i  10.0000          
+  -1.2051 + 2.0872i  10.0000          
+   1.2051 - 2.0872i  10.0000          
+        0 + 2.2361i   1.0000          
+        0 - 2.2361i   1.0000          
+  -2.4101            10.0000          
+
+</pre><p class="footer"><br>
+            Published with MATLAB&reg; 7.1<br></p>
+      </div>
+      <!--
+##### SOURCE BEGIN #####
+%______________________________________________________________25/06/07___
+%|   Regular solution sub-function         |    H.C.Eng.Ali Özgül (C)(R)  |
+%|_________________________________________|______________________________|
+%|Sub Function Application                 |
+%|                                         |
+%| [Solution]=regsolution( func(R) )       |
+%|_________________________________________|
+% [Syntax]
+%    [ssolution] = regsolution(func)
+%    func = function(R-parameter)
+%
+%    The [ssolution] is the symbolic expression on general maple's [solve.m] 
+%    function. "R" parameter is selected as symbolic variable for [ssolution.m] 
+%    This solution sub-function outputs are returned the regular solution
+%    technique with solution's roots order-degree
+%
+% [Example];
+%    regsolution((R^10-4)*(R^2+1)^4*sin(R))   <REPLACE_WITH_DASH_DASH|
+%
+% *** Equation's roots && order-degree 
+%        0             1.0000          
+%        0 + 1.0000i   4.0000          
+%        0 - 1.0000i   4.0000          
+%   1.1487             1.0000          
+%  -1.1487             1.0000          
+%  -0.9293 - 0.6752i   1.0000          
+%   0.9293 + 0.6752i   1.0000          
+%  -0.3550 - 1.0925i   1.0000          
+%   0.3550 + 1.0925i   1.0000          
+%  -0.3550 + 1.0925i   1.0000          
+%   0.3550 - 1.0925i   1.0000          
+%  -0.9293 + 0.6752i   1.0000          
+%   0.9293 - 0.6752i   1.0000    %
+%
+%  *** Generaly solution with maple solve function's output
+%  solution = solve((R^10-4)*(R^2+1)^4*sin(R),R)
+%
+%                                                                   sqrt(-1)
+%                                                                   sqrt(-1)
+%                                                                   sqrt(-1)
+%                                                                   sqrt(-1)
+%                                                                  -sqrt(-1)
+%                                                                  -sqrt(-1)
+%                                                                  -sqrt(-1)
+%                                                                  -sqrt(-1)
+%                                                                    2^(1/5)
+%                                                                   -2^(1/5)
+%  -((1/4*5^(1/2)-1/4+1/4*sqrt(-1)*2^(1/2)*(5+5^(1/2))^(1/2))*2^(2/5))^(1/2)
+%   ((1/4*5^(1/2)-1/4+1/4*sqrt(-1)*2^(1/2)*(5+5^(1/2))^(1/2))*2^(2/5))^(1/2)
+% -((-1/4*5^(1/2)-1/4+1/4*sqrt(-1)*2^(1/2)*(5-5^(1/2))^(1/2))*2^(2/5))^(1/2)
+%  ((-1/4*5^(1/2)-1/4+1/4*sqrt(-1)*2^(1/2)*(5-5^(1/2))^(1/2))*2^(2/5))^(1/2)
+% -((-1/4*5^(1/2)-1/4-1/4*sqrt(-1)*2^(1/2)*(5-5^(1/2))^(1/2))*2^(2/5))^(1/2)
+%  ((-1/4*5^(1/2)-1/4-1/4*sqrt(-1)*2^(1/2)*(5-5^(1/2))^(1/2))*2^(2/5))^(1/2)
+%  -((1/4*5^(1/2)-1/4-1/4*sqrt(-1)*2^(1/2)*(5+5^(1/2))^(1/2))*2^(2/5))^(1/2)
+%   ((1/4*5^(1/2)-1/4-1/4*sqrt(-1)*2^(1/2)*(5+5^(1/2))^(1/2))*2^(2/5))^(1/2)
+
+clc
+clear
+
+syms R real
+regsolution ( (R^6-196)^10*(R-5)^4*(R^2+5));
+
+##### SOURCE END #####
+-->
+   </body>
+</html>

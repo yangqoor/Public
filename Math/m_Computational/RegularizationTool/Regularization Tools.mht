@@ -1,0 +1,310 @@
+From: <Saved by Windows Internet Explorer 7>
+Subject: Regularization Tools
+Date: Mon, 15 Nov 2010 13:39:06 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01CB84CA.79717510"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5994
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01CB84CA.79717510
+Content-Type: text/html;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www2.imm.dtu.dk/~pch/Regutools/
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTTP><HTML><HEAD><TITLE>Regularization Tools</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dgb2312">
+<META content=3D"MSHTML 6.00.6000.17092" name=3DGENERATOR></HEAD>
+<BODY bgColor=3D#ffffff><IMG=20
+src=3D"http://www2.imm.dtu.dk/~pch/Regutools/regutools.gif">=20
+<HR>
+
+<H1>Regularization Tools Version 4.1 (for Matlab Version 7.3)</H1>A =
+Matlab=20
+package for analysis and solution of discrete ill-posed problems, =
+developed by=20
+<A href=3D"http://www.imm.dtu.dk/~pch">Prof. Per Christian Hansen</A>, =
+Dept. of=20
+Informatics and Mathematical Modelling, Technical Univ. of Denmark.=20
+<P>The package's <A=20
+href=3D"http://www.mathworks.com/matlabcentral/fileexchange/loadFile.do?o=
+bjectId=3D52&amp;objectType=3Dfile">home=20
+page</A> at Matlab Central.=20
+<H3><B>Background </B></H3>The software package Regularization Tools, =
+Version=20
+4.1 (for Matlab Version 7.3), consists of a collection of documented <A=20
+href=3D"http://www-europe.mathworks.com/">Matlab</A> functions for =
+analysis and=20
+solution of discrete ill-posed problems. By means of this package, the =
+user can=20
+experiment with different regularization strategies, compare them, and =
+draw=20
+conclusions that would otherwise require a major programming effort. In =
+addition=20
+to the analysis and solution routines, the package also includes 12 test =
+
+problems. The package and the underlying theory is published in:=20
+<P>
+<UL>
+  <LI>P. C. Hansen, <I>Regularization Tools: A Matlab package for =
+analysis and=20
+  solution of discrete ill-posed problems</I>, Numerical Algorithms, 6 =
+(1994),=20
+  pp. 1-35. </LI></UL>The most recent version of the package is =
+described in:=20
+<P>
+<UL>
+  <LI>P. C. Hansen, <I>Regularization Tools Version 4.0 for Matlab =
+7.3</I>,=20
+  Numerical Algorithms, 46 (2007), pp. 189-194. </LI></UL>See also the =
+published=20
+book:=20
+<P>
+<UL>
+  <LI>P. C. Hansen, <I>Rank-Deficient and Discrete Ill-Posed Problems: =
+Numerical=20
+  Aspects of Linear Inversion</I>, SIAM, Philadelphia, 1998. </LI></UL>
+<H3><B>Software </B></H3>The software consists is available as a =
+compressed=20
+file:=20
+<UL>
+  <LI>Zip file <A=20
+  =
+href=3D"http://www2.imm.dtu.dk/~pch/Regutools/Software.zip">Software.zip<=
+/A>.=20
+  </LI></UL>The software is also available in the <A=20
+href=3D"http://www.netlib.org/numeralgo/index.html">NumerAlgo</A> =
+directory at=20
+Netlib. Versions 2.1 and 3.0 of the software are also available in the =
+same=20
+directory.=20
+<H3><B>Manual </B></H3>The accompanying manual, which also includes a=20
+description of the underlying algorithms, as well as a tutorial, is=20
+electronically available:=20
+<UL>
+  <LI><A =
+href=3D"http://www2.imm.dtu.dk/~pch/Regutools/Contents.pdf">Table of=20
+  contents</A> (pdf file).=20
+  <LI><A =
+href=3D"http://www2.imm.dtu.dk/~pch/Regutools/RTv4manual.pdf">Complete=20
+  manual</A> (pdf file). </LI></UL>The hardcopy version of the manual is =
+also=20
+available from IMM as a Lecture Note.=20
+<P>
+<H3><B>Additional Matlab software </B></H3>The function <A=20
+href=3D"http://www2.imm.dtu.dk/~pch/Regutools/TVreg.m">TVreg.m</A> that =
+computes a=20
+1D Total Variation regularized solution.=20
+<P>The 212-times-100 helioseismology problem used in several of my =
+papers is=20
+available either as an m-file <A=20
+href=3D"http://www2.imm.dtu.dk/~pch/Regutools/helio.m">helio.m</A> or as =
+a=20
+mat-file <A =
+href=3D"http://www2.imm.dtu.dk/~pch/Regutools/helio.mat">helio.mat</A>=20
+(note: some browsers try to change the file extension when saving this=20
+mat-file).=20
+<P>The functions <A=20
+href=3D"http://www2.imm.dtu.dk/~pch/Regutools/mblur.m">mblur.m</A> and =
+<A=20
+href=3D"http://www2.imm.dtu.dk/~pch/Regutools/oblur.m">oblur.m</A> =
+compute block=20
+Toeplitz matrices representing motion blur and out-of-focus blur, =
+respectively.=20
+<P>The function <A=20
+href=3D"http://www2.imm.dtu.dk/~pch/Regutools/pptsvd.m">pptsvd.m</A> =
+computes=20
+piecewise polynomial regularized solutions by means of the PP-TSVD =
+algorithm.=20
+Note that the computing time can be very large for large problems.=20
+<P>
+<P>
+<HR>
+<IMG src=3D"http://www2.imm.dtu.dk/~pch/Regutools/regutools1.gif"> =
+</BODY></HTML>
+
+------=_NextPart_000_0000_01CB84CA.79717510
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www2.imm.dtu.dk/~pch/Regutools/regutools.gif
+
+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
+
+------=_NextPart_000_0000_01CB84CA.79717510
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www2.imm.dtu.dk/~pch/Regutools/regutools1.gif
+
+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
+
+------=_NextPart_000_0000_01CB84CA.79717510--
