@@ -2,69 +2,71 @@
 % close all;
 % clc;
 % K=500;
-function x_1=D1IAA_1(y,K)
-M=length(y);
+function x_1 = D1IAA_1(y, K)
+    M = length(y);
 
-for m=1:M k=0:K-1;                   %∂®“Âaæÿ’Û
-    A(m,k+1)=exp(j*(m-1)*2*pi*k/K);    
-end
-
-
-%∑¢ÀÕ∂À
-% AM = 1;
-% omega = pi/3;
-% omega1 = pi;
-% phi = 0.1;
-% m = (1:M).';
-% y1 = AM*exp(j*(omega*m+phi)) + AM*exp(j*(omega1*m+phi)) ;
-% e=0+sqrt(0.1)*randn(M,1);         
-% y2=y1+e; %observation
-% Y2=fft(y2,K);                        
-% Ay2=abs(Y2);
-
-x = ones(K,1);
- power=abs(x).^2;                         % π”√À„∑®
- P=diag(power);
- R=A*P*A';
- Q=inv(R);
-
-for t=1:15
-    for    n=1:K
-
-x_1(t,n)=A(:,n)'*Q*y/(A(:,n)'*Q*A(:,n));
-   
+    for m = 1:M k = 0:K - 1; %ÂÆö‰πâaÁü©Èòµ
+        A(m, k + 1) = exp(j * (m - 1) * 2 * pi * k / K);
     end
-power=abs(x_1(t,:)).^2;                         % π”√À„∑®
-P=diag(power);
-R=A*P*A';
-Q=inv(R);
 
-end
-% for h=2:15
-%     if norm(x_1(h,:)-x_1(h-1,:))/norm(x_1(h,:))<=1e-1 break;
-%     end
-% end
-x_1 = x_1(end,:);
-% y3=A*x_1';                             %ªπ‘≠≥ˆ¿¥µƒ–≈∫≈                         
-% Y3=fft(y3,K); 
-% Ay3=abs(x_1);
-% 
-% 
-% 
-% % Ay4 = fft(y2,K);
-% 
-% figure;
-% b=0:K-1;
-% plot(b*360/K,Ay2/max(Ay2),'b'), hold on;
-% xlabel('∆µ¬ ');
-% ylabel('’Ò∑˘');
-% 
-% % plot(b*2*pi/K,Ay4,'k+-'),hold on;
-% b_1=0:K-1;
-% plot(b_1*360/K,Ay3/max(Ay3),'r'),hold on;
-% 
-% xlabel('∆µ¬ ');
-% ylabel('’Ò∑˘');
-% 
-% legend('dft','proposed')
-% % title('¥¶¿Ì∫Ûµƒ∆µ∆◊');
+    %ÂèëÈÄÅÁ´Ø
+    % AM = 1;
+    % omega = pi/3;
+    % omega1 = pi;
+    % phi = 0.1;
+    % m = (1:M).';
+    % y1 = AM*exp(j*(omega*m+phi)) + AM*exp(j*(omega1*m+phi)) ;
+    % e=0+sqrt(0.1)*randn(M,1);
+    % y2=y1+e; %observation
+    % Y2=fft(y2,K);
+    % Ay2=abs(Y2);
+
+    x = ones(K, 1);
+    power = abs(x) .^ 2; %‰ΩøÁî®ÁÆóÊ≥ï
+    P = diag(power);
+    R = A * P * A';
+    Q = inv(R);
+
+    for t = 1:15
+
+        for n = 1:K
+
+            x_1(t, n) = A(:, n)' * Q * y / (A(:, n)' * Q * A(:, n));
+
+        end
+
+        power = abs(x_1(t, :)) .^ 2; %‰ΩøÁî®ÁÆóÊ≥ï
+        P = diag(power);
+        R = A * P * A';
+        Q = inv(R);
+
+    end
+
+    % for h=2:15
+    %     if norm(x_1(h,:)-x_1(h-1,:))/norm(x_1(h,:))<=1e-1 break;
+    %     end
+    % end
+    x_1 = x_1(end, :);
+    % y3=A*x_1';                             %ËøòÂéüÂá∫Êù•ÁöÑ‰ø°Âè∑
+    % Y3=fft(y3,K);
+    % Ay3=abs(x_1);
+    %
+    %
+    %
+    % % Ay4 = fft(y2,K);
+    %
+    % figure;
+    % b=0:K-1;
+    % plot(b*360/K,Ay2/max(Ay2),'b'), hold on;
+    % xlabel('È¢ëÁéá');
+    % ylabel('ÊåØÂπÖ');
+    %
+    % % plot(b*2*pi/K,Ay4,'k+-'),hold on;
+    % b_1=0:K-1;
+    % plot(b_1*360/K,Ay3/max(Ay3),'r'),hold on;
+    %
+    % xlabel('È¢ëÁéá');
+    % ylabel('ÊåØÂπÖ');
+    %
+    % legend('dft','proposed')
+    % % title('Â§ÑÁêÜÂêéÁöÑÈ¢ëË∞±');

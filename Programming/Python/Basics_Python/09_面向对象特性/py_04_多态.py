@@ -32,3 +32,4 @@ xiaoming = Person("小明")
 
 # 3. 让小明和狗玩的方法
 xiaoming.game_with_dog(wangcai)
+  

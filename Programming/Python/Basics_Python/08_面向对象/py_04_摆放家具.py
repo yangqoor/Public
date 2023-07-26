@@ -59,3 +59,5 @@ my_home.add_item(chest)
 my_home.add_item(table)
 
 print(my_home)
+
+my_home.add_item(bed)
