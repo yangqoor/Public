@@ -16,7 +16,7 @@ omega = linspace(-pi, pi, 1024);
 t = 0:500000; % *100
 a = zeros(1, 4001);
 T = t(1:100000); % *100
-signal = exp(j * (0.1 * T + 0.0006 * T .* T));
+signal = exp(1j * (0.1 * T + 0.0006 * T .* T));
 chirp = cat(2, signal, a);
 %% Deramping
 img2 = zeros(size(img));
