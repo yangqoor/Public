@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Matlab Code for Fast Blind Removal of Non-Uniform Camera Shake Blur</title>
+	<meta name="author" content="Oliver Whyte &lt;oawhyte@gmail.com&gt;"/>
+	<meta name="version" content="1.0"/>
+	<meta name="date" content="Sept 17, 2014"/>
+	<meta name="copyright" content="2012, Oliver Whyte"/>
+	<meta name="url" content="http://www.di.ens.fr/willow/research/deblurring/, 
+http://www.di.ens.fr/willow/research/saturation/"/>
+</head>
+<body>
+
+<h1 id="matlabcodeforfastblindremovalofnon-uniformcamerashakeblur">Matlab Code for Fast Blind Removal of Non-Uniform Camera Shake Blur</h1>
+
+<p>This package contains code to perform fast blind deblurring of images degraded
+by camera shake, using the MAP algorithm described in our IJCV 2012 paper
+<a class="citation" href="#fn:1" title="Jump to citation">[1]<span class="citekey" style="display:none">Whyte12</span></a>, and the fast approximation of spatially-varying blur described in
+our CPCV 2011 paper <a class="citation" href="#fn:2" title="Jump to citation">[2]<span class="citekey" style="display:none">Whyte11</span></a>. Please cite these papers if using this code
+in an academic publication.</p>
+
+<p>Please send bug reports to <a href="&#109;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#x6f;&#x61;&#119;&#x68;&#x79;&#x74;&#x65;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#x6f;&#109;">&#111;&#x61;&#x77;&#x68;&#x79;&#116;&#x65;&#x40;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;</a></p>
+
+<h2 id="1acknowledgements">1 Acknowledgements</h2>
+
+<p>This package includes modified versions of code published by several other authors:</p>
+
+<ul>
+<li>Sparse Deconvolution code of Levin et al. Downloaded from <a href="http://groups.csail.mit.edu/graphics/CodedAperture/DeconvolutionCode.html">http://groups.csail.mit.edu/graphics/CodedAperture/DeconvolutionCode.html</a></li>
+<li>Fast Deconvolution code of Krishnan and Fergus. Downloaded from <a href="http://cs.nyu.edu/~dilip/research/fast-deconvolution/">http://cs.nyu.edu/~dilip/research/fast-deconvolution/</a></li>
+<li>FFT-based Poisson image blending by Amit Agrawal. Downloaded May 2008 from <a href="http://www.umiacs.umd.edu/~aagrawal/ICCV2007Course/PseudoCode.PDF">http://www.umiacs.umd.edu/~aagrawal/ICCV2007Course/PseudoCode.PDF</a></li>
+<li>Shock-filter code of Guy Gilboa. Downloaded from <a href="http://visl.technion.ac.il/~gilboa/PDE-filt/shock.m">http://visl.technion.ac.il/~gilboa/PDE-filt/shock.m</a></li>
+<li>LARS-LASSO code of Karl Skoglund. Most recent version available at <a href="http://www.imm.dtu.dk/projects/spasm/">http://www.imm.dtu.dk/projects/spasm/</a></li>
+</ul>
+
+<h2 id="2installingrunning">2 Installing &amp; Running</h2>
+
+<ul>
+<li>Add the <code>code</code> directory to your Matlab path, e.g. with <code>addpath(fullfile(pwd,'code'))</code></li>
+<li>Pre-compiled mex files are included for several platforms. However, if necessary,
+ compile the included mex files by running <code>blind_mexall.m</code>
+
+<ul>
+<li>On Windows, you will probably need to edit blind_mexall.m to disable openmp
+ and blas</li>
+</ul></li>
+<li>Run one of the included examples, e.g. <code>run examples/deblur_garden.m</code> to try
+ out the code</li>
+</ul>
+
+<h3 id="2.1compatibility">2.1 Compatibility</h3>
+
+<p>Tested on:</p>
+
+<ul>
+<li>64-bit Linux Ubuntu 10.04 with Matlab R2011a</li>
+<li>64-bit Mac OS X 10.6 with Matlab R2010a</li>
+<li>64-bit Windows 8.1 with Matlab R2011b</li>
+</ul>
+
+<h2 id="3license">3 License</h2>
+
+<p>Copyright (c) 2012, Oliver Whyte</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &#8220;Software&#8221;), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED &#8220;AS IS&#8221;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+
+<h2 id="4changelog">4 Changelog</h2>
+
+<h3 id="version1.017-sep-2014">Version 1.0 (17-Sep&#8211;2014)</h3>
+
+<ul>
+<li>Initial public release</li>
+</ul>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1" class="citation"><span class="citekey" style="display:none">Whyte12</span><p>O. Whyte, J. Sivic, A. Zisserman, and J. Ponce. &#8220;Non-uniform
+Deblurring for Shaken Images&#8221;. IJCV, 2011 (accepted).</p>
+</li>
+
+<li id="fn:2" class="citation"><span class="citekey" style="display:none">Whyte11</span><p>O. Whyte, J. Sivic, and A. Zisserman. &#8220;Deblurring Shaken and
+Partially Saturated Images&#8221;. In Proc. CPCV Workshop, with ICCV, 2011.</p>
+</li>
+
+</ol>
+</div>
+
+
+</body>
+</html>
