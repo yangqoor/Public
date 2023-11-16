@@ -14,7 +14,7 @@ hfs1_x1=floor((size(filt1,2)-1)/2);
 hfs1_x2=ceil((size(filt1,2)-1)/2);
 hfs1_y1=floor((size(filt1,1)-1)/2);
 hfs1_y2=ceil((size(filt1,1)-1)/2);
-shifts1=[-hfs1_x1  hfs1_x2  -hfs1_y1  hfs1_y2];
+% shifts1=[-hfs1_x1  hfs1_x2  -hfs1_y1  hfs1_y2];
 
 hfs_x1=hfs1_x1;
 hfs_x2=hfs1_x2;
@@ -24,7 +24,7 @@ hfs_y2=hfs1_y2;
 
 m=m+hfs_x1+hfs_x2;
 n=n+hfs_y1+hfs_y2;
-N=m*n;
+% N=m*n;
 mask=zeros(n,m);
 mask(hfs_y1+1:n-hfs_y2,hfs_x1+1:m-hfs_x2)=1;
 
@@ -62,7 +62,7 @@ r = b - Ax;
 for iter = 1:max_it  
      rho = (r(:)'*r(:));
 
-     if ( iter > 1 ),                       % direction vector
+     if ( iter > 1 )                       % direction vector
         beta = rho / rho_1;
         p = r + beta*p;
      else
