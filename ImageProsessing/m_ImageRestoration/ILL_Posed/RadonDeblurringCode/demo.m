@@ -1,6 +1,6 @@
 % This is a demo script for deblurring photographs using "Blur kernel
 % estimation using blurred edge profiles".  
-%
+
 % Taeg Sang Cho
 % 18 Aug 2010
 
@@ -8,7 +8,7 @@ clear;
 
 path(path, './FunctionPackage');
 
-MAPOn = 0; %if 1, then RadonMAP, if 0, then just the inverse Radon transform.
+MAPOn = 1; %if 1, then RadonMAP, if 0, then just the inverse Radon transform.
 
 % image number, runs from 1 to 33
 % To add more images, edit loadImData_web.m to specify the blur kernel size
