@@ -1,7 +1,7 @@
 README file for Deblurring code used in SIGGRAPH '06 paper: "Removing
 Camera Shake from a Single Image" by R.Fergus, B.Singh, A. Hertzmann,
 S. T. Roweis, W. T. Freeman.
-
+[Removing camera shake from a single image](https://cs.nyu.edu/~fergus/research/deblur.html)
 
 Distribution code Version 1.2 -- 10/23/2006 by Rob Fergus (fergus at
 csail dot mit dot edu) Copyright 2006, Massachusetts Institute of
@@ -29,7 +29,7 @@ email me if you are really stuck. I will try and get back to you, but I may take
 as I am busy with other stuff.
 
 --------------------------------------------------------------------------------
-¦ Contents                                                                     ¦
+ï¿½ Contents                                                                     ï¿½
 --------------------------------------------------------------------------------
 
 1. Legal blurb regarding the patent filed on this algorithm.
@@ -41,7 +41,7 @@ as I am busy with other stuff.
 7. Hints and tips for using the algorithm.
 
 -------------------------------------------------------------------------------
-¦ 1. Legal blurb                                                              ¦
+ï¿½ 1. Legal blurb                                                              ï¿½
 ------------------------------------------------------------------------------- 
 Begin patent blurb from MIT TLO
 
@@ -62,7 +62,7 @@ Begin patent blurb from MIT TLO
 End patent blurb from MIT TLO
 
 -------------------------------------------------------------------------------
-¦ 2. Acknowledgements                                                          ¦
+ï¿½ 2. Acknowledgements                                                          ï¿½
 ------------------------------------------------------------------------------- 
 
 We'd like to acknowledge a variety of people for their help on this
@@ -78,7 +78,7 @@ project:
 	- Various funding agencies
 
 -------------------------------------------------------------------------------
-¦ 3. Academic use of the code                                                  ¦
+ï¿½ 3. Academic use of the code                                                  ï¿½
 ------------------------------------------------------------------------------- 
 
 If you use this code to generate results that you use in an academic
@@ -127,7 +127,7 @@ year = 2000
 
 
 -------------------------------------------------------------------------------
-¦ 4. Installing the code                                                       ¦
+ï¿½ 4. Installing the code                                                       ï¿½
 ------------------------------------------------------------------------------- 
 
 4.1 Platform issues / requirements
@@ -175,7 +175,7 @@ year = 2000
 	  http://www.cns.nyu.edu/~lcv/softare.html
 
 -------------------------------------------------------------------------------
-¦ 5. Overall structure of the algorithm                                       ¦
+ï¿½ 5. Overall structure of the algorithm                                       ï¿½
 ------------------------------------------------------------------------------- 
 
 5.1 Directory structure
@@ -314,7 +314,7 @@ dropping down a resolution level, then use the "fiddle_lucy3"
 function, e.g. "fiddle_lucy3('rob1',20)".
 
 -------------------------------------------------------------------------------
-¦ 6. Details of the parameters script		                              ¦
+ï¿½ 6. Details of the parameters script		                              ï¿½
 ------------------------------------------------------------------------------- 
 
 The script contains all the parameters used by the algorithm. This is
@@ -340,7 +340,7 @@ to set once you get the hang of things.
       levels to use in inference (along with RESIZE_STEP).
 
 6.1.3 FIRST_INIT_MODE_BLUR - string. Possible values
-    {'hbar'¦'vbar'¦'delta'}. Sets the initial 3x3 kernel that will be
+    {'hbar'ï¿½'vbar'ï¿½'delta'}. Sets the initial 3x3 kernel that will be
     used for inference at the 1st scale level. 'hbar' is a horizontal
     bar (i.e. [0 0 0 ; 1 1 1 ; 0 0 0]/3). 'vbar' is a vertical bar
     (i.e. 'hbar' rotated through 90 degrees). 'delta' is a delta
@@ -411,7 +411,7 @@ Occasionally if you are getting no sensible results despite playing
   other parameters to see if they help. These are listed below in
   rough order of importance.
 
-6.3.1 PRIOR_TYPE - string. Possible values {'street' ¦ 'whiteboard' }.
+6.3.1 PRIOR_TYPE - string. Possible values {'street' ï¿½ 'whiteboard' }.
       Prior file to use. In priors/ are two files with the parameters
       of a mixture of Gaussians fit to the image gradients from
       different scenes. 'street' selects the parameters estimated from
@@ -482,7 +482,7 @@ now just leave anything below the "Fixed parameters" comment alone.
 
     
 -------------------------------------------------------------------------------
-¦ 7. Hints and Tips					                      ¦
+ï¿½ 7. Hints and Tips					                      ï¿½
 ------------------------------------------------------------------------------- 
 
 7.1 Saturation
@@ -558,7 +558,7 @@ now just leave anything below the "Fixed parameters" comment alone.
     function to examine the progress of the algorithm.
 
 -------------------------------------------------------------------------------
-¦ 8. Frequently asked questions
+ï¿½ 8. Frequently asked questions
 ------------------------------------------------------------------------------- 
 
 8.1 Q: Richardson-Lucy Where can I find an explanation of it?
