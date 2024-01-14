@@ -1,7 +1,5 @@
-README file for Deblurring code used in SIGGRAPH '06 paper: "Removing
-Camera Shake from a Single Image" by R.Fergus, B.Singh, A. Hertzmann,
+README file for Deblurring code used in SIGGRAPH '06 paper: "[Removing Camera Shake from a Single Image](https://cs.nyu.edu/~fergus/research/deblur.html)" by R.Fergus, B.Singh, A. Hertzmann,
 S. T. Roweis, W. T. Freeman.
-[Removing camera shake from a single image](https://cs.nyu.edu/~fergus/research/deblur.html)
 
 Distribution code Version 1.2 -- 10/23/2006 by Rob Fergus (fergus at
 csail dot mit dot edu) Copyright 2006, Massachusetts Institute of
