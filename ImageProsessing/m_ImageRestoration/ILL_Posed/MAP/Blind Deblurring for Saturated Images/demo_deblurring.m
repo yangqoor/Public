@@ -52,6 +52,6 @@ figure; imshow(Latent)
 mkdir('./results');
 k = kernel - min(kernel(:));
 k = k./max(k(:));
-imwrite(k,'./results/kernel.png');
-imwrite(Latent,'./results/image.png');
+% imwrite(k,'./results/kernel.png');
+% imwrite(Latent,'./results/image.png');
 
