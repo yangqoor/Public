@@ -1,0 +1,25 @@
+Collecting colorama
+  Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting pillow
+  Downloading pillow-10.2.0-cp38-cp38-win_amd64.whl.metadata (9.9 kB)
+Collecting Theano==0.8.2
+  Downloading Theano-0.8.2.tar.gz (2.9 MB)
+     ---------------------------------------- 2.9/2.9 MB 3.2 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: numpy>=1.7.1 in d:\programfiles\anaconda\envs\py38_img\lib\site-packages (from Theano==0.8.2) (1.24.4)
+Requirement already satisfied: scipy>=0.11 in d:\programfiles\anaconda\envs\py38_img\lib\site-packages (from Theano==0.8.2) (1.10.1)
+Collecting six>=1.9.0 (from Theano==0.8.2)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Downloading pillow-10.2.0-cp38-cp38-win_amd64.whl (2.6 MB)
+   ---------------------------------------- 2.6/2.6 MB 551.6 kB/s eta 0:00:00
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Building wheels for collected packages: Theano
+  Building wheel for Theano (setup.py): started
+  Building wheel for Theano (setup.py): finished with status 'done'
+  Created wheel for Theano: filename=Theano-0.8.2-py3-none-any.whl size=2724446 sha256=3a925e6ae77fba6b2d49a99f62e370455b7d1c3ebc59ef0b954afad81e9aa84d
+  Stored in directory: c:\users\administrator\appdata\local\pip\cache\wheels\ee\df\dd\48f318ca6cd4b7c41258b6dde183bef1b96bbe0b563aefccae
+Successfully built Theano
+Installing collected packages: six, pillow, colorama, Theano
+Successfully installed Theano-0.8.2 colorama-0.4.6 pillow-10.2.0 six-1.16.0
