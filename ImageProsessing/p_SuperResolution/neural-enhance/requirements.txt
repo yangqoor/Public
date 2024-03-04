@@ -2,3 +2,5 @@ colorama
 pillow>=3.2.0
 Theano>=0.8.2
 lasagne
+numpy
+scipy
