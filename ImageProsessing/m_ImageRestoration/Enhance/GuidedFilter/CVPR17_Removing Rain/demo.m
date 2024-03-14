@@ -11,7 +11,7 @@ clc;
 clear;
 
 addpath '.\fast-guided-filter-code-v1'
-run 'D:\ProgramFiles\MATLAB\R2019a\toolbox\deeplearning\matconvnet\matlab\vl_setupnn'
+run 'D:\Lib_Dependencies\MATLAB\DL\matconvnet\matlab\vl_setupnn'
 
 load('network.mat'); % load trained model
 
@@ -23,8 +23,8 @@ eps = 1;
 s = 4;
 %%%
 
-% input = im2double(imread('.\image\synthetic\1rain.jpg'));
-input = im2double(imread('.\image\real_world\xxx.jpg'));
+% input = im2double(imread('.\image\synthetic\3rain.jpg'));
+input = im2double(imread('.\image\real_world\3.jpg'));
 
 base_layer = zeros(size(input)); % base layer
 base_layer(:, :, 1) = fastguidedfilter(input(:, :, 1), input(:, :, 1), r, eps, s);
