@@ -1,4 +1,4 @@
-newImageRGB = imread('.\img\1_banana_noise.jpg');
+newImageRGB = imread('.\img\1_bird_noise.jpg');
 figure(1);
 imshow(newImageRGB);
 

@@ -105,7 +105,7 @@ for ii = 2 : length(video_path)
     nFrames=nFrames+1;
     time=time+toc;
     
-    imwrite(result, strcat(save_path, video_path(ii).name));
+    % imwrite(result, strcat(save_path, video_path(ii).name));
 
 %     min(result(:))
     

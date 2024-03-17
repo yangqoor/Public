@@ -14,4 +14,4 @@ X_full = FullDetailEnhancement(X, r, lambda, theta);
 X_selective = SelectiveDetailEnhancement(X, r, lambda, theta);
 
 figure('Name', 'in --- full --- selective');
-imshow([X,X_full, X_selective]); 
+imshow([X, X_full, X_selective]); 

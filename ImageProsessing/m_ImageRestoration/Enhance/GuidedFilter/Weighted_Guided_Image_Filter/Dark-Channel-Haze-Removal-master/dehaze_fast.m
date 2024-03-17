@@ -21,7 +21,7 @@ atmosphere = get_atmosphere(image, dark_channel);
 
 trans_est = get_transmission_estimate(image, atmosphere, omega, win_size);
 
-x = guided_filter(rgb2gray(image), trans_est, r, res);
+x = dehaze_guided_filter(rgb2gray(image), trans_est, r, res);
 
 transmission = reshape(x, m, n);
 

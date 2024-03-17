@@ -23,5 +23,5 @@ for imagenumber_i = 1:1:(filesize-2)
         error('two images are not the same size.');
     end
     imgf = msmd(image_input1,image_input2,level,iteration,sigma_s,sigma_r,k);
-    imwrite((imgf),strcat( result_folder, '\',name,ext));
+    % imwrite((imgf),strcat( result_folder, '\',name,ext));
 end

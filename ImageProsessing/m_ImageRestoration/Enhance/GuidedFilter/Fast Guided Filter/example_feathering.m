@@ -19,3 +19,7 @@ toc;
 
 figure();
 imshow([I, repmat(p, [1, 1, 3]), repmat(q, [1, 1, 3]), repmat(q_sub, [1, 1, 3])], [0, 1]);
+
+en_I = repmat(q_sub, [1, 1, 3]) .* I; 
+figure();
+imshow(en_I)
