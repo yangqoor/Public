@@ -147,5 +147,5 @@ blurred = im2double(imread(fn));
 figure; imshow(deblurImg,[]);
 kw = kernel - min(kernel(:));
 kw = kw./max(kw(:));
-imwrite(kw,['results/' fn(7:end-4) '_kernel.png'])
-imwrite(deblurImg,['results/' fn(7:end-4) '_out.png'])
+% imwrite(kw,['results/' fn(7:end-4) '_kernel.png'])
+% imwrite(deblurImg,['results/' fn(7:end-4) '_out.png'])

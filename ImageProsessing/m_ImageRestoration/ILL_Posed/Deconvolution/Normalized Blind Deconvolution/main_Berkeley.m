@@ -36,7 +36,7 @@ for im = 1:12
         tic
         [fe, k] = deblur(blurred, MK, NK, lambda, params);
         t = toc;
-        imwrite(k./max(k(:)),[resultFolder '/img',num2str(im),'_kernel',num2str(ker),'_MeiguangTVL2_kernel.png']);
+        % imwrite(k./max(k(:)),[resultFolder '/img',num2str(im),'_kernel',num2str(ker),'_MeiguangTVL2_kernel.png']);
         end
     end
 end
