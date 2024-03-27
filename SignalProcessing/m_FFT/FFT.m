@@ -3,7 +3,8 @@ N   = 128;
 n   = 0:N - 1;
 t   = n / fs;
 f0  = 10;                                  % 设定正弦信号频率
-x   = sin(2 * pi * f0 * t);                % 生成正弦信号
+f1  = 6;
+x   = sin(2 * pi * f0 * t) + sin(2 * pi * f1 * t);                % 生成正弦信号
 figure(1);
 subplot(211);
 plot(t, x);                                % 作正弦信号的时域波形
