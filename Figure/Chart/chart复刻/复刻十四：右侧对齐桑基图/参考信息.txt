@@ -1,0 +1,6 @@
+文章地址：www.nature.com/articles/s41586-021-03922-4
+文章下载：https://www.nature.com/articles/s41586-021-03922-4.pdf
+
+文章引用：Elmarakeby, H.A., Hwang, J., Arafeh, R. et al. Biologically informed deep neural network for prostate cancer discovery. Nature 598, 348–352 (2021). https://doi.org/10.1038/s41586-021-03922-4
+
+工具引用：Zhaoxu Liu / slandarer (2024). sankey plot (https://www.mathworks.com/matlabcentral/fileexchange/128679-sankey-plot), MATLAB Central File Exchange. 
