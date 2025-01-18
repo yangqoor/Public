@@ -1,0 +1,13 @@
+The	O
+bread	B-POS
+is	O
+top	O
+notch	O
+as	O
+well	O
+.	O
+
+I	O
+have	O
+to	O
+say	O

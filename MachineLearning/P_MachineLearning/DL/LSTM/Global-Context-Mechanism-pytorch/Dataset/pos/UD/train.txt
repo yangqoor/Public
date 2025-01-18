@@ -1,0 +1,7 @@
+What WP
+if IN
+Google NNP
+Morphed VBD
+Into IN
+GoogleOS NNP
+? .
