@@ -29,6 +29,7 @@ for img=1:4
 
         y = imread(filename);
         yg = im2double(rgb2gray(y));
+        % yg = im2double(y);
 
         tic;
         [kernel, interim_latent] = blind_deconv(yg, lambda, lambda_grad, opts);
