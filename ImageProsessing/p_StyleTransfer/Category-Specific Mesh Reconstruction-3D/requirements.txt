@@ -1,0 +1,16 @@
+absl-py
+Cython
+h5py
+imageio
+ipdb
+matplotlib
+opencv-python
+Pillow
+progressbar
+protobuf
+PyOpenGL
+scikit-image
+scipy
+torchfile
+tqdm
+visdom
