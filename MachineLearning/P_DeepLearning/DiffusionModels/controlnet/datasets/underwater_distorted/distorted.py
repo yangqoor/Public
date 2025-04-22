@@ -109,8 +109,8 @@ class distorted(datasets.GeneratorBasedBuilder):
             }
 
 # import datasets 
-# config = datasets.DownloadConfig(local_files_only=True) 
+# config  = datasets.DownloadConfig(local_files_only=True) 
 # dataset = datasets.load_dataset( "codeparrot/self-instruct-starcoder", cache_dir="./hf_cache", download_config=config )
-# dataset = load_dataset(r'E:\Z_Pan\controlnet\datasets\underwater_distorted\distorted.py')
+dataset   = load_dataset(r'D:\Study\Code\Public\MachineLearning\P_DeepLearning\DiffusionModels\controlnet\datasets\underwater_distorted\distorted.py', trust_remote_code=True)
 # print(dataset)
 # print(dataset["train"][0])
