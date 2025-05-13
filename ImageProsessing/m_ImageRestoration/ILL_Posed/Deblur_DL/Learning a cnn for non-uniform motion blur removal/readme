@@ -1,0 +1,19 @@
+% This is the code implementing the paper: 
+%     Learning a convolutional neural network for non-uniform motion blur
+%  removal, CVPR 2015
+%  
+%  The code is written by Jian SUN at Xi'an Jiaotong University
+%     EMAIL: jiansun@mail.xjtu.edu.cn
+%     Homepage: jiansun.gr.xjtu.edu.cn
+
+%  1. How to run the code?
+%  (1) Install the matconvnet toolbox (in GPU or CPU mode), and include the path in the first line of "main_deblur". If GPU is not provided, just set 
+%      params.useGPU = 0; GPU version is preferred.
+%  (2) Compile 'motionBlurConv.cc' 'motionBlurConv_mirror.cc' using mex if you are not using ubuntu 64 bit system.
+%  (2) The main function for running deblur code is 'main_deblur'. Please set impath to the image path you want to work with.
+%      We included several examples of blurry images in the folder 'Examples'. 
+%  
+%   Note: our approach assumes that the images are with uniform
+%         or non-uniform linear motion blur. Therefore, it may not work well on blurs with other general shape motion blurs, or out-of-focus blurs.  
+
+% 2. About the training code: In this version, a pre-trained network for blur estimation is provided. If you are interested in the training codes and (or) training dataset, please contact us.
