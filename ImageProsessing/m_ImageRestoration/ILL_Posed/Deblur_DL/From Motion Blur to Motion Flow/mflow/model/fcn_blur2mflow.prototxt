@@ -1,0 +1,431 @@
+layer {
+  name: "data"
+  type: "Input"
+  top: "data"
+  input_param {
+    shape {
+      dim: 1
+      dim: 3
+      dim: 500
+      dim: 500
+    }
+  }
+}
+layer {
+  name: "conv1"
+  type: "Convolution"
+  bottom: "data"
+  top: "conv1"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 96
+    pad: 30
+    kernel_size: 7
+    stride: 1
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  name: "relu1"
+  type: "ReLU"
+  bottom: "conv1"
+  top: "conv1"
+}
+layer {
+  name: "pool1"
+  type: "Pooling"
+  bottom: "conv1"
+  top: "pool1"
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layer {
+  name: "conv2"
+  type: "Convolution"
+  bottom: "pool1"
+  top: "conv2"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 256
+    pad: 0
+    kernel_size: 5
+    stride: 1
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  name: "relu2"
+  type: "ReLU"
+  bottom: "conv2"
+  top: "conv2"
+}
+layer {
+  name: "pool2"
+  type: "Pooling"
+  bottom: "conv2"
+  top: "pool2"
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layer {
+  name: "conv3"
+  type: "Convolution"
+  bottom: "pool2"
+  top: "conv3"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 512
+    pad: 0
+    kernel_size: 3
+    stride: 1
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  name: "relu3"
+  type: "ReLU"
+  bottom: "conv3"
+  top: "conv3"
+}
+layer {
+  name: "pool3"
+  type: "Pooling"
+  bottom: "conv3"
+  top: "pool3"
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layer {
+  name: "conv4"
+  type: "Convolution"
+  bottom: "pool3"
+  top: "conv4"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 512
+    pad: 0
+    kernel_size: 3
+    stride: 1
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  name: "relu4"
+  type: "ReLU"
+  bottom: "conv4"
+  top: "conv4"
+}
+layer {
+  name: "pool4"
+  type: "Pooling"
+  bottom: "conv4"
+  top: "pool4"
+  pooling_param {
+    pool: MAX
+    kernel_size: 2
+    stride: 2
+  }
+}
+layer {
+  name: "conv5"
+  type: "Convolution"
+  bottom: "pool4"
+  top: "conv5"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 1024
+    pad: 0
+    kernel_size: 3
+    stride: 1
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  name: "relu5"
+  type: "ReLU"
+  bottom: "conv5"
+  top: "conv5"
+}
+layer {
+  name: "score_fr"
+  type: "Convolution"
+  bottom: "conv5"
+  top: "score_fr"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 112
+    pad: 0
+    kernel_size: 1
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+  }
+}
+layer {
+  name: "upscore2"
+  type: "Deconvolution"
+  bottom: "score_fr"
+  top: "upscore2"
+  param {
+    lr_mult: 0
+  }
+  convolution_param {
+    num_output: 112
+    bias_term: false
+    kernel_size: 4
+    stride: 2
+  }
+}
+layer {
+  name: "scale_pool3"
+  type: "Scale"
+  bottom: "pool3"
+  top: "scale_pool3"
+  param {
+    lr_mult: 0
+  }
+  scale_param {
+    filler {
+      type: "constant"
+      value: 0.01
+    }
+  }
+}
+layer {
+  name: "score_pool3"
+  type: "Convolution"
+  bottom: "scale_pool3"
+  top: "score_pool3"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 112
+    pad: 0
+    kernel_size: 1
+  }
+}
+layer {
+  name: "score_pool3c"
+  type: "Crop"
+  bottom: "score_pool3"
+  bottom: "upscore2"
+  top: "score_pool3c"
+  crop_param {
+    axis: 2
+    offset: 2
+  }
+}
+layer {
+  name: "fuse_pool3"
+  type: "Eltwise"
+  bottom: "upscore2"
+  bottom: "score_pool3c"
+  top: "fuse_pool3"
+  eltwise_param {
+    operation: SUM
+  }
+}
+layer {
+  name: "upscore_pool3"
+  type: "Deconvolution"
+  bottom: "fuse_pool3"
+  top: "upscore_pool3"
+  param {
+    lr_mult: 0
+  }
+  convolution_param {
+    num_output: 112
+    bias_term: false
+    kernel_size: 4
+    stride: 2
+  }
+}
+layer {
+  name: "scale_pool2"
+  type: "Scale"
+  bottom: "pool2"
+  top: "scale_pool2"
+  param {
+    lr_mult: 0
+  }
+  scale_param {
+    filler {
+      type: "constant"
+      value: 0.0001
+    }
+  }
+}
+layer {
+  name: "score_pool2"
+  type: "Convolution"
+  bottom: "scale_pool2"
+  top: "score_pool2"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 112
+    pad: 0
+    kernel_size: 1
+  }
+}
+layer {
+  name: "score_pool2c"
+  type: "Crop"
+  bottom: "score_pool2"
+  bottom: "upscore_pool3"
+  top: "score_pool2c"
+  crop_param {
+    axis: 2
+    offset: 4
+  }
+}
+layer {
+  name: "fuse_pool2"
+  type: "Eltwise"
+  bottom: "upscore_pool3"
+  bottom: "score_pool2c"
+  top: "fuse_pool2"
+  eltwise_param {
+    operation: SUM
+  }
+}
+layer {
+  name: "upscore_pool2"
+  type: "Deconvolution"
+  bottom: "fuse_pool2"
+  top: "upscore_pool2"
+  param {
+    lr_mult: 0
+  }
+  convolution_param {
+    num_output: 112
+    bias_term: false
+    kernel_size: 8
+    stride: 4
+  }
+}
+layer {
+  name: "score"
+  type: "Crop"
+  bottom: "upscore_pool2"
+  bottom: "data"
+  top: "score"
+  crop_param {
+    axis: 2
+    offset: 9
+  }
+}
+layer {
+  name: "score1"
+  type: "Slice"
+  bottom: "score"
+  top: "score1"
+  top: "score2"
+  slice_param {
+    slice_point: 39
+    axis: 1
+  }
+}

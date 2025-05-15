@@ -1,0 +1,40 @@
+Testing code for "From Motion Blur to Motion Flow" v1.0
+Project page: https://donggong1.github.io/blur2mflow
+
+This package contains the testing code for the paper:
+
+Dong Gong, Jie Yang, Lingqiao Liu, Yanning Zhang, Ian Reid, Chunhua Shen, Anton van den Hengel, and Qinfeng Shi. "From Motion Blur to Motion Flow: a Deep Learning Solution for Removing Heterogeneous Motion Blur". In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017.
+
+If you use this code in your research, please cite our paper:
+@inproceedings{gong2017blur2fm,
+  title={From Motion Blur to Motion Flow: a Deep Learning Solution for Removing Heterogeneous Motion Blur},
+  author={Gong, Dong and Yang, Jie and Liu, Lingqiao and Zhang, Yanning and Reid, Ian and Shen, Chunhua and Hengel, Anton van den and Shi, Qinfeng},
+  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  Year = {2017}
+}
+
+For algorithmic details, please refer to our paper.
+
+
+=== Some hints for usage
+This package contains a trained model and the code for non-blind deconvolution.
+
+==== Motion flow estimation
+Caffe is required for running this code. The folder "./model" contains the network definition in "fcn_blur2mflow.prototxt" and the trained weights in "fcn_blur2mflow.caffemodel". The code is tested on Ubuntu 14.04 with an NVIDIA GeForce 980 Ti graphics card.
+
+To estimate motion flow map from blurred image, run:
+	python script_mf_est.py [input path for testing image] [output path for motion flow map]
+	e.g. python script_mf_est.py example/example1.png example/example1_mfmap.mat
+
+Function @draw_mfmap can be used for visualizing the motion flow. Please find an example in "script_nbd.m".
+
+
+==== Non-blind deconvolution (recovering sharp image given motion flow)
+The implementation is in MATLAB and partly in C using mex (in folder "./mf_nbd_code"). Given a blurred image (e.g. img_name.png) and the corresponding motion flow map (e.g. img_name_mfmap.mat), the sharp image can be recovered using "nbd_single.m". An example is given in the file "script_nbd.m".
+
+Note that the non-blind deconvolution is based on the implementation of the paper "J. Sun, W. Cao, Z. Xu, and J. Ponce. Learning a convolutional neural network for non-uniform motion blur removal. In CVPR, 2015.". The performance of the non-blind deconvolution correlates to the regularization weight. You may need to slightly tune the parameters for a desired results. 
+
+
+=== Copyright
+Copyright (c) The authors, 2017.
+This code is for non-commercial purposes only. For commerical purposes, please contact Dong Gong (edgong01@gmail.com), Jie Yang (yangjie07@gmail.com) and Javen Shi (javen.shi@adelaide.edu.au).
