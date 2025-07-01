@@ -1,0 +1,60 @@
+data:
+    dataset: "ImageNet"
+    image_size: 64
+    channels: 3
+    logit_transform: false
+    uniform_dequantization: false
+    gaussian_dequantization: false
+    random_flip: true
+    rescaled: true
+    num_workers: 12
+    subset_1k: True
+    out_of_dist: False
+
+model:
+    type: "openai"
+    in_channels: 3
+    out_channels: 3
+    num_channels: 192  
+    num_heads: 8  
+    num_res_blocks: 3  
+    attention_resolutions: "32,16,8"  
+    dropout: 0.1  
+    resamp_with_conv: True
+    learn_sigma: True
+    use_scale_shift_norm: true  
+    use_fp16: true
+    resblock_updown: true  
+    num_heads_upsample: -1
+    var_type: "fixedsmall"
+    num_head_channels: 64  
+    image_size: 64
+    class_cond: True
+    use_new_attention_order: false
+
+classifier:
+    image_size: 64
+    classifier_attention_resolutions: "32,16,8"
+    classifier_depth: 4
+    classifier_pool: "attention"
+    classifier_resblock_updown: True
+    classifier_width: 128
+    classifier_use_scale_shift_norm: True
+    classifier_scale: 1.0
+    classifier_use_fp16: True
+
+
+diffusion:
+    beta_schedule: linear 
+    beta_start: 0.0001
+    beta_end: 0.01  
+    num_diffusion_timesteps: 1000
+    model_var_type: "fixedsmall"
+
+time_travel:
+    T_sampling: 250  
+    travel_length: 1
+    travel_repeat: 2  
+
+sampling:
+    batch_size: 1

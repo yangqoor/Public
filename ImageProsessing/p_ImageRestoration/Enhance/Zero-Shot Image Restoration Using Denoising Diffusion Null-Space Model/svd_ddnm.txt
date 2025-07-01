@@ -1,0 +1,230 @@
+import torch
+from tqdm import tqdm
+import torchvision.utils as tvu
+import torchvision
+import os
+
+class_num = 951
+
+
+def compute_alpha(beta, t):
+    beta = torch.cat([torch.zeros(1).to(beta.device), beta], dim=0)
+    a = (1 - beta).cumprod(dim=0).index_select(0, t + 1).view(-1, 1, 1, 1)
+    return a
+
+def inverse_data_transform(x):
+    x = (x + 1.0) / 2.0
+    return torch.clamp(x, 0.0, 1.0)
+
+def ddnm_diffusion(x, model, b, eta, A_funcs, y, cls_fn=None, classes=None, config=None):
+    """DDNM+扩散过程，基于零空间修正和时间旅行的零样本图像恢复
+    
+    Args:
+        x: 初始噪声张量
+        model: 预训练的去噪扩散模型
+        b: 扩散步长参数
+        eta: DDIM中的随机性控制参数(η)，影响生成多样性
+        A_funcs: 包含线性算子A及其伪逆A_pinv的处理器
+        y: 观测的退化图像
+        cls_fn: 分类器梯度函数(可选，用于有条件生成)
+        classes: 类别标签(可选)
+        config: 配置参数，包含时间旅行等超参数
+        
+    Returns:
+        list: 恢复后的图像序列
+        list: 预测的x0序列
+    """
+    with torch.no_grad():  # 推理阶段不计算梯度
+        # 初始化变量
+        skip = config.diffusion.num_diffusion_timesteps // config.time_travel.T_sampling  # 时间步跳跃间隔
+        n = x.size(0)  # Batch大小
+        x0_preds = []  # 存储各时间步预测的x0
+        xs = [x]  # 存储各时间步的噪声图像xt
+
+        # 生成时间旅行计划表（对应论文Algo.2）
+        times = get_schedule_jump(
+            config.time_travel.T_sampling, 
+            config.time_travel.travel_length, 
+            config.time_travel.travel_repeat,
+        )
+        time_pairs = list(zip(times[:-1], times[1:]))  # 生成时间步对，如(t, t-1)
+        
+        # 反向扩散采样循环
+        for i, j in tqdm(time_pairs):
+            i, j = i * skip, j * skip  # 计算实际时间步（考虑跳跃）
+            if j < 0: j = -1  # 处理边界条件
+
+            if j < i:  # 正常反向扩散步骤（对应论文Algo.1）
+                # --- 时间步计算 ---
+                t = (torch.ones(n) * i).to(x.device)
+                next_t = (torch.ones(n) * j).to(x.device)
+                at = compute_alpha(b, t.long())        # 计算α_t（式5）
+                at_next = compute_alpha(b, next_t.long())
+                
+                # --- 噪声预测 ---
+                xt = xs[-1].to('cuda').float()  # 获取当前时间步的噪声图像
+                if cls_fn is None:  # 无条件生成
+                    et = model(xt, t)                  # 预测噪声ε_t（式7）
+                else:               # 分类器引导生成
+                    classes = torch.ones(xt.size(0), dtype=torch.long, device=xt.device) * classes
+                    et = model(xt, t, classes)         # 带类别的噪声预测
+                    et = et[:, :3]
+                    et = et - (1 - at).sqrt()[0,0,0,0] * cls_fn(x, t, classes)
+                
+                # --- 估计x0与零空间修正 ---
+                if et.size(1) == 6:  # 处理多通道输出
+                    et = et[:, :3]
+                x0_t = (xt - et * (1 - at).sqrt()) / at.sqrt()  # 估计x0|t（式12）
+                
+                # 零空间修正：x0_t_hat = A†y + (I - A†A)x0|t（式13）
+                x0_t_hat = x0_t - A_funcs.A_pinv(
+                    A_funcs.A(x0_t.reshape(x0_t.size(0), -1)) - y.reshape(y.size(0), -1)
+                ).reshape(*x0_t.size())
+                
+                # --- 生成下一时间步xt_next（式14）---
+                c1 = (1 - at_next).sqrt() * eta        # 控制随机性的系数
+                c2 = (1 - at_next).sqrt() * ((1 - eta**2)**0.5)
+                xt_next = at_next.sqrt() * x0_t_hat + c1 * torch.randn_like(x0_t) + c2 * et
+                
+                # 保存结果
+                x0_preds.append(x0_t.to('cpu'))
+                xs.append(xt_next.to('cpu'))
+                
+            else:  # 时间旅行（对应论文3.3节Time-Travel Trick）
+                next_t = (torch.ones(n) * j).to(x.device)
+                at_next = compute_alpha(b, next_t.long())
+                x0_t = x0_preds[-1].to('cuda').float()  # 使用历史x0预测
+                
+                # 重新添加噪声：xt_next ~ q(xt_next | x0_t)（式5）
+                xt_next = at_next.sqrt() * x0_t + torch.randn_like(x0_t) * (1 - at_next).sqrt()
+                xs.append(xt_next.to('cpu'))
+
+    return [xs[-1]], [x0_preds[-1]]  # 返回最终结果
+
+def ddnm_plus_diffusion(x, model, b, eta, A_funcs, y, sigma_y, cls_fn=None, classes=None, config=None):
+    with torch.no_grad():
+
+        # setup iteration variables
+        skip = config.diffusion.num_diffusion_timesteps//config.time_travel.T_sampling
+        n = x.size(0)
+        x0_preds = []
+        xs = [x]
+
+        # generate time schedule
+        times = get_schedule_jump(config.time_travel.T_sampling, 
+                               config.time_travel.travel_length, 
+                               config.time_travel.travel_repeat,
+                              )
+        time_pairs = list(zip(times[:-1], times[1:]))        
+        
+        # reverse diffusion sampling
+        for i, j in tqdm(time_pairs):
+            i, j = i*skip, j*skip
+            if j<0: j=-1 
+
+            if j < i: # normal sampling 
+                t = (torch.ones(n) * i).to(x.device)
+                next_t = (torch.ones(n) * j).to(x.device)
+                at = compute_alpha(b, t.long())
+                at_next = compute_alpha(b, next_t.long())
+                xt = xs[-1].to('cuda').float()
+                if cls_fn == None:
+                    et = model(xt, t)
+                else:
+                    classes = torch.ones(xt.size(0), dtype=torch.long, device=torch.device("cuda"))*class_num
+                    et = model(xt, t, classes)
+                    et = et[:, :3]
+                    et = et - (1 - at).sqrt()[0, 0, 0, 0] * cls_fn(x, t, classes)
+
+                if et.size(1) == 6:
+                    et = et[:, :3]
+
+                # Eq. 12
+                x0_t = (xt - et * (1 - at).sqrt()) / at.sqrt()
+
+                sigma_t = (1 - at_next).sqrt()[0, 0, 0, 0]
+
+                # Eq. 17
+                x0_t_hat = x0_t - A_funcs.Lambda(A_funcs.A_pinv(
+                    A_funcs.A(x0_t.reshape(x0_t.size(0), -1)) - y.reshape(y.size(0), -1)
+                ).reshape(x0_t.size(0), -1), at_next.sqrt()[0, 0, 0, 0], sigma_y, sigma_t, eta).reshape(*x0_t.size())
+
+                # Eq. 51
+                xt_next = at_next.sqrt() * x0_t_hat + A_funcs.Lambda_noise(
+                    torch.randn_like(x0_t).reshape(x0_t.size(0), -1), 
+                    at_next.sqrt()[0, 0, 0, 0], sigma_y, sigma_t, eta, et.reshape(et.size(0), -1)).reshape(*x0_t.size())
+
+                x0_preds.append(x0_t.to('cpu'))
+                xs.append(xt_next.to('cpu'))
+            else: # time-travel back
+                next_t = (torch.ones(n) * j).to(x.device)
+                at_next = compute_alpha(b, next_t.long())
+                x0_t = x0_preds[-1].to('cuda').float()
+                
+                xt_next = at_next.sqrt() * x0_t + torch.randn_like(x0_t) * (1 - at_next).sqrt()
+
+                xs.append(xt_next.to('cpu'))
+                
+#             #ablation
+#             if i%50==0:
+#                 os.makedirs('/userhome/wyh/ddnm/debug/x0t', exist_ok=True)
+#                 tvu.save_image(
+#                     inverse_data_transform(x0_t[0]),
+#                     os.path.join('/userhome/wyh/ddnm/debug/x0t', f"x0_t_{i}.png")
+#                 )
+                
+#                 os.makedirs('/userhome/wyh/ddnm/debug/x0_t_hat', exist_ok=True)
+#                 tvu.save_image(
+#                     inverse_data_transform(x0_t_hat[0]),
+#                     os.path.join('/userhome/wyh/ddnm/debug/x0_t_hat', f"x0_t_hat_{i}.png")
+#                 )
+                
+#                 os.makedirs('/userhome/wyh/ddnm/debug/xt_next', exist_ok=True)
+#                 tvu.save_image(
+#                     inverse_data_transform(xt_next[0]),
+#                     os.path.join('/userhome/wyh/ddnm/debug/xt_next', f"xt_next_{i}.png")
+#                 )
+
+    return [xs[-1]], [x0_preds[-1]]
+
+# form RePaint
+def get_schedule_jump(T_sampling, travel_length, travel_repeat):
+
+    jumps = {}
+    for j in range(0, T_sampling - travel_length, travel_length):
+        jumps[j] = travel_repeat - 1
+
+    t = T_sampling
+    ts = []
+
+    while t >= 1:
+        t = t-1
+        ts.append(t)
+
+        if jumps.get(t, 0) > 0:
+            jumps[t] = jumps[t] - 1
+            for _ in range(travel_length):
+                t = t + 1
+                ts.append(t)
+
+    ts.append(-1)
+
+    _check_times(ts, -1, T_sampling)
+
+    return ts
+
+def _check_times(times, t_0, T_sampling):
+    # Check end
+    assert times[0] > times[1], (times[0], times[1])
+
+    # Check beginning
+    assert times[-1] == -1, times[-1]
+
+    # Steplength = 1
+    for t_last, t_cur in zip(times[:-1], times[1:]):
+        assert abs(t_last - t_cur) == 1, (t_last, t_cur)
+
+    # Value range
+    for t in times:
+        assert t >= t_0, (t, t_0)
+        assert t <= T_sampling, (t, T_sampling)

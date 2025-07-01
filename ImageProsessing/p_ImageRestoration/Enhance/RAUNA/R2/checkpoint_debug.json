@@ -1,0 +1,3570 @@
+{
+  "keys": [
+    "decnet.stages.0.initial_L_branch.0.weight",
+    "decnet.stages.0.initial_L_branch.0.bias",
+    "decnet.stages.0.initial_L_branch.1.conv1.weight",
+    "decnet.stages.0.initial_L_branch.1.conv1.bias",
+    "decnet.stages.0.initial_L_branch.1.conv2.weight",
+    "decnet.stages.0.initial_L_branch.1.conv2.bias",
+    "decnet.stages.0.initial_L_branch.2.conv1.weight",
+    "decnet.stages.0.initial_L_branch.2.conv1.bias",
+    "decnet.stages.0.initial_L_branch.2.conv2.weight",
+    "decnet.stages.0.initial_L_branch.2.conv2.bias",
+    "decnet.stages.0.initial_L_branch.3.weight",
+    "decnet.stages.0.initial_L_branch.3.bias",
+    "decnet.stages.0.initial_R_branch.0.weight",
+    "decnet.stages.0.initial_R_branch.0.bias",
+    "decnet.stages.0.initial_R_branch.1.conv1.weight",
+    "decnet.stages.0.initial_R_branch.1.conv1.bias",
+    "decnet.stages.0.initial_R_branch.1.conv2.weight",
+    "decnet.stages.0.initial_R_branch.1.conv2.bias",
+    "decnet.stages.0.initial_R_branch.2.conv1.weight",
+    "decnet.stages.0.initial_R_branch.2.conv1.bias",
+    "decnet.stages.0.initial_R_branch.2.conv2.weight",
+    "decnet.stages.0.initial_R_branch.2.conv2.bias",
+    "decnet.stages.0.initial_R_branch.3.weight",
+    "decnet.stages.0.initial_R_branch.3.bias",
+    "decnet.stages.0.L_branch.0.weight",
+    "decnet.stages.0.L_branch.0.bias",
+    "decnet.stages.0.L_branch.1.conv1.weight",
+    "decnet.stages.0.L_branch.1.conv1.bias",
+    "decnet.stages.0.L_branch.1.conv2.weight",
+    "decnet.stages.0.L_branch.1.conv2.bias",
+    "decnet.stages.0.L_branch.2.weight",
+    "decnet.stages.0.L_branch.2.bias",
+    "decnet.stages.0.R_branch.0.weight",
+    "decnet.stages.0.R_branch.0.bias",
+    "decnet.stages.0.R_branch.1.conv1.weight",
+    "decnet.stages.0.R_branch.1.conv1.bias",
+    "decnet.stages.0.R_branch.1.conv2.weight",
+    "decnet.stages.0.R_branch.1.conv2.bias",
+    "decnet.stages.0.R_branch.2.weight",
+    "decnet.stages.0.R_branch.2.bias",
+    "decnet.stages.0.structure_prior.0.weight",
+    "decnet.stages.0.structure_prior.0.bias",
+    "decnet.stages.0.structure_prior.1.conv1.weight",
+    "decnet.stages.0.structure_prior.1.conv1.bias",
+    "decnet.stages.0.structure_prior.1.conv2.weight",
+    "decnet.stages.0.structure_prior.1.conv2.bias",
+    "decnet.stages.0.structure_prior.2.weight",
+    "decnet.stages.0.structure_prior.2.bias",
+    "decnet.stages.1.initial_L_branch.0.weight",
+    "decnet.stages.1.initial_L_branch.0.bias",
+    "decnet.stages.1.initial_L_branch.1.conv1.weight",
+    "decnet.stages.1.initial_L_branch.1.conv1.bias",
+    "decnet.stages.1.initial_L_branch.1.conv2.weight",
+    "decnet.stages.1.initial_L_branch.1.conv2.bias",
+    "decnet.stages.1.initial_L_branch.2.conv1.weight",
+    "decnet.stages.1.initial_L_branch.2.conv1.bias",
+    "decnet.stages.1.initial_L_branch.2.conv2.weight",
+    "decnet.stages.1.initial_L_branch.2.conv2.bias",
+    "decnet.stages.1.initial_L_branch.3.weight",
+    "decnet.stages.1.initial_L_branch.3.bias",
+    "decnet.stages.1.initial_R_branch.0.weight",
+    "decnet.stages.1.initial_R_branch.0.bias",
+    "decnet.stages.1.initial_R_branch.1.conv1.weight",
+    "decnet.stages.1.initial_R_branch.1.conv1.bias",
+    "decnet.stages.1.initial_R_branch.1.conv2.weight",
+    "decnet.stages.1.initial_R_branch.1.conv2.bias",
+    "decnet.stages.1.initial_R_branch.2.conv1.weight",
+    "decnet.stages.1.initial_R_branch.2.conv1.bias",
+    "decnet.stages.1.initial_R_branch.2.conv2.weight",
+    "decnet.stages.1.initial_R_branch.2.conv2.bias",
+    "decnet.stages.1.initial_R_branch.3.weight",
+    "decnet.stages.1.initial_R_branch.3.bias",
+    "decnet.stages.1.L_branch.0.weight",
+    "decnet.stages.1.L_branch.0.bias",
+    "decnet.stages.1.L_branch.1.conv1.weight",
+    "decnet.stages.1.L_branch.1.conv1.bias",
+    "decnet.stages.1.L_branch.1.conv2.weight",
+    "decnet.stages.1.L_branch.1.conv2.bias",
+    "decnet.stages.1.L_branch.2.weight",
+    "decnet.stages.1.L_branch.2.bias",
+    "decnet.stages.1.R_branch.0.weight",
+    "decnet.stages.1.R_branch.0.bias",
+    "decnet.stages.1.R_branch.1.conv1.weight",
+    "decnet.stages.1.R_branch.1.conv1.bias",
+    "decnet.stages.1.R_branch.1.conv2.weight",
+    "decnet.stages.1.R_branch.1.conv2.bias",
+    "decnet.stages.1.R_branch.2.weight",
+    "decnet.stages.1.R_branch.2.bias",
+    "decnet.stages.1.structure_prior.0.weight",
+    "decnet.stages.1.structure_prior.0.bias",
+    "decnet.stages.1.structure_prior.1.conv1.weight",
+    "decnet.stages.1.structure_prior.1.conv1.bias",
+    "decnet.stages.1.structure_prior.1.conv2.weight",
+    "decnet.stages.1.structure_prior.1.conv2.bias",
+    "decnet.stages.1.structure_prior.2.weight",
+    "decnet.stages.1.structure_prior.2.bias",
+    "decnet.stages.2.initial_L_branch.0.weight",
+    "decnet.stages.2.initial_L_branch.0.bias",
+    "decnet.stages.2.initial_L_branch.1.conv1.weight",
+    "decnet.stages.2.initial_L_branch.1.conv1.bias",
+    "decnet.stages.2.initial_L_branch.1.conv2.weight",
+    "decnet.stages.2.initial_L_branch.1.conv2.bias",
+    "decnet.stages.2.initial_L_branch.2.conv1.weight",
+    "decnet.stages.2.initial_L_branch.2.conv1.bias",
+    "decnet.stages.2.initial_L_branch.2.conv2.weight",
+    "decnet.stages.2.initial_L_branch.2.conv2.bias",
+    "decnet.stages.2.initial_L_branch.3.weight",
+    "decnet.stages.2.initial_L_branch.3.bias",
+    "decnet.stages.2.initial_R_branch.0.weight",
+    "decnet.stages.2.initial_R_branch.0.bias",
+    "decnet.stages.2.initial_R_branch.1.conv1.weight",
+    "decnet.stages.2.initial_R_branch.1.conv1.bias",
+    "decnet.stages.2.initial_R_branch.1.conv2.weight",
+    "decnet.stages.2.initial_R_branch.1.conv2.bias",
+    "decnet.stages.2.initial_R_branch.2.conv1.weight",
+    "decnet.stages.2.initial_R_branch.2.conv1.bias",
+    "decnet.stages.2.initial_R_branch.2.conv2.weight",
+    "decnet.stages.2.initial_R_branch.2.conv2.bias",
+    "decnet.stages.2.initial_R_branch.3.weight",
+    "decnet.stages.2.initial_R_branch.3.bias",
+    "decnet.stages.2.L_branch.0.weight",
+    "decnet.stages.2.L_branch.0.bias",
+    "decnet.stages.2.L_branch.1.conv1.weight",
+    "decnet.stages.2.L_branch.1.conv1.bias",
+    "decnet.stages.2.L_branch.1.conv2.weight",
+    "decnet.stages.2.L_branch.1.conv2.bias",
+    "decnet.stages.2.L_branch.2.weight",
+    "decnet.stages.2.L_branch.2.bias",
+    "decnet.stages.2.R_branch.0.weight",
+    "decnet.stages.2.R_branch.0.bias",
+    "decnet.stages.2.R_branch.1.conv1.weight",
+    "decnet.stages.2.R_branch.1.conv1.bias",
+    "decnet.stages.2.R_branch.1.conv2.weight",
+    "decnet.stages.2.R_branch.1.conv2.bias",
+    "decnet.stages.2.R_branch.2.weight",
+    "decnet.stages.2.R_branch.2.bias",
+    "decnet.stages.2.structure_prior.0.weight",
+    "decnet.stages.2.structure_prior.0.bias",
+    "decnet.stages.2.structure_prior.1.conv1.weight",
+    "decnet.stages.2.structure_prior.1.conv1.bias",
+    "decnet.stages.2.structure_prior.1.conv2.weight",
+    "decnet.stages.2.structure_prior.1.conv2.bias",
+    "decnet.stages.2.structure_prior.2.weight",
+    "decnet.stages.2.structure_prior.2.bias",
+    "decnet.stages.3.initial_L_branch.0.weight",
+    "decnet.stages.3.initial_L_branch.0.bias",
+    "decnet.stages.3.initial_L_branch.1.conv1.weight",
+    "decnet.stages.3.initial_L_branch.1.conv1.bias",
+    "decnet.stages.3.initial_L_branch.1.conv2.weight",
+    "decnet.stages.3.initial_L_branch.1.conv2.bias",
+    "decnet.stages.3.initial_L_branch.2.conv1.weight",
+    "decnet.stages.3.initial_L_branch.2.conv1.bias",
+    "decnet.stages.3.initial_L_branch.2.conv2.weight",
+    "decnet.stages.3.initial_L_branch.2.conv2.bias",
+    "decnet.stages.3.initial_L_branch.3.weight",
+    "decnet.stages.3.initial_L_branch.3.bias",
+    "decnet.stages.3.initial_R_branch.0.weight",
+    "decnet.stages.3.initial_R_branch.0.bias",
+    "decnet.stages.3.initial_R_branch.1.conv1.weight",
+    "decnet.stages.3.initial_R_branch.1.conv1.bias",
+    "decnet.stages.3.initial_R_branch.1.conv2.weight",
+    "decnet.stages.3.initial_R_branch.1.conv2.bias",
+    "decnet.stages.3.initial_R_branch.2.conv1.weight",
+    "decnet.stages.3.initial_R_branch.2.conv1.bias",
+    "decnet.stages.3.initial_R_branch.2.conv2.weight",
+    "decnet.stages.3.initial_R_branch.2.conv2.bias",
+    "decnet.stages.3.initial_R_branch.3.weight",
+    "decnet.stages.3.initial_R_branch.3.bias",
+    "decnet.stages.3.L_branch.0.weight",
+    "decnet.stages.3.L_branch.0.bias",
+    "decnet.stages.3.L_branch.1.conv1.weight",
+    "decnet.stages.3.L_branch.1.conv1.bias",
+    "decnet.stages.3.L_branch.1.conv2.weight",
+    "decnet.stages.3.L_branch.1.conv2.bias",
+    "decnet.stages.3.L_branch.2.weight",
+    "decnet.stages.3.L_branch.2.bias",
+    "decnet.stages.3.R_branch.0.weight",
+    "decnet.stages.3.R_branch.0.bias",
+    "decnet.stages.3.R_branch.1.conv1.weight",
+    "decnet.stages.3.R_branch.1.conv1.bias",
+    "decnet.stages.3.R_branch.1.conv2.weight",
+    "decnet.stages.3.R_branch.1.conv2.bias",
+    "decnet.stages.3.R_branch.2.weight",
+    "decnet.stages.3.R_branch.2.bias",
+    "decnet.stages.3.structure_prior.0.weight",
+    "decnet.stages.3.structure_prior.0.bias",
+    "decnet.stages.3.structure_prior.1.conv1.weight",
+    "decnet.stages.3.structure_prior.1.conv1.bias",
+    "decnet.stages.3.structure_prior.1.conv2.weight",
+    "decnet.stages.3.structure_prior.1.conv2.bias",
+    "decnet.stages.3.structure_prior.2.weight",
+    "decnet.stages.3.structure_prior.2.bias",
+    "decnet.stages.4.initial_L_branch.0.weight",
+    "decnet.stages.4.initial_L_branch.0.bias",
+    "decnet.stages.4.initial_L_branch.1.conv1.weight",
+    "decnet.stages.4.initial_L_branch.1.conv1.bias",
+    "decnet.stages.4.initial_L_branch.1.conv2.weight",
+    "decnet.stages.4.initial_L_branch.1.conv2.bias",
+    "decnet.stages.4.initial_L_branch.2.conv1.weight",
+    "decnet.stages.4.initial_L_branch.2.conv1.bias",
+    "decnet.stages.4.initial_L_branch.2.conv2.weight",
+    "decnet.stages.4.initial_L_branch.2.conv2.bias",
+    "decnet.stages.4.initial_L_branch.3.weight",
+    "decnet.stages.4.initial_L_branch.3.bias",
+    "decnet.stages.4.initial_R_branch.0.weight",
+    "decnet.stages.4.initial_R_branch.0.bias",
+    "decnet.stages.4.initial_R_branch.1.conv1.weight",
+    "decnet.stages.4.initial_R_branch.1.conv1.bias",
+    "decnet.stages.4.initial_R_branch.1.conv2.weight",
+    "decnet.stages.4.initial_R_branch.1.conv2.bias",
+    "decnet.stages.4.initial_R_branch.2.conv1.weight",
+    "decnet.stages.4.initial_R_branch.2.conv1.bias",
+    "decnet.stages.4.initial_R_branch.2.conv2.weight",
+    "decnet.stages.4.initial_R_branch.2.conv2.bias",
+    "decnet.stages.4.initial_R_branch.3.weight",
+    "decnet.stages.4.initial_R_branch.3.bias",
+    "decnet.stages.4.L_branch.0.weight",
+    "decnet.stages.4.L_branch.0.bias",
+    "decnet.stages.4.L_branch.1.conv1.weight",
+    "decnet.stages.4.L_branch.1.conv1.bias",
+    "decnet.stages.4.L_branch.1.conv2.weight",
+    "decnet.stages.4.L_branch.1.conv2.bias",
+    "decnet.stages.4.L_branch.2.weight",
+    "decnet.stages.4.L_branch.2.bias",
+    "decnet.stages.4.R_branch.0.weight",
+    "decnet.stages.4.R_branch.0.bias",
+    "decnet.stages.4.R_branch.1.conv1.weight",
+    "decnet.stages.4.R_branch.1.conv1.bias",
+    "decnet.stages.4.R_branch.1.conv2.weight",
+    "decnet.stages.4.R_branch.1.conv2.bias",
+    "decnet.stages.4.R_branch.2.weight",
+    "decnet.stages.4.R_branch.2.bias",
+    "decnet.stages.4.structure_prior.0.weight",
+    "decnet.stages.4.structure_prior.0.bias",
+    "decnet.stages.4.structure_prior.1.conv1.weight",
+    "decnet.stages.4.structure_prior.1.conv1.bias",
+    "decnet.stages.4.structure_prior.1.conv2.weight",
+    "decnet.stages.4.structure_prior.1.conv2.bias",
+    "decnet.stages.4.structure_prior.2.weight",
+    "decnet.stages.4.structure_prior.2.bias",
+    "decnet.stages.5.initial_L_branch.0.weight",
+    "decnet.stages.5.initial_L_branch.0.bias",
+    "decnet.stages.5.initial_L_branch.1.conv1.weight",
+    "decnet.stages.5.initial_L_branch.1.conv1.bias",
+    "decnet.stages.5.initial_L_branch.1.conv2.weight",
+    "decnet.stages.5.initial_L_branch.1.conv2.bias",
+    "decnet.stages.5.initial_L_branch.2.conv1.weight",
+    "decnet.stages.5.initial_L_branch.2.conv1.bias",
+    "decnet.stages.5.initial_L_branch.2.conv2.weight",
+    "decnet.stages.5.initial_L_branch.2.conv2.bias",
+    "decnet.stages.5.initial_L_branch.3.weight",
+    "decnet.stages.5.initial_L_branch.3.bias",
+    "decnet.stages.5.initial_R_branch.0.weight",
+    "decnet.stages.5.initial_R_branch.0.bias",
+    "decnet.stages.5.initial_R_branch.1.conv1.weight",
+    "decnet.stages.5.initial_R_branch.1.conv1.bias",
+    "decnet.stages.5.initial_R_branch.1.conv2.weight",
+    "decnet.stages.5.initial_R_branch.1.conv2.bias",
+    "decnet.stages.5.initial_R_branch.2.conv1.weight",
+    "decnet.stages.5.initial_R_branch.2.conv1.bias",
+    "decnet.stages.5.initial_R_branch.2.conv2.weight",
+    "decnet.stages.5.initial_R_branch.2.conv2.bias",
+    "decnet.stages.5.initial_R_branch.3.weight",
+    "decnet.stages.5.initial_R_branch.3.bias",
+    "decnet.stages.5.L_branch.0.weight",
+    "decnet.stages.5.L_branch.0.bias",
+    "decnet.stages.5.L_branch.1.conv1.weight",
+    "decnet.stages.5.L_branch.1.conv1.bias",
+    "decnet.stages.5.L_branch.1.conv2.weight",
+    "decnet.stages.5.L_branch.1.conv2.bias",
+    "decnet.stages.5.L_branch.2.weight",
+    "decnet.stages.5.L_branch.2.bias",
+    "decnet.stages.5.R_branch.0.weight",
+    "decnet.stages.5.R_branch.0.bias",
+    "decnet.stages.5.R_branch.1.conv1.weight",
+    "decnet.stages.5.R_branch.1.conv1.bias",
+    "decnet.stages.5.R_branch.1.conv2.weight",
+    "decnet.stages.5.R_branch.1.conv2.bias",
+    "decnet.stages.5.R_branch.2.weight",
+    "decnet.stages.5.R_branch.2.bias",
+    "decnet.stages.5.structure_prior.0.weight",
+    "decnet.stages.5.structure_prior.0.bias",
+    "decnet.stages.5.structure_prior.1.conv1.weight",
+    "decnet.stages.5.structure_prior.1.conv1.bias",
+    "decnet.stages.5.structure_prior.1.conv2.weight",
+    "decnet.stages.5.structure_prior.1.conv2.bias",
+    "decnet.stages.5.structure_prior.2.weight",
+    "decnet.stages.5.structure_prior.2.bias",
+    "decnet.stages.6.initial_L_branch.0.weight",
+    "decnet.stages.6.initial_L_branch.0.bias",
+    "decnet.stages.6.initial_L_branch.1.conv1.weight",
+    "decnet.stages.6.initial_L_branch.1.conv1.bias",
+    "decnet.stages.6.initial_L_branch.1.conv2.weight",
+    "decnet.stages.6.initial_L_branch.1.conv2.bias",
+    "decnet.stages.6.initial_L_branch.2.conv1.weight",
+    "decnet.stages.6.initial_L_branch.2.conv1.bias",
+    "decnet.stages.6.initial_L_branch.2.conv2.weight",
+    "decnet.stages.6.initial_L_branch.2.conv2.bias",
+    "decnet.stages.6.initial_L_branch.3.weight",
+    "decnet.stages.6.initial_L_branch.3.bias",
+    "decnet.stages.6.initial_R_branch.0.weight",
+    "decnet.stages.6.initial_R_branch.0.bias",
+    "decnet.stages.6.initial_R_branch.1.conv1.weight",
+    "decnet.stages.6.initial_R_branch.1.conv1.bias",
+    "decnet.stages.6.initial_R_branch.1.conv2.weight",
+    "decnet.stages.6.initial_R_branch.1.conv2.bias",
+    "decnet.stages.6.initial_R_branch.2.conv1.weight",
+    "decnet.stages.6.initial_R_branch.2.conv1.bias",
+    "decnet.stages.6.initial_R_branch.2.conv2.weight",
+    "decnet.stages.6.initial_R_branch.2.conv2.bias",
+    "decnet.stages.6.initial_R_branch.3.weight",
+    "decnet.stages.6.initial_R_branch.3.bias",
+    "decnet.stages.6.L_branch.0.weight",
+    "decnet.stages.6.L_branch.0.bias",
+    "decnet.stages.6.L_branch.1.conv1.weight",
+    "decnet.stages.6.L_branch.1.conv1.bias",
+    "decnet.stages.6.L_branch.1.conv2.weight",
+    "decnet.stages.6.L_branch.1.conv2.bias",
+    "decnet.stages.6.L_branch.2.weight",
+    "decnet.stages.6.L_branch.2.bias",
+    "decnet.stages.6.R_branch.0.weight",
+    "decnet.stages.6.R_branch.0.bias",
+    "decnet.stages.6.R_branch.1.conv1.weight",
+    "decnet.stages.6.R_branch.1.conv1.bias",
+    "decnet.stages.6.R_branch.1.conv2.weight",
+    "decnet.stages.6.R_branch.1.conv2.bias",
+    "decnet.stages.6.R_branch.2.weight",
+    "decnet.stages.6.R_branch.2.bias",
+    "decnet.stages.6.structure_prior.0.weight",
+    "decnet.stages.6.structure_prior.0.bias",
+    "decnet.stages.6.structure_prior.1.conv1.weight",
+    "decnet.stages.6.structure_prior.1.conv1.bias",
+    "decnet.stages.6.structure_prior.1.conv2.weight",
+    "decnet.stages.6.structure_prior.1.conv2.bias",
+    "decnet.stages.6.structure_prior.2.weight",
+    "decnet.stages.6.structure_prior.2.bias",
+    "decnet.stages.7.initial_L_branch.0.weight",
+    "decnet.stages.7.initial_L_branch.0.bias",
+    "decnet.stages.7.initial_L_branch.1.conv1.weight",
+    "decnet.stages.7.initial_L_branch.1.conv1.bias",
+    "decnet.stages.7.initial_L_branch.1.conv2.weight",
+    "decnet.stages.7.initial_L_branch.1.conv2.bias",
+    "decnet.stages.7.initial_L_branch.2.conv1.weight",
+    "decnet.stages.7.initial_L_branch.2.conv1.bias",
+    "decnet.stages.7.initial_L_branch.2.conv2.weight",
+    "decnet.stages.7.initial_L_branch.2.conv2.bias",
+    "decnet.stages.7.initial_L_branch.3.weight",
+    "decnet.stages.7.initial_L_branch.3.bias",
+    "decnet.stages.7.initial_R_branch.0.weight",
+    "decnet.stages.7.initial_R_branch.0.bias",
+    "decnet.stages.7.initial_R_branch.1.conv1.weight",
+    "decnet.stages.7.initial_R_branch.1.conv1.bias",
+    "decnet.stages.7.initial_R_branch.1.conv2.weight",
+    "decnet.stages.7.initial_R_branch.1.conv2.bias",
+    "decnet.stages.7.initial_R_branch.2.conv1.weight",
+    "decnet.stages.7.initial_R_branch.2.conv1.bias",
+    "decnet.stages.7.initial_R_branch.2.conv2.weight",
+    "decnet.stages.7.initial_R_branch.2.conv2.bias",
+    "decnet.stages.7.initial_R_branch.3.weight",
+    "decnet.stages.7.initial_R_branch.3.bias",
+    "decnet.stages.7.L_branch.0.weight",
+    "decnet.stages.7.L_branch.0.bias",
+    "decnet.stages.7.L_branch.1.conv1.weight",
+    "decnet.stages.7.L_branch.1.conv1.bias",
+    "decnet.stages.7.L_branch.1.conv2.weight",
+    "decnet.stages.7.L_branch.1.conv2.bias",
+    "decnet.stages.7.L_branch.2.weight",
+    "decnet.stages.7.L_branch.2.bias",
+    "decnet.stages.7.R_branch.0.weight",
+    "decnet.stages.7.R_branch.0.bias",
+    "decnet.stages.7.R_branch.1.conv1.weight",
+    "decnet.stages.7.R_branch.1.conv1.bias",
+    "decnet.stages.7.R_branch.1.conv2.weight",
+    "decnet.stages.7.R_branch.1.conv2.bias",
+    "decnet.stages.7.R_branch.2.weight",
+    "decnet.stages.7.R_branch.2.bias",
+    "decnet.stages.7.structure_prior.0.weight",
+    "decnet.stages.7.structure_prior.0.bias",
+    "decnet.stages.7.structure_prior.1.conv1.weight",
+    "decnet.stages.7.structure_prior.1.conv1.bias",
+    "decnet.stages.7.structure_prior.1.conv2.weight",
+    "decnet.stages.7.structure_prior.1.conv2.bias",
+    "decnet.stages.7.structure_prior.2.weight",
+    "decnet.stages.7.structure_prior.2.bias",
+    "decnet.stages.8.initial_L_branch.0.weight",
+    "decnet.stages.8.initial_L_branch.0.bias",
+    "decnet.stages.8.initial_L_branch.1.conv1.weight",
+    "decnet.stages.8.initial_L_branch.1.conv1.bias",
+    "decnet.stages.8.initial_L_branch.1.conv2.weight",
+    "decnet.stages.8.initial_L_branch.1.conv2.bias",
+    "decnet.stages.8.initial_L_branch.2.conv1.weight",
+    "decnet.stages.8.initial_L_branch.2.conv1.bias",
+    "decnet.stages.8.initial_L_branch.2.conv2.weight",
+    "decnet.stages.8.initial_L_branch.2.conv2.bias",
+    "decnet.stages.8.initial_L_branch.3.weight",
+    "decnet.stages.8.initial_L_branch.3.bias",
+    "decnet.stages.8.initial_R_branch.0.weight",
+    "decnet.stages.8.initial_R_branch.0.bias",
+    "decnet.stages.8.initial_R_branch.1.conv1.weight",
+    "decnet.stages.8.initial_R_branch.1.conv1.bias",
+    "decnet.stages.8.initial_R_branch.1.conv2.weight",
+    "decnet.stages.8.initial_R_branch.1.conv2.bias",
+    "decnet.stages.8.initial_R_branch.2.conv1.weight",
+    "decnet.stages.8.initial_R_branch.2.conv1.bias",
+    "decnet.stages.8.initial_R_branch.2.conv2.weight",
+    "decnet.stages.8.initial_R_branch.2.conv2.bias",
+    "decnet.stages.8.initial_R_branch.3.weight",
+    "decnet.stages.8.initial_R_branch.3.bias",
+    "decnet.stages.8.L_branch.0.weight",
+    "decnet.stages.8.L_branch.0.bias",
+    "decnet.stages.8.L_branch.1.conv1.weight",
+    "decnet.stages.8.L_branch.1.conv1.bias",
+    "decnet.stages.8.L_branch.1.conv2.weight",
+    "decnet.stages.8.L_branch.1.conv2.bias",
+    "decnet.stages.8.L_branch.2.weight",
+    "decnet.stages.8.L_branch.2.bias",
+    "decnet.stages.8.R_branch.0.weight",
+    "decnet.stages.8.R_branch.0.bias",
+    "decnet.stages.8.R_branch.1.conv1.weight",
+    "decnet.stages.8.R_branch.1.conv1.bias",
+    "decnet.stages.8.R_branch.1.conv2.weight",
+    "decnet.stages.8.R_branch.1.conv2.bias",
+    "decnet.stages.8.R_branch.2.weight",
+    "decnet.stages.8.R_branch.2.bias",
+    "decnet.stages.8.structure_prior.0.weight",
+    "decnet.stages.8.structure_prior.0.bias",
+    "decnet.stages.8.structure_prior.1.conv1.weight",
+    "decnet.stages.8.structure_prior.1.conv1.bias",
+    "decnet.stages.8.structure_prior.1.conv2.weight",
+    "decnet.stages.8.structure_prior.1.conv2.bias",
+    "decnet.stages.8.structure_prior.2.weight",
+    "decnet.stages.8.structure_prior.2.bias",
+    "decnet.stages.9.initial_L_branch.0.weight",
+    "decnet.stages.9.initial_L_branch.0.bias",
+    "decnet.stages.9.initial_L_branch.1.conv1.weight",
+    "decnet.stages.9.initial_L_branch.1.conv1.bias",
+    "decnet.stages.9.initial_L_branch.1.conv2.weight",
+    "decnet.stages.9.initial_L_branch.1.conv2.bias",
+    "decnet.stages.9.initial_L_branch.2.conv1.weight",
+    "decnet.stages.9.initial_L_branch.2.conv1.bias",
+    "decnet.stages.9.initial_L_branch.2.conv2.weight",
+    "decnet.stages.9.initial_L_branch.2.conv2.bias",
+    "decnet.stages.9.initial_L_branch.3.weight",
+    "decnet.stages.9.initial_L_branch.3.bias",
+    "decnet.stages.9.initial_R_branch.0.weight",
+    "decnet.stages.9.initial_R_branch.0.bias",
+    "decnet.stages.9.initial_R_branch.1.conv1.weight",
+    "decnet.stages.9.initial_R_branch.1.conv1.bias",
+    "decnet.stages.9.initial_R_branch.1.conv2.weight",
+    "decnet.stages.9.initial_R_branch.1.conv2.bias",
+    "decnet.stages.9.initial_R_branch.2.conv1.weight",
+    "decnet.stages.9.initial_R_branch.2.conv1.bias",
+    "decnet.stages.9.initial_R_branch.2.conv2.weight",
+    "decnet.stages.9.initial_R_branch.2.conv2.bias",
+    "decnet.stages.9.initial_R_branch.3.weight",
+    "decnet.stages.9.initial_R_branch.3.bias",
+    "decnet.stages.9.L_branch.0.weight",
+    "decnet.stages.9.L_branch.0.bias",
+    "decnet.stages.9.L_branch.1.conv1.weight",
+    "decnet.stages.9.L_branch.1.conv1.bias",
+    "decnet.stages.9.L_branch.1.conv2.weight",
+    "decnet.stages.9.L_branch.1.conv2.bias",
+    "decnet.stages.9.L_branch.2.weight",
+    "decnet.stages.9.L_branch.2.bias",
+    "decnet.stages.9.R_branch.0.weight",
+    "decnet.stages.9.R_branch.0.bias",
+    "decnet.stages.9.R_branch.1.conv1.weight",
+    "decnet.stages.9.R_branch.1.conv1.bias",
+    "decnet.stages.9.R_branch.1.conv2.weight",
+    "decnet.stages.9.R_branch.1.conv2.bias",
+    "decnet.stages.9.R_branch.2.weight",
+    "decnet.stages.9.R_branch.2.bias",
+    "decnet.stages.9.structure_prior.0.weight",
+    "decnet.stages.9.structure_prior.0.bias",
+    "decnet.stages.9.structure_prior.1.conv1.weight",
+    "decnet.stages.9.structure_prior.1.conv1.bias",
+    "decnet.stages.9.structure_prior.1.conv2.weight",
+    "decnet.stages.9.structure_prior.1.conv2.bias",
+    "decnet.stages.9.structure_prior.2.weight",
+    "decnet.stages.9.structure_prior.2.bias",
+    "decnet.stages.10.initial_L_branch.0.weight",
+    "decnet.stages.10.initial_L_branch.0.bias",
+    "decnet.stages.10.initial_L_branch.1.conv1.weight",
+    "decnet.stages.10.initial_L_branch.1.conv1.bias",
+    "decnet.stages.10.initial_L_branch.1.conv2.weight",
+    "decnet.stages.10.initial_L_branch.1.conv2.bias",
+    "decnet.stages.10.initial_L_branch.2.conv1.weight",
+    "decnet.stages.10.initial_L_branch.2.conv1.bias",
+    "decnet.stages.10.initial_L_branch.2.conv2.weight",
+    "decnet.stages.10.initial_L_branch.2.conv2.bias",
+    "decnet.stages.10.initial_L_branch.3.weight",
+    "decnet.stages.10.initial_L_branch.3.bias",
+    "decnet.stages.10.initial_R_branch.0.weight",
+    "decnet.stages.10.initial_R_branch.0.bias",
+    "decnet.stages.10.initial_R_branch.1.conv1.weight",
+    "decnet.stages.10.initial_R_branch.1.conv1.bias",
+    "decnet.stages.10.initial_R_branch.1.conv2.weight",
+    "decnet.stages.10.initial_R_branch.1.conv2.bias",
+    "decnet.stages.10.initial_R_branch.2.conv1.weight",
+    "decnet.stages.10.initial_R_branch.2.conv1.bias",
+    "decnet.stages.10.initial_R_branch.2.conv2.weight",
+    "decnet.stages.10.initial_R_branch.2.conv2.bias",
+    "decnet.stages.10.initial_R_branch.3.weight",
+    "decnet.stages.10.initial_R_branch.3.bias",
+    "decnet.stages.10.L_branch.0.weight",
+    "decnet.stages.10.L_branch.0.bias",
+    "decnet.stages.10.L_branch.1.conv1.weight",
+    "decnet.stages.10.L_branch.1.conv1.bias",
+    "decnet.stages.10.L_branch.1.conv2.weight",
+    "decnet.stages.10.L_branch.1.conv2.bias",
+    "decnet.stages.10.L_branch.2.weight",
+    "decnet.stages.10.L_branch.2.bias",
+    "decnet.stages.10.R_branch.0.weight",
+    "decnet.stages.10.R_branch.0.bias",
+    "decnet.stages.10.R_branch.1.conv1.weight",
+    "decnet.stages.10.R_branch.1.conv1.bias",
+    "decnet.stages.10.R_branch.1.conv2.weight",
+    "decnet.stages.10.R_branch.1.conv2.bias",
+    "decnet.stages.10.R_branch.2.weight",
+    "decnet.stages.10.R_branch.2.bias",
+    "decnet.stages.10.structure_prior.0.weight",
+    "decnet.stages.10.structure_prior.0.bias",
+    "decnet.stages.10.structure_prior.1.conv1.weight",
+    "decnet.stages.10.structure_prior.1.conv1.bias",
+    "decnet.stages.10.structure_prior.1.conv2.weight",
+    "decnet.stages.10.structure_prior.1.conv2.bias",
+    "decnet.stages.10.structure_prior.2.weight",
+    "decnet.stages.10.structure_prior.2.bias",
+    "decnet.stages.11.initial_L_branch.0.weight",
+    "decnet.stages.11.initial_L_branch.0.bias",
+    "decnet.stages.11.initial_L_branch.1.conv1.weight",
+    "decnet.stages.11.initial_L_branch.1.conv1.bias",
+    "decnet.stages.11.initial_L_branch.1.conv2.weight",
+    "decnet.stages.11.initial_L_branch.1.conv2.bias",
+    "decnet.stages.11.initial_L_branch.2.conv1.weight",
+    "decnet.stages.11.initial_L_branch.2.conv1.bias",
+    "decnet.stages.11.initial_L_branch.2.conv2.weight",
+    "decnet.stages.11.initial_L_branch.2.conv2.bias",
+    "decnet.stages.11.initial_L_branch.3.weight",
+    "decnet.stages.11.initial_L_branch.3.bias",
+    "decnet.stages.11.initial_R_branch.0.weight",
+    "decnet.stages.11.initial_R_branch.0.bias",
+    "decnet.stages.11.initial_R_branch.1.conv1.weight",
+    "decnet.stages.11.initial_R_branch.1.conv1.bias",
+    "decnet.stages.11.initial_R_branch.1.conv2.weight",
+    "decnet.stages.11.initial_R_branch.1.conv2.bias",
+    "decnet.stages.11.initial_R_branch.2.conv1.weight",
+    "decnet.stages.11.initial_R_branch.2.conv1.bias",
+    "decnet.stages.11.initial_R_branch.2.conv2.weight",
+    "decnet.stages.11.initial_R_branch.2.conv2.bias",
+    "decnet.stages.11.initial_R_branch.3.weight",
+    "decnet.stages.11.initial_R_branch.3.bias",
+    "decnet.stages.11.L_branch.0.weight",
+    "decnet.stages.11.L_branch.0.bias",
+    "decnet.stages.11.L_branch.1.conv1.weight",
+    "decnet.stages.11.L_branch.1.conv1.bias",
+    "decnet.stages.11.L_branch.1.conv2.weight",
+    "decnet.stages.11.L_branch.1.conv2.bias",
+    "decnet.stages.11.L_branch.2.weight",
+    "decnet.stages.11.L_branch.2.bias",
+    "decnet.stages.11.R_branch.0.weight",
+    "decnet.stages.11.R_branch.0.bias",
+    "decnet.stages.11.R_branch.1.conv1.weight",
+    "decnet.stages.11.R_branch.1.conv1.bias",
+    "decnet.stages.11.R_branch.1.conv2.weight",
+    "decnet.stages.11.R_branch.1.conv2.bias",
+    "decnet.stages.11.R_branch.2.weight",
+    "decnet.stages.11.R_branch.2.bias",
+    "decnet.stages.11.structure_prior.0.weight",
+    "decnet.stages.11.structure_prior.0.bias",
+    "decnet.stages.11.structure_prior.1.conv1.weight",
+    "decnet.stages.11.structure_prior.1.conv1.bias",
+    "decnet.stages.11.structure_prior.1.conv2.weight",
+    "decnet.stages.11.structure_prior.1.conv2.bias",
+    "decnet.stages.11.structure_prior.2.weight",
+    "decnet.stages.11.structure_prior.2.bias",
+    "decnet.stages.12.initial_L_branch.0.weight",
+    "decnet.stages.12.initial_L_branch.0.bias",
+    "decnet.stages.12.initial_L_branch.1.conv1.weight",
+    "decnet.stages.12.initial_L_branch.1.conv1.bias",
+    "decnet.stages.12.initial_L_branch.1.conv2.weight",
+    "decnet.stages.12.initial_L_branch.1.conv2.bias",
+    "decnet.stages.12.initial_L_branch.2.conv1.weight",
+    "decnet.stages.12.initial_L_branch.2.conv1.bias",
+    "decnet.stages.12.initial_L_branch.2.conv2.weight",
+    "decnet.stages.12.initial_L_branch.2.conv2.bias",
+    "decnet.stages.12.initial_L_branch.3.weight",
+    "decnet.stages.12.initial_L_branch.3.bias",
+    "decnet.stages.12.initial_R_branch.0.weight",
+    "decnet.stages.12.initial_R_branch.0.bias",
+    "decnet.stages.12.initial_R_branch.1.conv1.weight",
+    "decnet.stages.12.initial_R_branch.1.conv1.bias",
+    "decnet.stages.12.initial_R_branch.1.conv2.weight",
+    "decnet.stages.12.initial_R_branch.1.conv2.bias",
+    "decnet.stages.12.initial_R_branch.2.conv1.weight",
+    "decnet.stages.12.initial_R_branch.2.conv1.bias",
+    "decnet.stages.12.initial_R_branch.2.conv2.weight",
+    "decnet.stages.12.initial_R_branch.2.conv2.bias",
+    "decnet.stages.12.initial_R_branch.3.weight",
+    "decnet.stages.12.initial_R_branch.3.bias",
+    "decnet.stages.12.L_branch.0.weight",
+    "decnet.stages.12.L_branch.0.bias",
+    "decnet.stages.12.L_branch.1.conv1.weight",
+    "decnet.stages.12.L_branch.1.conv1.bias",
+    "decnet.stages.12.L_branch.1.conv2.weight",
+    "decnet.stages.12.L_branch.1.conv2.bias",
+    "decnet.stages.12.L_branch.2.weight",
+    "decnet.stages.12.L_branch.2.bias",
+    "decnet.stages.12.R_branch.0.weight",
+    "decnet.stages.12.R_branch.0.bias",
+    "decnet.stages.12.R_branch.1.conv1.weight",
+    "decnet.stages.12.R_branch.1.conv1.bias",
+    "decnet.stages.12.R_branch.1.conv2.weight",
+    "decnet.stages.12.R_branch.1.conv2.bias",
+    "decnet.stages.12.R_branch.2.weight",
+    "decnet.stages.12.R_branch.2.bias",
+    "decnet.stages.12.structure_prior.0.weight",
+    "decnet.stages.12.structure_prior.0.bias",
+    "decnet.stages.12.structure_prior.1.conv1.weight",
+    "decnet.stages.12.structure_prior.1.conv1.bias",
+    "decnet.stages.12.structure_prior.1.conv2.weight",
+    "decnet.stages.12.structure_prior.1.conv2.bias",
+    "decnet.stages.12.structure_prior.2.weight",
+    "decnet.stages.12.structure_prior.2.bias",
+    "adjnet.L_adjnet.0.weight",
+    "adjnet.L_adjnet.0.bias",
+    "adjnet.L_adjnet.1.conv1.weight",
+    "adjnet.L_adjnet.1.conv1.bias",
+    "adjnet.L_adjnet.1.conv2.weight",
+    "adjnet.L_adjnet.1.conv2.bias",
+    "adjnet.L_adjnet.2.weight",
+    "adjnet.L_adjnet.2.bias",
+    "adjnet.R_adjnet.0.weight",
+    "adjnet.R_adjnet.0.bias",
+    "adjnet.R_adjnet.1.conv1.weight",
+    "adjnet.R_adjnet.1.conv1.bias",
+    "adjnet.R_adjnet.1.conv2.weight",
+    "adjnet.R_adjnet.1.conv2.bias",
+    "adjnet.R_adjnet.2.conv1.weight",
+    "adjnet.R_adjnet.2.conv1.bias",
+    "adjnet.R_adjnet.2.conv2.weight",
+    "adjnet.R_adjnet.2.conv2.bias",
+    "adjnet.R_adjnet.3.weight",
+    "adjnet.R_adjnet.3.bias",
+    "adjnet.lbs.conv1.weight",
+    "adjnet.lbs.conv1.bias",
+    "adjnet.lbs.conv2.weight",
+    "adjnet.lbs.conv2.bias"
+  ],
+  "shapes": {
+    "decnet.stages.0.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.0.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.0.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.0.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.0.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.0.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.0.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.0.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.0.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.0.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.0.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.0.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.0.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.0.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.0.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.0.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.0.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.0.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.0.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.0.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.0.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.0.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.0.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.0.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.0.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.0.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.0.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.0.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.1.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.1.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.1.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.1.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.1.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.1.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.1.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.1.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.1.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.1.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.1.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.1.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.1.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.1.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.1.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.1.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.1.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.1.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.1.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.1.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.1.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.1.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.1.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.1.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.1.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.1.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.1.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.1.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.2.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.2.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.2.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.2.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.2.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.2.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.2.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.2.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.2.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.2.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.2.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.2.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.2.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.2.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.2.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.2.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.2.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.2.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.2.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.2.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.2.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.2.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.2.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.2.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.2.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.2.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.2.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.2.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.3.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.3.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.3.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.3.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.3.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.3.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.3.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.3.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.3.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.3.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.3.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.3.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.3.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.3.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.3.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.3.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.3.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.3.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.3.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.3.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.3.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.3.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.3.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.3.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.3.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.3.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.3.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.3.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.4.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.4.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.4.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.4.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.4.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.4.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.4.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.4.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.4.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.4.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.4.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.4.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.4.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.4.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.4.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.4.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.4.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.4.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.4.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.4.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.4.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.4.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.4.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.4.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.4.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.4.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.4.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.4.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.5.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.5.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.5.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.5.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.5.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.5.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.5.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.5.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.5.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.5.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.5.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.5.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.5.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.5.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.5.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.5.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.5.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.5.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.5.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.5.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.5.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.5.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.5.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.5.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.5.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.5.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.5.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.5.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.6.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.6.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.6.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.6.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.6.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.6.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.6.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.6.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.6.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.6.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.6.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.6.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.6.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.6.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.6.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.6.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.6.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.6.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.6.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.6.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.6.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.6.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.6.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.6.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.6.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.6.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.6.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.6.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.7.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.7.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.7.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.7.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.7.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.7.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.7.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.7.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.7.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.7.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.7.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.7.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.7.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.7.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.7.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.7.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.7.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.7.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.7.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.7.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.7.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.7.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.7.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.7.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.7.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.7.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.7.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.7.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.8.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.8.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.8.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.8.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.8.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.8.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.8.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.8.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.8.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.8.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.8.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.8.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.8.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.8.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.8.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.8.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.8.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.8.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.8.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.8.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.8.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.8.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.8.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.8.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.8.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.8.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.8.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.8.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.9.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.9.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.9.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.9.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.9.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.9.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.9.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.9.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.9.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.9.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.9.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.9.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.9.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.9.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.9.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.9.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.9.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.9.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.9.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.9.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.9.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.9.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.9.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.9.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.9.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.9.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.9.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.9.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.10.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.10.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.10.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.10.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.10.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.10.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.10.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.10.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.10.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.10.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.10.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.10.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.10.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.10.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.10.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.10.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.10.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.10.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.10.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.10.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.10.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.10.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.10.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.10.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.10.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.10.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.10.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.10.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.11.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.11.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.11.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.11.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.11.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.11.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.11.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.11.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.11.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.11.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.11.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.11.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.11.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.11.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.11.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.11.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.11.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.11.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.11.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.11.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.11.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.11.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.11.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.11.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.11.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.11.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.11.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.11.structure_prior.2.bias": [
+      3
+    ],
+    "decnet.stages.12.initial_L_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.12.initial_L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.12.initial_L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.12.initial_L_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_L_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.12.initial_L_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_L_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.12.initial_L_branch.3.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_L_branch.3.bias": [
+      1
+    ],
+    "decnet.stages.12.initial_R_branch.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.12.initial_R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.12.initial_R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.12.initial_R_branch.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_R_branch.2.conv1.bias": [
+      32
+    ],
+    "decnet.stages.12.initial_R_branch.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_R_branch.2.conv2.bias": [
+      32
+    ],
+    "decnet.stages.12.initial_R_branch.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.initial_R_branch.3.bias": [
+      3
+    ],
+    "decnet.stages.12.L_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.12.L_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.12.L_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.L_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.12.L_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.L_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.12.L_branch.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.L_branch.2.bias": [
+      1
+    ],
+    "decnet.stages.12.R_branch.0.weight": [
+      32,
+      7,
+      3,
+      3
+    ],
+    "decnet.stages.12.R_branch.0.bias": [
+      32
+    ],
+    "decnet.stages.12.R_branch.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.R_branch.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.12.R_branch.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.R_branch.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.12.R_branch.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.R_branch.2.bias": [
+      3
+    ],
+    "decnet.stages.12.structure_prior.0.weight": [
+      32,
+      3,
+      3,
+      3
+    ],
+    "decnet.stages.12.structure_prior.0.bias": [
+      32
+    ],
+    "decnet.stages.12.structure_prior.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.structure_prior.1.conv1.bias": [
+      32
+    ],
+    "decnet.stages.12.structure_prior.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.structure_prior.1.conv2.bias": [
+      32
+    ],
+    "decnet.stages.12.structure_prior.2.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "decnet.stages.12.structure_prior.2.bias": [
+      3
+    ],
+    "adjnet.L_adjnet.0.weight": [
+      32,
+      1,
+      3,
+      3
+    ],
+    "adjnet.L_adjnet.0.bias": [
+      32
+    ],
+    "adjnet.L_adjnet.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "adjnet.L_adjnet.1.conv1.bias": [
+      32
+    ],
+    "adjnet.L_adjnet.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "adjnet.L_adjnet.1.conv2.bias": [
+      32
+    ],
+    "adjnet.L_adjnet.2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "adjnet.L_adjnet.2.bias": [
+      1
+    ],
+    "adjnet.R_adjnet.0.weight": [
+      32,
+      4,
+      3,
+      3
+    ],
+    "adjnet.R_adjnet.0.bias": [
+      32
+    ],
+    "adjnet.R_adjnet.1.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "adjnet.R_adjnet.1.conv1.bias": [
+      32
+    ],
+    "adjnet.R_adjnet.1.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "adjnet.R_adjnet.1.conv2.bias": [
+      32
+    ],
+    "adjnet.R_adjnet.2.conv1.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "adjnet.R_adjnet.2.conv1.bias": [
+      32
+    ],
+    "adjnet.R_adjnet.2.conv2.weight": [
+      32,
+      32,
+      3,
+      3
+    ],
+    "adjnet.R_adjnet.2.conv2.bias": [
+      32
+    ],
+    "adjnet.R_adjnet.3.weight": [
+      3,
+      32,
+      3,
+      3
+    ],
+    "adjnet.R_adjnet.3.bias": [
+      3
+    ],
+    "adjnet.lbs.conv1.weight": [
+      32,
+      1,
+      3,
+      3
+    ],
+    "adjnet.lbs.conv1.bias": [
+      32
+    ],
+    "adjnet.lbs.conv2.weight": [
+      1,
+      32,
+      3,
+      3
+    ],
+    "adjnet.lbs.conv2.bias": [
+      1
+    ]
+  }
+}

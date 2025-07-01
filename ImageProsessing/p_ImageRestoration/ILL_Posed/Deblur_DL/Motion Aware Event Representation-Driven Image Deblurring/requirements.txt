@@ -1,0 +1,17 @@
+addict
+future
+lmdb
+opencv-python
+Pillow
+pyyaml
+requests
+scikit-image
+scipy
+tqdm
+yapf
+einops
+timm
+thop
+h5py
+tensorboard
+numpy==1.26.4

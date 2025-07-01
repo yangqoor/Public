@@ -1,0 +1,67 @@
+# general settings
+name: MAENet_ERGB_test #debug
+model_type: TestImageEventRestorationModel
+scale: 1
+num_gpu:  1 #4
+manual_seed: 10
+
+datasets:
+  test:
+    name: ERGB-h5-test
+    type: H5ImageDataset
+
+    dataroot: /data/zhijing/GOPRO_rawevent/HS_ERGB_test # for debug
+
+    norm_voxel: true
+    return_voxel: true
+    return_gt_frame: true
+    return_mask: false
+    use_mask: false
+
+    io_backend:
+      type: h5
+    
+    crop_size: ~
+    use_flip: false
+    use_rot: false
+
+dataset_name: ERGB
+
+# network structures
+network_g:
+  type: Baseline_Biattention_CrossRecurrent_FC
+  in_chn: 3
+  ev_chn: 6
+  width: 64
+  middle_blk_num: 3
+  enc_blk_nums: [2,2,2]
+  dec_blk_nums: [2,2,2]
+  num_heads: [2,4,4]
+
+# path
+path:
+  pretrain_network_g: /model/zhijing/Baseline_Biattention/experiments/Baseline_Biattention_CrossRecurrent_FC_ERGB/models/net_g_latest.pth
+  # param_key_g: params
+  strict_load_g: true
+  resume_state: ~
+  # training_states: ~ # save current trainig model states, for resume
+  root: /model/zhijing/Baseline_Biattention
+
+# validation settings
+val:
+  save_img: true
+  save_img_path: /output
+  grids: ~
+  crop_size: ~
+  rgb2bgr: false
+  max_minibatch: 8
+  metrics: {
+    PSNR: {
+      type: calculate_psnr,
+      crop_border: 0
+    }
+  }
+# dist training settings
+dist_params:
+  backend: nccl
+  port: 29500
