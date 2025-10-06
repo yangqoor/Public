@@ -84,5 +84,3 @@ lgd2Hdl.Location='southeast';
 lgd2Hdl.FontSize=13;
 lgd2Hdl.TextColor=[.4,.4,.4];
 
-
-
